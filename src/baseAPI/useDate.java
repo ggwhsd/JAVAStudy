@@ -38,15 +38,6 @@ public class useDate{
 		strb.append(":"+calendar.get(Calendar.MILLISECOND));
 		System.out.println(strb);
 		
-		Random rd = new Random();
-		
-		System.out.println(rd.nextInt(100));
-		
-		
-		NumberFormat nf = null;
-		nf = NumberFormat.getInstance();
-		System.out.println("格式化后："+nf.format(10000000));
-		System.out.println("格式化后:"+nf.format(1000.345));
 		
 	}
 };
