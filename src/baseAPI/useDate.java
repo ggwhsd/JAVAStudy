@@ -1,4 +1,4 @@
-package com.gugw.Library.Test;
+package baseAPI;
 import java.util.* ;	// 导入需要的工具包
 import java.text.* ;	// 导入SimpleDateFormat所在的包
 class mmm{		// 以后直接通过此类就可以取得日期时间
