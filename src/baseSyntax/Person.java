@@ -1,4 +1,4 @@
-package abstractTest;
+package baseSyntax;
 
 public abstract class Person {
 	public Person()

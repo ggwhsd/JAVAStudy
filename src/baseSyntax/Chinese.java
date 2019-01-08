@@ -1,4 +1,4 @@
-package abstractTest;
+package baseSyntax;
 
 public class Chinese extends Person {
 	public Chinese()

@@ -1,4 +1,4 @@
-package abstractTest;
+package baseSyntax;
 
 public class AbstractTest {
 
