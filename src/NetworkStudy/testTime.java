@@ -1,4 +1,4 @@
-package testNetWork;
+package NetworkStudy;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

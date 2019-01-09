@@ -1,4 +1,4 @@
-package testNetWork;
+package NetworkStudy;
 import java.net.*;
 import java.io.IOException;
 import java.io.BufferedReader;

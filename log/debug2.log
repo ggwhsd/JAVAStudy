@@ -1,9 +1,12 @@
-2019-01-08 16:26:36 [main:94] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:12] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:13] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:14] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:12] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:13] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [INFO] [useLog4J:14] [main] 这是一条测试log的数据，级别info
-2019-01-08 16:26:36 [main:95] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:36] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:37] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
+2019-01-09 10:50:52 [main:40] - [WARN] [logStudy:22] [main] logger2 warn
+2019-01-09 10:50:52 [main:40] - [FATAL] [logStudy:23] [main] logger2 fatal
