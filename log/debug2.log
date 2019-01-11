@@ -1,12 +1,21 @@
-2019-01-09 10:50:52 [main:36] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:37] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:40] - [WARN] [logStudy:22] [main] logger2 warn
-2019-01-09 10:50:52 [main:40] - [FATAL] [logStudy:23] [main] logger2 fatal
+2019-01-11 09:42:37 [main:67425] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:37 [main:67435] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:67554] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:37 [main:67676] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:37 [main:67683] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:67755] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:67860] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:67957] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:67963] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:67986] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:38 [main:68163] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:68235] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:68242] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:68450] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:68579] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:68595] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:38 [main:68666] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:68737] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:44 [main:74397] - [INFO] [useNIO:134] [DoSomeThing] [系统消息提示]someone disconnect
+2019-01-11 09:50:35 [main:0] - [INFO] [useNIO:147] [testPath] .\log\nio.txt
+2019-01-11 09:50:35 [main:4] - [INFO] [useNIO:148] [testPath] log\nio.txt

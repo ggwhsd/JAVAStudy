@@ -1,102 +1,590 @@
-2019-01-09 10:50:52 [main:0] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:3] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:3] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:4] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:4] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:4] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:4] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:4] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:6] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:6] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:7] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:7] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:7] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:7] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:7] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:10] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:11] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:11] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:11] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:11] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:11] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:12] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:12] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:12] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:12] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:13] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:14] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:14] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:14] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:14] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:15] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:16] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:16] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:17] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:17] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:19] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:19] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:19] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:19] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:20] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:20] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:20] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:20] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:20] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:21] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:21] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:21] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:22] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:23] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:23] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:23] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:23] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:23] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:24] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:24] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:25] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:26] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:26] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:26] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:26] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:26] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:27] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:27] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:27] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:28] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:28] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:28] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:28] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:30] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:30] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:30] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:31] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:31] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:31] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:31] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:31] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:32] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:33] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:34] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:34] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:36] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:37] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:38] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:39] - [WARN] [useLog4J:16] [main] 这是一条测试log的数据，级别应该是warn
-2019-01-09 10:50:52 [main:40] - [WARN] [logStudy:22] [main] logger2 warn
-2019-01-09 10:50:52 [main:40] - [FATAL] [logStudy:23] [main] logger2 fatal
+2019-01-11 09:41:30 [main:0] - [INFO] [useNIO:75] [testSelector] [系统消息提示]NIO服务器初始化完毕，监听端口33333
+2019-01-11 09:41:56 [main:26035] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:56 [main:26178] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:56 [main:26340] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:56 [main:26517] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:57 [main:26835] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:57 [main:27011] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:57 [main:27172] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:57 [main:27323] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:57 [main:27451] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:57 [main:27593] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:57 [main:27762] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:58 [main:27938] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:58 [main:28067] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:58 [main:28266] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:58 [main:28459] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:58 [main:28611] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:58 [main:28770] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:59 [main:28962] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:41:59 [main:29115] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:41:59 [main:29323] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:00 [main:29978] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:00 [main:30010] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:00 [main:30211] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:00 [main:30354] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:00 [main:30507] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:00 [main:30676] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:01 [main:30811] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:01 [main:30962] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:01 [main:31129] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:01 [main:31290] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:01 [main:31435] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:01 [main:31583] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:01 [main:31763] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:02 [main:31896] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:02 [main:32059] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:02 [main:32203] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:02 [main:32357] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:02 [main:32492] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:02 [main:32650] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:03 [main:32795] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33328] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33360] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33394] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33426] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33459] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33493] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33525] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33559] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33591] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33625] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33658] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33692] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33723] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:03 [main:33755] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33788] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33822] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33854] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33889] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33922] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33955] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:33988] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34019] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34053] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34102] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34119] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34152] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34185] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34217] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34251] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34284] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34316] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34352] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34383] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34416] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34486] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34491] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34517] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34547] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34581] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34614] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34647] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34681] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34714] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34745] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:04 [main:34780] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34813] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34848] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34878] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34910] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34946] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:34977] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35010] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35044] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35076] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35108] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35142] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35174] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35208] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35242] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:05 [main:35451] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:35951] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:35983] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36017] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36051] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36082] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36115] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36147] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36181] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36214] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36247] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36281] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36313] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36348] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36379] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36412] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36445] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36478] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36511] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36544] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36577] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36610] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36643] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36676] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36710] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36742] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:06 [main:36774] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:07 [main:36808] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:07 [main:36841] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:07 [main:36874] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:07 [main:37068] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37570] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37600] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37634] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37665] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37699] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37733] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:07 [main:37766] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37798] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37831] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37863] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37896] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37929] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37962] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:37997] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38029] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38061] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38095] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38128] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38161] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38194] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38226] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38259] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38293] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38327] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38359] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38392] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38425] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38459] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38491] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:08 [main:38683] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39229] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39230] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39249] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39282] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39315] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39348] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39382] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39414] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39446] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39479] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39512] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39546] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39581] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39612] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39645] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39678] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39710] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39743] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:09 [main:39777] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39810] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39842] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39877] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39908] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39942] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:39974] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:40007] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:40040] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:40074] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:10 [main:40203] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:10 [main:40702] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:10 [main:40736] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:10 [main:40768] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40800] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40833] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40867] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40900] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40933] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40966] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:40999] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41033] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41065] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41098] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41131] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41164] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41197] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41230] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41263] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41298] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41329] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41361] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:11 [main:41507] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42007] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42041] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42073] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42105] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42138] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42172] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42208] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42245] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42271] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42303] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42337] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42369] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42403] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42437] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42469] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42502] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42535] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42568] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42602] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42634] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42667] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42699] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42732] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:12 [main:42765] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:13 [main:42799] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:13 [main:42831] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[g]new connect
+2019-01-11 09:42:13 [main:42973] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43470] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43502] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43535] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43582] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43602] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43635] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43667] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43725] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43737] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:13 [main:43766] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43800] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43832] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43865] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43899] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43932] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43965] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:43998] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44031] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44064] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44096] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44129] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44163] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44196] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:14 [main:44318] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44813] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44847] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44880] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44913] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44946] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:44981] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45014] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45045] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45077] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45112] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45144] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45177] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45211] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45243] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45277] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45310] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45343] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45375] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45408] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45444] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45477] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45507] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45540] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45572] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45606] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45641] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45674] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:15 [main:45705] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[j]new connect
+2019-01-11 09:42:16 [main:45835] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46333] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46368] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46402] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46433] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46466] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46500] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46532] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46565] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46599] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46631] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46664] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46697] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46730] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:16 [main:46764] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46800] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46829] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46862] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46896] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46927] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46962] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:46995] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47027] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47060] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47095] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47129] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47160] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47194] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[k]new connect
+2019-01-11 09:42:17 [main:47724] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48223] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48255] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48288] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48321] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48354] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48386] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48420] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48456] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48490] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48518] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48551] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48584] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48618] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48652] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48685] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48718] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:18 [main:48751] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:48783] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:48817] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:48848] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:48882] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:48914] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:19 [main:49539] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50042] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50072] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50105] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50138] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50174] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50206] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50237] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50269] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50303] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50336] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50369] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50402] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50434] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50469] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50502] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50534] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50568] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50599] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50633] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50666] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50699] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50732] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:20 [main:50766] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:21 [main:50798] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:21 [main:50830] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[q]new connect
+2019-01-11 09:42:21 [main:51098] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51634] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51636] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51665] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51698] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51731] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:21 [main:51764] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51798] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51829] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51865] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51895] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51929] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51963] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:51994] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52028] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52062] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52093] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52128] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52160] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52192] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52225] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52258] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52291] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52326] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52358] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52392] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52425] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52456] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52489] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52523] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52555] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[w]new connect
+2019-01-11 09:42:22 [main:52682] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53183] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53216] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53252] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53281] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53314] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53348] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53381] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53415] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53448] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53481] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53513] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53547] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53578] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53611] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53645] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53677] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53711] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53745] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:23 [main:53777] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53810] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53844] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53877] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53908] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53944] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:53976] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:54008] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:54041] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:24 [main:54178] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:24 [main:54678] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:24 [main:54710] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:24 [main:54743] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:24 [main:54776] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54811] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54846] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54875] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54909] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54941] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:54974] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55009] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55042] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55074] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55107] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55141] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55173] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55206] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55239] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55272] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55305] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55338] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55371] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55405] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55437] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55468] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55503] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55536] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[r]new connect
+2019-01-11 09:42:25 [main:55682] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56183] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56216] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56249] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56283] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56316] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56354] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56380] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56413] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56446] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56479] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56512] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56547] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56577] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56612] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56646] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56677] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56711] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:26 [main:56744] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56790] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56810] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56844] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56879] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56908] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56943] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:56975] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57008] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57042] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57073] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57106] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57139] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57173] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[t]new connect
+2019-01-11 09:42:27 [main:57290] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57791] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57822] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57856] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57888] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57923] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57954] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:57988] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:28 [main:58021] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[y]new connect
+2019-01-11 09:42:29 [main:59191] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[h]new connect
+2019-01-11 09:42:29 [main:59276] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[e]new connect
+2019-01-11 09:42:29 [main:59387] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:29 [main:59554] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[o]new connect
+2019-01-11 09:42:29 [main:59569] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[l]new connect
+2019-01-11 09:42:30 [main:60051] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[o]new connect
+2019-01-11 09:42:31 [main:61151] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[p]new connect
+2019-01-11 09:42:31 [main:61227] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:31 [main:61492] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:31 [main:61747] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:32 [main:61905] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:32 [main:62035] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:32 [main:62098] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:32 [main:62275] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:32 [main:62290] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:32 [main:62459] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:32 [main:62634] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:32 [main:62650] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:33 [main:62859] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:33 [main:62961] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:33 [main:63131] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:33 [main:63220] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:33 [main:63240] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:33 [main:63393] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:33 [main:63403] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:33 [main:63451] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:33 [main:63506] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:33 [main:63650] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:33 [main:63658] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:33 [main:63666] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:34 [main:63801] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:34 [main:63971] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:34 [main:63995] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:34 [main:64132] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:34 [main:64355] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:34 [main:64387] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:34 [main:64441] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:34 [main:64570] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:34 [main:64731] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:34 [main:64738] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:35 [main:64883] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:35 [main:64994] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:35 [main:65018] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:35 [main:65139] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:35 [main:65322] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:35 [main:65412] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:35 [main:65459] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:35 [main:65467] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:35 [main:65683] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:35 [main:65707] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:36 [main:65820] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:36 [main:65826] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:36 [main:66001] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:36 [main:66010] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:36 [main:66082] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:36 [main:66161] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:36 [main:66330] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:36 [main:66337] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:36 [main:66348] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:36 [main:66474] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:36 [main:66585] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:36 [main:66593] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:36 [main:66754] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:36 [main:66779] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:37 [main:66930] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:37 [main:66938] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:66954] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:37 [main:67043] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:37 [main:67187] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:67194] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:37 [main:67202] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:37 [main:67329] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:37 [main:67419] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:37 [main:67425] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:37 [main:67435] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:67554] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:37 [main:67676] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:37 [main:67683] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:37 [main:67755] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:67860] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:67957] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:67963] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:67986] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:38 [main:68163] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:68235] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:68242] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:68450] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:38 [main:68579] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[s]new connect
+2019-01-11 09:42:38 [main:68595] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[a]new connect
+2019-01-11 09:42:38 [main:68666] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[d]new connect
+2019-01-11 09:42:38 [main:68737] - [INFO] [useNIO:131] [DoSomeThing] [系统消息提示]服务器发现[f]new connect
+2019-01-11 09:42:44 [main:74397] - [INFO] [useNIO:134] [DoSomeThing] [系统消息提示]someone disconnect
+2019-01-11 09:50:35 [main:0] - [INFO] [useNIO:147] [testPath] .\log\nio.txt
+2019-01-11 09:50:35 [main:4] - [INFO] [useNIO:148] [testPath] log\nio.txt

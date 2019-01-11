@@ -17,3 +17,5 @@ JAVA 1.8
 [示例客户端](./src/NetworkStudy/TcpTest.java)||[示例服务端](./src/NetworkStudy/Server.java)
 
 * JAVA 的IO流，（不包括NIO的库使用），包括字符流和字节流。 [示例](./src/baseAPI/useIO.java)
+
+* JAVA 的NIO库 [示例](./src/baseAPI/useNIO.java):Buffer,Selector,FileChannel,Path等。[详细介绍](http://blog.51cto.com/ggwhsd/2341370)
