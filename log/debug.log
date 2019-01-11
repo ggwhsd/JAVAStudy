@@ -588,3 +588,5 @@
 2019-01-11 09:42:44 [main:74397] - [INFO] [useNIO:134] [DoSomeThing] [系统消息提示]someone disconnect
 2019-01-11 09:50:35 [main:0] - [INFO] [useNIO:147] [testPath] .\log\nio.txt
 2019-01-11 09:50:35 [main:4] - [INFO] [useNIO:148] [testPath] log\nio.txt
+2019-01-11 11:22:50 [main:0] - [INFO] [useNIO:147] [testPath] .\log\nio.txt
+2019-01-11 11:22:50 [main:4] - [INFO] [useNIO:148] [testPath] log\nio.txt

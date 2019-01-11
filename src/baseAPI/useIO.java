@@ -1,6 +1,9 @@
 package baseAPI;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 
@@ -307,6 +310,56 @@ class useScan
 	}
 };
 
+class useFile
+{
+	public static void testFile()
+	{
+		
+		File file = new File(".\\log\\nio.txt");
+		boolean fileExists = file.exists();
+		System.out.println("文件是否存在："+fileExists);
+		long length = file.length();
+		System.out.println("文件长度："+length);
+		File file1 = new File(".\\log\\deletenio.txt");
+	
+	   try {
+			Files.copy(file.toPath(), file1.toPath());
+			 System.out.println("复制文件");
+		} catch (IOException e) {
+			try {
+				file.createNewFile();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			e.printStackTrace();
+		}
+		
+		boolean success = file.renameTo(new File(".\\log\\newnio.txt"));
+		System.out.println("改名："+length);
+		
+		
+	    
+	    boolean isDirectory = file.isDirectory();
+	    System.out.println("是否为目录："+isDirectory);
+	    
+	  
+	    success = file1.delete();
+	    System.out.println("删除文件："+success);
+	    
+	    file = new File(".\\log");
+	    String[] fileNames = file.list();
+	    File[] files = file.listFiles();
+	    for(int i=0 ;i< fileNames.length; i++)
+	    {
+	    	System.out.println("文件："+fileNames[i]);
+	    }
+	    for(int i=0 ;i< files.length; i++)
+	    {
+	    	System.out.println("文件："+files[i]+" 是否为目录"+files[i].isDirectory());
+	    }
+	   
+	}
+};
 
 public class useIO {
 	public static void main(String[] args) {
@@ -318,7 +371,8 @@ public class useIO {
 		//pipedTest p = new pipedTest();p.pipedStream();
 		//useBuffer.testBufferReader();
 		//useScan.testScan();
-		useBuffer.testBufferWriter();
+		//useBuffer.testBufferWriter();
+		useFile.testFile();
 	}
 }
 
