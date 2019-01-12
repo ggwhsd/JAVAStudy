@@ -1,4 +1,4 @@
-package thirdThread;
+package Thread_03;
 import java.lang.InterruptedException;
 
 public class MyThread extends Thread {

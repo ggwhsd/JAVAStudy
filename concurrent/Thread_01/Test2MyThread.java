@@ -1,4 +1,4 @@
-package firstThreadStudy;
+package Thread_01;
 
 public class Test2MyThread {
 

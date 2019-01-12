@@ -1,4 +1,4 @@
-package secondThreadStudy;
+package Thread_02;
 import java.lang.InterruptedException;
 
 public class MyThread extends Thread {
