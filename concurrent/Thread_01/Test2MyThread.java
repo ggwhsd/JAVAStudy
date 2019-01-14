@@ -3,7 +3,7 @@ package Thread_01;
 public class Test2MyThread {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		MyThread boy = new MyThread();
 		boy.setName("boy");
 		MyThread girl = new MyThread();

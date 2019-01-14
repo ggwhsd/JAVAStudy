@@ -4,7 +4,7 @@ public class Test {
 	public static void main(String[] args)
 	{
 		try{
-			MyThread boy = new MyThread();
+			MyThread2 boy = new MyThread2();
 			boy.start();
 			Thread.sleep(2000);
 			boy.interrupt();

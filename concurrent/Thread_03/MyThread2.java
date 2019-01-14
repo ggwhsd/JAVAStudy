@@ -1,7 +1,7 @@
 package Thread_03;
 import java.lang.InterruptedException;
 
-public class MyThread extends Thread {
+public class MyThread2 extends Thread {
 	@Override
 	public void run(){
 		super.run();
