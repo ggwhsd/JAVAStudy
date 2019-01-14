@@ -1,5 +1,7 @@
 package Thread_01;
-
+/*
+ * 线程的两种创建方法示例，其实Thread类也是实现了Runnable的接口类，所以线程本质上创建方法只有一种实现Runnable接口。
+ */
 public class test {
 	public static void main(String args[])
 	{

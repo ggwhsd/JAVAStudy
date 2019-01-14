@@ -1,5 +1,8 @@
-package volatileTest;
+package Thread_03;
 
+/*
+ * 友好的结束线程的方式。
+ */
 public class PrintString implements Runnable{
 	private boolean isContinuePrint=true;
 	public boolean isContinuePrint()

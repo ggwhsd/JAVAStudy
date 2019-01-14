@@ -1,18 +1,34 @@
 package Thread_03;
 
+/*
+ * volatile的关键字
+ * synchronized的关键字
+ */
 public class Test {
-	public static void main(String[] args)
-	{
-		try{
-			MyThread2 boy = new MyThread2();
-			boy.start();
-			Thread.sleep(2000);
-			boy.interrupt();
-			
-		}catch(InterruptedException e)
+
+	public static void main(String[] args) {
+		violateStudy[] mythreadArray = new violateStudy[100];
+		for (int i=0; i<100; i++)
 		{
-			System.out.println("main catch");
-			e.printStackTrace();
+			mythreadArray[i] = new violateStudy();
 		}
+		for (int i=0; i< 100; i++)
+		{
+			mythreadArray[i].start();
+		}
+		
+		PrintString p = new PrintString();
+		Thread print = new Thread(p,"testTurnDownThread");
+		print.start();
+		try {
+			Thread.sleep(3000);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		p.setContinuePrint(false);
+		
+		
 	}
 }
