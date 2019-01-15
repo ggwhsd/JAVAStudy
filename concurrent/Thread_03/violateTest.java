@@ -4,7 +4,7 @@ package Thread_03;
  * volatile的关键字
  * synchronized的关键字
  */
-public class Test {
+public class violateTest {
 
 	public static void main(String[] args) {
 		violateStudy[] mythreadArray = new violateStudy[100];

@@ -1,4 +1,4 @@
-package concurrent1;
+package synchronizedStudy;
 
 public class boy extends Thread{
 	private toy mytoy;

@@ -6,7 +6,6 @@ public class violateStudy extends Thread{
 		for (int i = 0; i < 100; i++)
 		{
 			count++;
-			
 		}
 		System.out.println("Count="+count);
 	}

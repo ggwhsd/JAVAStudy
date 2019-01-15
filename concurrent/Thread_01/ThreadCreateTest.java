@@ -1,6 +1,6 @@
 package Thread_01;
 
-public class Test2MyThread {
+public class ThreadCreateTest {
 
 	public static void main(String[] args) {
 		

@@ -5,7 +5,7 @@ package Thread_02;
  * 关于Thread类的interrupt方法，以及interrupted()的使用，一般我不会使用着两个方法。
  * 以及yield方法。
  */
-public class Test {
+public class yieldAndInterruptTest {
 	public static void main(String[] args)
 	{
 		try{
