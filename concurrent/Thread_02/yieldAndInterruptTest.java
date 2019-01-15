@@ -1,5 +1,6 @@
 package Thread_02;
 
+import java.util.concurrent.TimeUnit;
 
 /*
  * 关于Thread类的interrupt方法，以及interrupted()的使用，一般我不会使用着两个方法。
@@ -22,5 +23,15 @@ public class yieldAndInterruptTest {
 		
 		MyYieldThread boy = new MyYieldThread();
 		boy.start();
+		
+		MyThread2 t = new MyThread2();
+		t.start();
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		t.interrupt();
 	}
 }

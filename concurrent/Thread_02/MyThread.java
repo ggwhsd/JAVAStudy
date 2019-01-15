@@ -8,7 +8,7 @@ public class MyThread extends Thread {
 		try{
 			for ( int i = 0; i< 500000 ; i++ )
 			{
-				//判断该对象线程是否中断，若不使用这个方法，在其他地方
+				//interrupted会擦出内部的标志，所以被interrupte之后，第一次interrupted为true，第二次则为false。
 				if(this.interrupted()){
 					System.out.println("has interrupted! i am quit!");
 					throw new InterruptedException();
@@ -20,10 +20,29 @@ public class MyThread extends Thread {
 		catch(InterruptedException e)
 		{
 			System.out.println("exception has been catched");
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 }
+
+class MyThread2 extends Thread {
+	@Override
+	public void run(){
+			for ( int i = 0; i< 500000 ; i++ )
+			{
+				//isInterrupted只是判断是否被打断了，不会修改任何线程内部数据
+				if(this.isInterrupted()){
+					System.out.println(Thread.currentThread().getName()+"has interrupted! i am quit!");
+					//throw new InterruptedException();
+				}
+				//System.out.println(Thread.currentThread().getName()+"i am not executed , yeah !");
+			}
+			System.out.println(Thread.currentThread().getName()+"i am not executed ,too , yeah !");
+		
+		
+	}
+}
+
 
 
 class MyYieldThread extends Thread {
