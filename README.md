@@ -29,7 +29,9 @@ JAVA 1.8
    * 线程的yield和interrupt [示例](./concurrent/Thread_02/yieldAndInterruptTest.java)
    * 线程的volatile关键字的使用 [示例](./concurrent/Thread_03/violateStudy.java)
    * 线程的synchronized使用 [示例](./concurrent/synchronizedStudy/toy.java)
- 
+   * 线程的通信notify和wait。 [示例](./concurrent/Thread_03/notifyWaitStudy.java)
+   * 线程组的概念 
+   
 * 并发编程
 
 * Spring 库
