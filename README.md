@@ -25,14 +25,13 @@ JAVA 1.8
 * json 库 使用了gson库。 [示例](./src/baseAPI/gsonBase.java)
 
 * 线程库
-   * 线程的创建和使用 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)
-   * 线程的yield和interrupt [示例](./concurrent/Thread_02/yieldAndInterruptTest.java)
-   * 线程的volatile关键字的使用 [示例](./concurrent/Thread_03/violateStudy.java)
-   * 线程的synchronized使用 [示例](./concurrent/synchronizedStudy/toy.java)
+   * 线程的创建和使用。 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)
+   * 线程的yield和interrupt。 [示例](./concurrent/Thread_02/yieldAndInterruptTest.java)
+   * 线程的volatile关键字的使用。 [示例](./concurrent/Thread_03/violateStudy.java)
+   * 线程的synchronized使用。 [示例](./concurrent/synchronizedStudy/toy.java)
    * 线程的通信notify和wait。 [示例](./concurrent/Thread_03/notifyWaitStudy.java)
-   * 线程组的概念 
-   
-* 并发编程
+   * 线程组的概念,主要用于组织线程，并不用来管理线程。[示例](./concurrent/Thread_03/ThreadGroupStudy.java)
+   * 线程池
 
 * Spring 库
 
