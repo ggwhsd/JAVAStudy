@@ -8,7 +8,7 @@ import java.util.concurrent.TimeoutException;
 import static java.lang.Thread.currentThread;
 import static java.lang.System.currentTimeMillis;
 /*
- * 用synchronized 和 Object的对象的wait和notify。
+ * 用synchronized 和 Object的对象的wait和notify。 来开发一个精简版的lock。
  * 
  */
 interface Lock
