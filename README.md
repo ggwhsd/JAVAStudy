@@ -32,7 +32,11 @@ JAVA 1.8
    * 线程的通信notify和wait。 [示例](./concurrent/Thread_03/notifyWaitStudy.java)
    * 线程组的概念,主要用于组织线程，并不用来管理线程。[示例](./concurrent/Thread_03/ThreadGroupStudy.java)
    * 线程池
-
+* ClassLoader类加载
+   * 每个类在jvm中只有首次被主动调用才会进行初始化，6种主动调用。[示例](./src/classLoaderStudy/ClassInit1.java)
+   * JVM中内置的三个ClassLoader [示例](./src/ClassLoaderStudy/classLoaderTest.java)
+   * 自定义加载类
+   
 * Spring 库
 
 	
