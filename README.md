@@ -35,8 +35,6 @@ JAVA 1.8
 * ClassLoader类加载
    * 每个类在jvm中只有首次被主动调用才会进行初始化，6种主动调用。[示例](./src/classLoaderStudy/ClassInit1.java)
    * JVM中内置的三个ClassLoader [示例](./src/ClassLoaderStudy/classLoaderTest.java)
-   * 自定义加载类
+   * 自定义加载类[示例](./src/ClassLoaderStudy/MyClassLoader.java)
    
 * Spring 库
-
-	
