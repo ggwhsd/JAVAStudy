@@ -27,7 +27,7 @@ JAVA 1.8
 * 线程库
    * 线程的创建和使用。 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)
    * 线程的yield和interrupt。 [示例](./concurrent/Thread_02/yieldAndInterruptTest.java)
-   * 线程的volatile关键字的使用。 [示例](./concurrent/Thread_03/violateStudy.java)
+   * 线程的volatile关键字的使用。volatile可以保证编译的顺序性，以避免编译器对其优化重排序。 [示例](./concurrent/Thread_03/violateStudy.java)
    * 线程的synchronized使用。 [示例](./concurrent/synchronizedStudy/toy.java)
    * 线程的通信notify和wait。 [示例](./concurrent/Thread_03/notifyWaitStudy.java)
    * 线程组的概念,主要用于组织线程，并不用来管理线程。[示例](./concurrent/Thread_03/ThreadGroupStudy.java)
@@ -38,8 +38,10 @@ JAVA 1.8
    * 自定义加载类[示例](./src/ClassLoaderStudy/MyClassLoader.java)
 
 * 单例模式的几种方式
-   * 饿汉
-   * 懒汉
-   * 
+   * 饿汉模式,可以保证多个线程下的唯一实例。[示例](./src/SingletonStudy/Singleton01.java)
+   * 懒汉模式：在初始化时不会创建instance，只有在getinstance使用时才会创建。不支持多线程安全。[示例](./src/SingletonStudy/Singleton02.java)
+   * 懒汉 + 同步 模式：懒汉 + 同步 模式: 多线程安全，唯一的不好就是在于每次只能一个线程访问getinstance，因此不适合高并发的场景下频繁使用。 [示例](./src/SingletonStudy/Singleton03.java)
+   * double check : 原理跟懒汉+同步模式差不多，只是synchronized不放在方法上，而是放在具体代码块中，使得可以多个线程同时访问。如果需要再初始化类的代码里面，有包含其他初始化操作的变量，可以对这些变量使用volatile关键字，保证顺序编译。
+   * 内部类 模式：这是单例模式好的设计之一，也是经常使用的一种方式。利用静态内部类中的静态成员，即达到了延迟初始化，又保证了同步，还使得多线程可以高并发访问。
    
 * Spring 库
