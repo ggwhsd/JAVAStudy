@@ -31,7 +31,11 @@ public class ImageIconDemo extends JFrame {
     }
     
     public static void main(String[] args) {
-        new ImageIconDemo();
+        try {
+			new ImageIconDemo();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     }
 
 }
