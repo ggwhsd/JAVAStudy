@@ -14,13 +14,13 @@ import javax.swing.WindowConstants;
 public class ImageIconDemo extends JFrame {
     
     public ImageIconDemo() throws Exception {
-        JLabel jl = new JLabel("ÕâÊÇÒ»¸öJFrame´°Ìå£¬ÅÔ±ßÊÇÒ»¸öÍ¼Æ¬");
-        //URL url = ImageIconDemo.class.getResource("2.jpg");        // »ñµÃÍ¼Æ¬ËùÔÚURL
-        URL url = new URL("2.jpg");        // »ñµÃÍ¼Æ¬ËùÔÚURL
-        Icon icon = new ImageIcon(url);        // ÊµÀý»¯Icon¶ÔÏó
-        jl.setIcon(icon);        // Îª±êÇ©ÉèÖÃÍ¼Æ¬
+        JLabel jl = new JLabel("ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½JFrameï¿½ï¿½ï¿½å£¬ï¿½Ô±ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¼Æ¬");
+        //URL url = ImageIconDemo.class.getResource("2.jpg");        // ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½URL
+        URL url = new URL("2.jpg");        // ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½URL
+        Icon icon = new ImageIcon(url);        // Êµï¿½ï¿½ï¿½ï¿½Iconï¿½ï¿½ï¿½ï¿½
+        jl.setIcon(icon);        // Îªï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
         jl.setHorizontalAlignment(SwingConstants.CENTER);
-        jl.setOpaque(true);        // ÉèÖÃ±êÇ©Îª²»Í¸Ã÷×´Ì¬
+        jl.setOpaque(true);        // ï¿½ï¿½ï¿½Ã±ï¿½Ç©Îªï¿½ï¿½Í¸ï¿½ï¿½×´Ì¬
         
         Container container = getContentPane();
         container.add(jl);
@@ -31,7 +31,12 @@ public class ImageIconDemo extends JFrame {
     }
     
     public static void main(String[] args) {
-        new ImageIconDemo();
+        try {
+			new ImageIconDemo();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
 }
