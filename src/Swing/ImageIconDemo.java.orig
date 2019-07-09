@@ -34,6 +34,10 @@ public class ImageIconDemo extends JFrame {
         try {
 			new ImageIconDemo();
 		} catch (Exception e) {
+<<<<<<< HEAD
+			// TODO Auto-generated catch block
+=======
+>>>>>>> 0194222ded514af97481ad721243f8d868ce38cd
 			e.printStackTrace();
 		}
     }
