@@ -6,7 +6,7 @@ public interface TaskLifecycle <T>{
 	void onFinish(Thread thread, T result);
 	void onError(Thread thread, Exception e);
 
-	//绌哄疄鐜�
+//内部类
 class EmptyLifecycle<T> implements TaskLifecycle<T>
 {
 	@Override

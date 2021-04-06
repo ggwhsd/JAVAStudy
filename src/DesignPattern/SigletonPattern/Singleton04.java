@@ -1,7 +1,7 @@
-package SingletonStudy;
+package DesignPattern.SigletonPattern;
 
 /*
- * double check : 原理跟懒汉+同步模式差不多，只是synchronized不放在方法上，而是放在具体代码块中，使得可以多个线程同时访问。
+ * double check : 原理跟懒�?+同步模式差不多，只是synchronized不放在方法上，�?�是放在具体代码块中，使得可以多个线程同时访问�??
  */
 public final class Singleton04 {
 

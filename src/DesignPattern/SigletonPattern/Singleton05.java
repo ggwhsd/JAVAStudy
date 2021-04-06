@@ -1,4 +1,4 @@
-package SingletonStudy;
+package DesignPattern.SigletonPattern;
 
 public final class Singleton05 {
 

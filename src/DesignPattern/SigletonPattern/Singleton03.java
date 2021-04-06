@@ -1,6 +1,6 @@
-package SingletonStudy;
+package DesignPattern.SigletonPattern;
 
-/* 懒汉 + 同步 模式: 多线程安全，唯一的不好就是在于每次只能一个线程访问getinstance，因此不适合高并发的场景下频繁使用。
+/* 懒汉 + 同步 模式: 多线程安全，唯一的不好就是在于每次只能一个线程访问getinstance，因此不适合高并发的场景下频繁使用�??
  * 
  */
 public final class Singleton03 {

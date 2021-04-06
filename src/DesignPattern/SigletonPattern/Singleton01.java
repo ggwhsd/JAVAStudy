@@ -1,8 +1,8 @@
-package SingletonStudy;
+package DesignPattern.SigletonPattern;
 
 
 /*
- * 饿汉模式,可以保证多个线程下的唯一实例。
+ * 饿汉模式,可以保证多个线程下的唯一实例�?
  */
 public final class Singleton01 {
 
