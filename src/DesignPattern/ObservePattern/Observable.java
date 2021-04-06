@@ -1,4 +1,4 @@
-package ObservePattern;
+package DesignPattern.ObservePattern;
 
 public interface Observable {
 	enum Cycle

@@ -1,4 +1,4 @@
-package ObservePattern;
+package DesignPattern.ObservePattern;
 
 public interface TaskLifecycle <T>{
 	void onStart(Thread thread);
@@ -6,7 +6,7 @@ public interface TaskLifecycle <T>{
 	void onFinish(Thread thread, T result);
 	void onError(Thread thread, Exception e);
 
-	//空实现
+	//绌哄疄鐜�
 class EmptyLifecycle<T> implements TaskLifecycle<T>
 {
 	@Override

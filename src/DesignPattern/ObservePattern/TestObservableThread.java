@@ -1,4 +1,4 @@
-package ObservePattern;
+package DesignPattern.ObservePattern;
 
 import java.util.concurrent.TimeUnit;
 

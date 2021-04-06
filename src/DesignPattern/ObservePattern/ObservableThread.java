@@ -1,4 +1,4 @@
-package ObservePattern;
+package DesignPattern.ObservePattern;
 
 public class ObservableThread<T> extends  Thread implements Observable{
 	private final TaskLifecycle<T> lifecycle;
