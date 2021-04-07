@@ -46,5 +46,5 @@ JAVA 1.8
 
 * 设计模式and线程编程模式
    * 观察者模式，应用在监控任务状态。[示例](./src/DesignPattern/ObservePattern/TestObservableThread.java)
-   * 
+   * 策略模式 [示例](./src/DesignPattern/Strategy/StrategyTest.java)
 
