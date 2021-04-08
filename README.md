@@ -48,5 +48,6 @@ JAVA 1.8
    * 观察者模式，应用在监控任务状态。[示例](./src/DesignPattern/ObservePattern/TestObservableThread.java)
    * 策略模式 [示例](./src/DesignPattern/Strategy/StrategyTest.java)
    * 迭代器模式 [示例](./src/DesignPattern/IteratorPattern/MyIterator.java)
-   * 责任链模式 [示例](./src/DesingPattern/HandlerChain/HandleChainTest.java)
+   * 责任链模式 [示例](./src/DesignPattern/HandlerChain/HandleChainTest.java)
+   * 命令模式 [示例](./src/DesignPattern/Command/CommandTest.java)
 
