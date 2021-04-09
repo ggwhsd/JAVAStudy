@@ -50,4 +50,4 @@ JAVA 1.8
    * 迭代器模式 [示例](./src/DesignPattern/IteratorPattern/MyIterator.java)
    * 责任链模式 [示例](./src/DesignPattern/HandlerChain/HandleChainTest.java)
    * 命令模式 [示例](./src/DesignPattern/Command/CommandTest.java)
-
+   * 状态模式 [示例](./src/DesignPattern/StatePattern/StateTest.java)
