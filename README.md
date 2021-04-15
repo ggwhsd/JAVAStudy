@@ -52,3 +52,4 @@ JAVA 1.8
    * 命令模式 [示例](./src/DesignPattern/Command/CommandTest.java)
    * 状态模式 [示例](./src/DesignPattern/StatePattern/StateTest.java)
    * 访问者模式 [示例](./src/DesignPattern/VisitorPattern/VisitorTest.java)
+   * 中介者模式 [示例](./src/DesignPattern/MediatorPattern/MediatorTest.java)
