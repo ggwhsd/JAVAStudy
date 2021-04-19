@@ -30,8 +30,14 @@ JAVA 1.8
    * 线程的volatile关键字的使用。volatile可以保证编译的顺序性，以避免编译器对其优化重排序。 [示例](./concurrent/Thread_03/violateStudy.java)
    * 线程的synchronized使用。 [示例](./concurrent/synchronizedStudy/toy.java)
    * 线程的通信notify和wait。 [示例](./concurrent/Thread_03/notifyWaitStudy.java)
-   * 线程组的概念,主要用于组织线程，并不用来管理线程。[示例](./concurrent/Thread_03/ThreadGroupStudy.java)
-   * 线程池
+   * 线程组的概念,主要用于组织线程，并不用来管理线程。 [示例](./concurrent/Thread_03/ThreadGroupStudy.java)
+   * 线程池，简单的使用方式ThreadPoolExecutor的方式newCachedThreadPool，线程池中的线程超过60s会自动释放。  [示例](./concurrent/ThreadPoolTest/Run1.java)
+   * 线程池，创建固定线程池newFixedThreadPool,线程池中的线程不会自动释放，除非调用shutdown。 [示例](./concurrent/ThreadPoolTest/Run2.java)
+   * 线程池，创建可调度的线程池newScheduledThreadPool,可以延迟多久之后以某个频率执行任务。 [示例](./concurrent/ThreadPoolTest/Run3.java)
+   * 线程池，创建单一线程池，实际上就是一个不阻塞当前执行线程的fifo的队列，例如消息总线的实现方式，GUI单线程等。newSingleThreadExecutor,以及Executors.newSingleThreadExecutor()。 [示例](./concurrent/ThreadPoolTest/Run4.java)
+   * 线程池，重定义创建线程的方法，实现ThreadFactory接口 [示例](./concurrent/ThreadPoolTest2/test.java)
+   * 线程池，继承ThreadPoolExecutor，实现自定义的线程池,并且重写了afterExecute和beginExecute。 [示例](./concurrent/ThreadPoolTest3/)
+
 * ClassLoader类加载
    * 每个类在jvm中只有首次被主动调用才会进行初始化，6种主动调用。[示例](./src/classLoaderStudy/ClassInit1.java)
    * JVM中内置的三个ClassLoader [示例](./src/ClassLoaderStudy/classLoaderTest.java)
