@@ -45,6 +45,7 @@ JAVA 1.8
    * 内部类 模式：这是单例模式好的设计之一，也是经常使用的一种方式。利用静态内部类中的静态成员，即达到了延迟初始化，又保证了同步，还使得多线程可以高并发访问。[示例](./src/DesignPattern/Sigleton/Singleton05.java)
 
 * 设计模式and线程编程模式
+   * 所有的模式，都不要生搬硬套，引入模式一般会引入系统复杂度，能更搞笑简单的处理问题时，就不要急着引入设计模式。
    * 观察者模式，应用在监控任务状态。[示例](./src/DesignPattern/ObservePattern/TestObservableThread.java)
    * 策略模式 [示例](./src/DesignPattern/Strategy/StrategyTest.java)
    * 迭代器模式 [示例](./src/DesignPattern/IteratorPattern/MyIterator.java)
@@ -53,3 +54,5 @@ JAVA 1.8
    * 状态模式 [示例](./src/DesignPattern/StatePattern/StateTest.java)
    * 访问者模式 [示例](./src/DesignPattern/VisitorPattern/VisitorTest.java)
    * 中介者模式 [示例](./src/DesignPattern/MediatorPattern/MediatorTest.java)
+   
+   
