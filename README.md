@@ -60,5 +60,10 @@ JAVA 1.8
    * 状态模式 [示例](./src/DesignPattern/StatePattern/StateTest.java)
    * 访问者模式 [示例](./src/DesignPattern/VisitorPattern/VisitorTest.java)
    * 中介者模式 [示例](./src/DesignPattern/MediatorPattern/MediatorTest.java)
+   * --上述为行为模式，以下为创建型模式
+   * 抽象工厂方法 [示例](./src/DesignPattern/AbstractFactory/usePattern.java)
+   * 普通工厂方法， [示例](./src/DesignPattern/FactoryPattern/uesPattern.java)
+   * -- 多个工厂方法模式 [示例](./src/DesignPattern/FactoryPattern/ShapeFactory_MultiMedod.java)
+   * -- 静态工厂方法模式 [示例](./src/DesignPattern/FactoryPattern/ShapeFactory_staticMedod.java)
    
    
