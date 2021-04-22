@@ -65,5 +65,7 @@ JAVA 1.8
    * 普通工厂方法， [示例](./src/DesignPattern/FactoryPattern/uesPattern.java)
    * -- 多个工厂方法模式 [示例](./src/DesignPattern/FactoryPattern/ShapeFactory_MultiMedod.java)
    * -- 静态工厂方法模式 [示例](./src/DesignPattern/FactoryPattern/ShapeFactory_staticMedod.java)
+   * 建造者模式
+   * 原型模式
    
    
