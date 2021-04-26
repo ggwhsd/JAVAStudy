@@ -11,10 +11,10 @@ class JFrameDemo2 extends JFrame
 	public void init() {
         this.setVisible(true);        // 可视化
         this.setSize(500, 350);        // 大小
-        this.setTitle("博客园");        // 标题
+        this.setTitle("标题");        // 标题
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);        // 关闭方式
         
-        JLabel jl = new JLabel("http://www.cnblogs.com/adamjwh/");        // 创建一个JLabel标签
+        JLabel jl = new JLabel("展示一个窗体");        // 创建一个JLabel标签
         jl.setHorizontalAlignment(SwingConstants.CENTER);        // 使标签文字居中
         
         Container container = this.getContentPane();        // 获取一个容器
@@ -35,8 +35,8 @@ public class SwingJFrame {
 	
 	public static void main(String[] args) {
 		
-		//new SwingJFrame().CreateJFrame();        // 调用CreateJFrame()方法
-		new JFrameDemo2().init();
+		new SwingJFrame().CreateJFrame();        // 调用CreateJFrame()方法
+		//new JFrameDemo2().init();
 	}
 
 }
