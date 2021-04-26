@@ -68,7 +68,10 @@ JAVA 1.8
    * 建造者模式 [示例](./src/DesignPattern/Builder/BuilderTest.java)
    * 原型模式 [示例](./src/DesignPattern/Prototype/PrototypeTest.java)
    * --上述为创建型模式，以下为结构性模式
-   * 类/对象适配器 [示例](./src/DesignPattern/Adapter/AdapterOneTest.java)
+   * 类适配器 [示例](./src/DesignPattern/Adapter/AdapterTestOne.java)
+   * 对象适配器 [示例](./src/DesignPattern/Adapter/AdapterTwoOne.java)
    * 接口适配器 [示例](./src/DesignPattern/AdapterInterfaces/AdapterTest.java)
+   * 外观模式 [示例](./src/DesignPattern/Facade/FacadeTest.java)
+   
    
    
