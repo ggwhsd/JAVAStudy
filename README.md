@@ -72,6 +72,9 @@ JAVA 1.8
    * 对象适配器 [示例](./src/DesignPattern/Adapter/AdapterTwoOne.java)
    * 接口适配器 [示例](./src/DesignPattern/AdapterInterfaces/AdapterTest.java)
    * 外观模式 [示例](./src/DesignPattern/Facade/FacadeTest.java)
+   * 装饰者模式，一种横向扩展方式，和对象适配器模式很像，但是是相同接口，而适配器都是针对不同接口。 [示例](./src/DesignPattern/Decorator/DecoratorTest.java)
+   * 代理模式，与装饰不同，内部对象由自己创建，这样才是代理。 [示例](./src/DesignPattern/Proxy/ProxyTest.java)
+   
    
    
    
