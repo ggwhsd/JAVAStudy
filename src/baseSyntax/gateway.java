@@ -1,5 +1,6 @@
 package baseSyntax;
 
+//½Ó¿Ú¼Ì³Ð
 public interface gateway {
 
 	public void Connect();

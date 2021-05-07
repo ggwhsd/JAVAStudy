@@ -10,7 +10,7 @@ package classLoaderStudy;
  */
 class Init01
 {
-	//静态代码块，另外可以看下java中四种初始化方式的顺序：静态方法、静态代码块、构造函数，静态变量。
+	//静态代码块，
 	static
 	{
 		System.out.println("init01 inited");
@@ -86,7 +86,8 @@ public class ClassInit1 {
 		//Init03.classForName();  //init05 init01 inited
 		//System.out.print(Init04_child.y);    //init05 Init04_parent 1
 		//System.out.print(Init04_child.z);  //init05 Init04_parent Init04_child 2
-		init06.newTest();   //init05 init01 inited
+		//init06.newTest();   //init05 init01 inited
+		Init07 a= new Init07();
 	}
 
 }
@@ -99,5 +100,34 @@ class init06
 	{
 		Init01  init01= new Init01();
 		
+	}
+}
+
+/*
+ * 7. 看下java中四种初始化方式的顺序：静态方法、静态代码块、构造函数，静态变量。
+ * 静态变量,静态代码块都会优先于构造函数.静态方法只有需要主动调用。
+ */
+
+class Init07
+{
+	
+	public static int x = -1;
+	
+
+	public static void setX()
+	{
+		x=2;
+		System.out.println("setX");
+	}
+	static 
+	{
+		
+		System.out.println("static X "+x);
+		x=1;
+	}
+	public Init07()
+	{
+		x=3;
+		System.out.println("init07");
 	}
 }
