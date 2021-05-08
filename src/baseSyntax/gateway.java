@@ -1,5 +1,6 @@
 package baseSyntax;
 
+///接口的使用
 //接口继承
 public interface gateway {
 

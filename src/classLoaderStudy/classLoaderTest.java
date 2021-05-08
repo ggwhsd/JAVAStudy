@@ -2,6 +2,9 @@ package classLoaderStudy;
 
 /*
  * jvm中内置的三大classloader的加载路径。
+ * 三者顺序：1. Bootstrap CLassloder
+		  2. Extention ClassLoader
+          3. AppClassLoader
  */
 public class classLoaderTest {
 
