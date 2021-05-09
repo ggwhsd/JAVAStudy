@@ -3,6 +3,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+
+/*
+ * 1、通过java执行命令行，并获取命令行的执行结果
+ * 2、通过命令行执行网络命令
+ */
 public class NetStat {
 	public boolean isConnect(){
     	boolean connect = false;
@@ -72,10 +77,38 @@ public class NetStat {
         return connect;
 	}
 	
+	
+	public static void showTasksOfWindowsOS()
+	{
+		Runtime runtime = Runtime.getRuntime();
+    	Process process;
+    	StringBuilder sbr=new StringBuilder();
+    	try {
+			process = runtime.exec("tasklist");
+			InputStream is = process.getInputStream(); 
+	        InputStreamReader isr = new InputStreamReader(is); 
+	        BufferedReader br = new BufferedReader(isr); 
+	        String line = null; 
+	        while (true) { 
+	        	line = br.readLine();
+	        	if(line==null)
+	            	break; 	
+	        	sbr.append(line).append("\r\n");
+	        } 
+	        System.out.println(sbr.toString());  
+	        is.close(); 
+	        isr.close(); 
+	        br.close(); 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+	}
+	
 	public static void main(String[] args) {
 		NetStat netState = new NetStat();
 		//System.out.println(netState.isConnect());
-		System.out.println(netState.isExistTCPLink());
+		//System.out.println(netState.isExistTCPLink());
+		showTasksOfWindowsOS();
 	}
 
 }

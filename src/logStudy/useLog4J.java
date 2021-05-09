@@ -1,6 +1,7 @@
 package logStudy;
 import org.apache.log4j.Logger;
 
+///log4J是一个具体实现日志类。
 public class useLog4J {
 	public static Logger logger1 = Logger.getLogger(useLog4J.class);
 	public static Logger logger2 = Logger.getLogger("logStudy");

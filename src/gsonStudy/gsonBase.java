@@ -17,8 +17,8 @@ class numberSpecial
 	//该注解可以使得实际输出的字段名为Address，
 	@SerializedName("Address")  
 	String str;
-	
 	boolean flag;
+
 	public numberSpecial(int a, double b,String c,boolean d)
 	{
 		i = a;

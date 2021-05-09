@@ -12,7 +12,7 @@ class  useByteStream
 {
 	/**
 	 * 使用文件输出字节流
-	 * 
+	 * FileOutputStream是文件输出字节流，用于将数据通过字节流方式写入到文件中。
 	 */
 	public static void testFileOutputStream()
 	{
@@ -68,6 +68,7 @@ class useCharStream
 {
 	/**
 	 * 使用文件字符输出流
+	 * FileWriter 文件字符输出流，用于将字符串通过字符方式写入到文件中
 	 */
 	public static void testFileWriter()
 	{
@@ -121,6 +122,7 @@ class useMemoryStream
 {
 	/**
 	 * 使用内存操作流,字节
+	 * 除了文件字节流、文件字符流，还可以将数据直接操作于内存，因此就有了内存字节流，内存中都是字节，没有字符。
 	 */
 	public static void testByteArray()
 	{
@@ -150,6 +152,9 @@ class useMemoryStream
 	}
 };
 
+/*
+ * 管道字节流的使用，同一个进程类的不同线程或者模块通信的一种方式，比socket效率高，但是只能同一个进程内。
+ */
 class Send implements Runnable
 {
 	private PipedOutputStream pos  = null;
@@ -255,6 +260,10 @@ class pipedTest
 	}
 };
 
+/*
+ * BufferReader和BufferWriter，字符缓冲，用于缓冲读写，提高读写效率。
+ * 只能接收和输出字符流。如果遇到字节流，想使用的话，可以使用InputStreamReader提供字节流到字符流的转换,以及OutputStreamWriter，这两个转换类内部都有缓冲。
+ */
 class useBuffer
 {
 	public static void testBufferReader()
@@ -262,6 +271,7 @@ class useBuffer
 		BufferedReader buf = null;
 		//此处用到了字节流转字符流的类InputStreamReader，这是因为BufferedReader只能接收字符流
 		buf = new BufferedReader(new InputStreamReader(System.in));
+		
 		String str =null;
 		try
 		{
@@ -286,9 +296,23 @@ class useBuffer
 			e.printStackTrace();
 		}
 	}
+	public static void testBufferWriter2()
+	{
+		
+		try {
+			BufferedWriter out =new BufferedWriter(new OutputStreamWriter(System.out));
+			out.write("123321123355555", 0, 10);
+			 out.write("\r\n");
+			 out.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 };
 
-
+/*
+ * Scan获取输入。不过，也可以使用BufferReader配合System.in。
+ */
 class useScan
 {
 	public static void testScan()
@@ -310,6 +334,9 @@ class useScan
 	}
 };
 
+/*
+ * 文件、目录的大小、复制等。
+ */
 class useFile
 {
 	public static void testFile()
@@ -372,7 +399,8 @@ public class useIO {
 		//useBuffer.testBufferReader();
 		//useScan.testScan();
 		//useBuffer.testBufferWriter();
-		useFile.testFile();
+		//useFile.testFile();
+		//useBuffer.testBufferWriter2();
 	}
 }
 

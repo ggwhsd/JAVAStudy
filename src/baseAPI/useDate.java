@@ -19,14 +19,20 @@ class mmm{		// 以后直接通过此类就可以取得日期时间
 
 
 
-
+/*
+ * 
+ * java里面精确的数据，在1.8版本里面，只能到毫秒.
+ * 
+ * */
 public class useDate{
 	public static void main(String args[]){
 		mmm dt = new mmm() ;
+		System.out.println(System.nanoTime());//只能用于精确计算耗时，不能用于表示精确的时间，因为它的起点时间不固定
+		System.out.print(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS").format(new Date()) + "\r\n");
 		System.out.println("系统日期："+dt.getDate()) ;
 		System.out.println("中文日期："+dt.getDateComplete()) ;
 		System.out.println("时间戳："+dt.getTimeStamp()) ;
-		
+		System.out.println(System.nanoTime());
 		Calendar calendar = new GregorianCalendar();
 		StringBuffer strb= new StringBuffer();
 		strb.append(calendar.get(Calendar.YEAR));

@@ -5,6 +5,7 @@ package classLoaderStudy;
  * 三者顺序：1. Bootstrap CLassloder
 		  2. Extention ClassLoader
           3. AppClassLoader
+          默认所有的客户自己开发的类都是通过appClassLoader加载管理，如果自己想定制化加载，可以自己开发应用加载类作为补充。
  */
 public class classLoaderTest {
 
