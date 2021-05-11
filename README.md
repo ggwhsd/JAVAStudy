@@ -9,7 +9,7 @@ JAVA 1.8
 
 * Math库的使用。  [示例](./src/baseAPI/useMath) 
 
-* 运行时操作Runtime类的使用，读取内存使用情况，垃圾回收，调用外部进程，获取可用的cpu个数。 [示例](./src/baseAPI/useRuntime)
+* 运行时操作Runtime类的使用，读取内存使用情况，垃圾回收，调用外部进程(更详细的可以参考NetworkStudy目录下的示例)，获取可用的cpu个数。 [示例](./src/baseAPI/useRuntime)
 
 * StringBuffer类，相比较String，提升代码性能。StringBuffer是线程安全的。 StringBuffer清空，可以用setLength(0)或者delete(0, strBuff.length())，两者差不多，不建议new StringBuffer("")。[示例](./src/baseAPI/useStringBuffer.java)
 
@@ -18,8 +18,7 @@ JAVA 1.8
 
 * TCP socket的server简单使用[示例服务端](./src/NetworkStudy/Server.java)
 
-* java调用其他程序或者命令并获取返回值
-[示例](./src/NetworkStudy/NetStat.java)
+* java调用其他程序或者命令并获取返回值。[示例](./src/NetworkStudy/NetStat.java)
 
 * JAVA 的IO流，（不包括NIO的库使用），包括文件字符流和字节流、缓冲字符输入输出、内存字节流、管道字节流、Scan输入、文件和目录的操作、Path。 [示例](./src/baseAPI/useIO.java)
 
@@ -29,9 +28,13 @@ Selector帮助同时监听读写多个Channel,比如SocketChannel，就相当于
 FileChannel读写文件的一种channel，为了配合Select读写文件，就得用这个，如果只是想读写文件，就直接用File相关的Stream；
 [详细介绍](http://blog.51cto.com/ggwhsd/2341370)
 
+* NumberFormat类，用于转换各种数字到字符串，内置了很多转换格式，用于满足字符串显示需求。包括整数、小数、百分比，以及不同语言下的显示。
+
 * sigar库 获取系统信息包括内存、操作系统、网卡、磁盘和CPU信息，以及CPU运行情况等系统性能指标。 [示例](./src/baseAPI/useSigar.java) 
 
 * json 库 使用了gson库。 [示例](./src/baseAPI/gsonBase.java)
+
+* System.gc，以及finalize方法 [示例](./src/baseAPI/useSystem.java)
 
 * 线程库
    * 线程的创建和使用。 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)

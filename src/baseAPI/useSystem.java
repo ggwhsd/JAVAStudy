@@ -1,5 +1,7 @@
 package baseAPI;
 
+
+//调用垃圾回收，观看finalize()方法调用
 class Person
 {
 	private String name;
@@ -25,7 +27,6 @@ class Person
 public class useSystem {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Person p = new Person("tom",9);
 		System.out.println(p.toString());
 		p = null;
