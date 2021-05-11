@@ -13,20 +13,21 @@ JAVA 1.8
 
 * StringBuffer类，相比较String，提升代码性能。StringBuffer是线程安全的。 StringBuffer清空，可以用setLength(0)或者delete(0, strBuff.length())，两者差不多，不建议new StringBuffer("")。[示例](./src/baseAPI/useStringBuffer.java)
 
-* TCP socket使用
-[示例客户端](./src/NetworkStudy/TcpTest.java)||[示例服务端](./src/NetworkStudy/Server.java)
+* TCP socket的client简单使用
+[示例客户端](./src/NetworkStudy/TcpTest.java)
+
+* TCP socket的server简单使用[示例服务端](./src/NetworkStudy/Server.java)
 
 * java调用其他程序或者命令并获取返回值
 [示例](./src/NetworkStudy/NetStat.java)
 
-* JAVA 的IO流，（不包括NIO的库使用），包括文件字符流和字节流、缓冲字符输入输出、内存字节流、管道字节流、Scan输入、文件和目录的操作。 [示例](./src/baseAPI/useIO.java)
+* JAVA 的IO流，（不包括NIO的库使用），包括文件字符流和字节流、缓冲字符输入输出、内存字节流、管道字节流、Scan输入、文件和目录的操作、Path。 [示例](./src/baseAPI/useIO.java)
 
 * JAVA 的NIO库 [示例](./src/baseAPI/useNIO.java):
 Buffer类帮助方便管理缓存和高效使用缓存；
-Selector帮助同时监听读写多个Channel；
-就相当于C++里面的Select socket;
+Selector帮助同时监听读写多个Channel,比如SocketChannel，就相当于C++里面的select socket;
 FileChannel读写文件的一种channel，为了配合Select读写文件，就得用这个，如果只是想读写文件，就直接用File相关的Stream；
-Path等。[详细介绍](http://blog.51cto.com/ggwhsd/2341370)
+[详细介绍](http://blog.51cto.com/ggwhsd/2341370)
 
 * sigar库 获取系统信息包括内存、操作系统、网卡、磁盘和CPU信息，以及CPU运行情况等系统性能指标。 [示例](./src/baseAPI/useSigar.java) 
 

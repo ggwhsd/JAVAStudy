@@ -77,22 +77,34 @@ public class useNIO {
 		Selector selector;
 		try
 		{
+			//创建一个ServerSocketChannel
 			ServerSocketChannel server =  ServerSocketChannel.open();
+			//配置为非阻塞
 			server.configureBlocking(false);
+			//绑定监听端口
 			server.bind(new InetSocketAddress("127.0.0.1", port));
+			//创建Selector
 			selector = Selector.open();
+			//将ServerSocketChannel注册到Selector上，注册选项为接收新连接
 			server.register(selector, SelectionKey.OP_ACCEPT);
 			logger1.info("[系统消息提示]NIO服务器初始化完毕，监听端口" + port);
 			while(true)
 			{
 				try 
 				{
+					//select函数会根据所有注册的channel对应的注册选项进行处理；
+					//若设定了超时时间，则超时后会直接返回，否则阻塞直到有至少一个channel发生了相关的事件
 					selector.select(1000); //可以设置超时时间，防止进程阻塞
+					//获取有事件发生的注册选项
 					 Set<SelectionKey> selectionKeys = selector.selectedKeys();
+					 //遍历这些选项，
 					 Iterator<SelectionKey> selectionKeyIte = selectionKeys.iterator();
 					 while(selectionKeyIte.hasNext()){
+						 //获取一个注册选项
 						  SelectionKey selectionKey = selectionKeyIte.next();
+						  //删除最近一次获取选项，以便重新进入select()之前清空所有处理过的channel
 						  selectionKeyIte.remove();
+						  //处理对应channel的业务逻辑，通过selectionKey可以获取对应的channel
 						  DoSomeThing(selectionKey,selector);
 					 }
 				}
@@ -118,18 +130,25 @@ public class useNIO {
 		 SocketChannel channel = null;
 		 String receiveText;
 		  int count;
+		  //若selectKey为新连接
 		  if(selectionKey.isAcceptable()){
 			  try {
+				  //获取对应的监听ServerSocketChannel
 				  server = (ServerSocketChannel) selectionKey.channel();
+				  //接收该ServerSocketChannel上新连接，并赋值给本地channel变量
 				  channel = server.accept();
+				  //配置该新channel为非阻塞
 				  channel.configureBlocking(false);
-				  channel.register(selector, SelectionKey.OP_READ);
+				  //将该新channel注册到selector中，注册事件为读数据，也就是说，当有数据到来时，该channel为可读。
+				  channel.register(selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE | SelectionKey.OP_CONNECT);
+				  
 			  }
 			  catch (IOException e) 
 			  {
 				  e.printStackTrace();
 			  }
 		  }
+		  //若selectKey为有新的数据到来
 		  else if(selectionKey.isReadable())
 		  { //获取通道对象，方便后面将通道内的数据读入缓冲区 
 			  channel = (SocketChannel) selectionKey.channel(); 
@@ -138,26 +157,40 @@ public class useNIO {
 			  if(count>0)
 			  { 
 				  receiveText = new String(receiveBuffer.array(),0,count); 
-				  logger1.info("[系统消息提示]服务器发现["+receiveText+"]new connect"); }
+				  logger1.info("[系统消息提示]"+channel.getRemoteAddress().toString() +" 接收数据["+receiveText+"]"); 
+				  ByteBuffer buf = ByteBuffer.allocate(1024); 
+				  buf.put("sendEcho".getBytes());
+				  buf.flip();
+				  channel.write(buf);
+				  logger1.info("[系统消息提示]"+channel.getRemoteAddress().toString() +" 发送数据[sendEcho]"); 
+		
+				  }
 			  else
 			  { 
-				  logger1.info("[系统消息提示]someone disconnect"); //检测到客户端关闭（玩家下线），删除该selectionKey监听事件，否则会一直收到这个selectionKey的动作 
-			  selectionKey.cancel(); 
+				  logger1.info("[系统消息提示]"+channel.getRemoteAddress().toString() +"someone disconnect"); //检测到客户端关闭（玩家下线），删除该selectionKey监听事件，否则会一直收到这个selectionKey的动作 
+				  //在Selector中取消该对channel注册，后续Selector不会对该channel有任务处理
+				  selectionKey.cancel(); 
 			  }
-			} 
+			}
+		  else if(selectionKey.isWritable())
+		  {
+			  channel = (SocketChannel) selectionKey.channel(); 
+			  //logger1.info("[系统消息提示]"+channel.getRemoteAddress().toString() +"someone disconnect"); //检测到客户端关闭（玩家下线），删除该selectionKey监听事件，否则会一直收到这个selectionKey的动作 
+			   
+		  }
+		  else if(selectionKey.isConnectable())
+		  {
+			  channel = (SocketChannel) selectionKey.channel(); 
+
+			  logger1.info("[系统消息提示]"+channel.getRemoteAddress().toString() +" 发送数据[isConnectable]"); 
+		  }
 	}
 	
-	public static void testPath()
-	{
-		Path path = Paths.get(".\\log\\nio.txt");
-		Path path2 = path.normalize();
-		logger1.info(path);
-		logger1.info(path2);
-	}
+
 	public static void main(String[] args) {
 		//useNIO.testByteBuffer();
-		//useNIO.testSelector();
-		useNIO.testPath();
+		useNIO.testSelector();
+		
 	}
 
 }

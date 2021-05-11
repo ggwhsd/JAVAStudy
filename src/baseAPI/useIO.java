@@ -339,6 +339,13 @@ class useScan
  */
 class useFile
 {
+	public static void testPath()
+	{
+		Path path = Paths.get(".\\log\\nio.txt");
+		Path path2 = path.normalize();
+		System.out.println(path);
+		System.out.println(path2);
+	}
 	public static void testFile()
 	{
 		
