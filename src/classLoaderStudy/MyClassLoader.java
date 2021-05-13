@@ -74,6 +74,7 @@ public class MyClassLoader extends ClassLoader{
 		return "My ClassLoader";
 	}
 	public static void main(String[] args) {
+		
 		MyClassLoader classLoader = new MyClassLoader();
 		Class<?> aClass  =null;
 		try {

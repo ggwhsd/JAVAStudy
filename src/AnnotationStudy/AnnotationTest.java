@@ -1,35 +1,31 @@
-package test;
+package AnnotationStudy;
+
 import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-import gugw.Description;
-import gugw.Name;
-public class TestAnnotation {
+
+public class AnnotationTest {
 
 	public static void main(String[] args) {
 		
 		//获取注解Description的字段
-		String CLASS_NAME = "gugw.JavaEyer";
+		String CLASS_NAME = "AnnotationStudy.CaseJava";
 		Class test = null;
 		try {
 			test = Class.forName(CLASS_NAME);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Method[] method = test.getMethods();
-		//从类信息上判断是否有注解
+		//从类信息上判断是否有某个注解
 		boolean flag = test.isAnnotationPresent(Description.class);
 		if (flag) {
 			//获取注解对象
-            Description des = (Description) test
-                    .getAnnotation(Description.class);
-            System.out.println("描述:" + des.value());
+            Description des = (Description) test.getAnnotation(Description.class);
+            System.out.println("注解Description的描述:" + des.value());
             System.out.println("-----------------");
         }
-		
-		
 		Set<Method> set = new HashSet<Method>();
 		for (int i = 0; i < method.length; i++) {
 			//获取类方法信息，判断是否有注解
@@ -41,8 +37,9 @@ public class TestAnnotation {
 			//从方法上获取注解对象
             Name name = m.getAnnotation(Name.class);
             System.out.println(name.originate());
-            System.out.println("创建的社区:" + name.community());
+            System.out.println("社区用途:" + name.community());
         }
+		
 	}
 
 }
