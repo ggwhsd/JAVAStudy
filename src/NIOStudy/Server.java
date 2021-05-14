@@ -1,4 +1,4 @@
-package Server;
+package NIOStudy;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -12,25 +12,24 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class Server {
-
 	public void start() throws IOException
 	{
 		Selector selector = Selector.open();
 		ServerSocketChannel serverSocketChannel = createNIOServerSocketChannel();
-		System.out.println("start nio server and bind port 8888");
+		System.out.println("start nio server and bind port 28888");
 		serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 		
 		int ready = selector.select();
 		while (ready > 0) {
-			System.out.println("ready channel count " + ready);
+			//System.out.println("ready channel count " + ready);
 			Set<SelectionKey> selectionKeySet = selector.selectedKeys();
 			for (Iterator<SelectionKey> iterator = selectionKeySet.iterator(); iterator.hasNext(); ) {
                 SelectionKey selectionKey = iterator.next();
                 if (selectionKey.isAcceptable()) {
-                    System.out.println("acceptable");
+                    //System.out.println("acceptable");
                     acceptHandler(selectionKey);
                 } else if (selectionKey.isReadable()) {
-                    System.out.println("readable");
+                    //System.out.println("readable");
                     try {
                     	readHandler(selectionKey);
                     }
@@ -50,8 +49,10 @@ public class Server {
 	private ServerSocketChannel createNIOServerSocketChannel() throws IOException {
 		
 		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-        serverSocketChannel.bind(new InetSocketAddress(InetAddress.getLocalHost(), 8888));
-        serverSocketChannel.configureBlocking(false);
+		System.out.println("192.168.101.21");
+       // serverSocketChannel.bind(new InetSocketAddress(InetAddress.getLocalHost(), 28888));
+		serverSocketChannel.bind(new InetSocketAddress("192.168.1.6", 28888));
+		serverSocketChannel.configureBlocking(false);
         return serverSocketChannel;
 	}
 	//接收新的连接处理
@@ -70,19 +71,20 @@ public class Server {
         int num = socketChannel.read(byteBuffer);
         if(num == -1){ // 连接已断开
             System.out.println("client "+socketChannel.getLocalAddress() + " disconnection");
+            System.out.println((double)count/1024/1024+"MB");
+            selectionKey.cancel();
             socketChannel.close();
             return;
         }
         byteBuffer.flip();
         while (byteBuffer.hasRemaining()) {
-            byte b = byteBuffer.get();
-            System.out.println((char) b);
+        	byteBuffer.get();
+        	count++;
         }
     }
-	
+	private long  count=0 ;
 	public static void main(String[] args) throws IOException{
 		Server server = new Server();
 		server.start();
 	}
-	
 }
