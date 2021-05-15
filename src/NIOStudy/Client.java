@@ -24,7 +24,8 @@ public class Client {
         message +=message;
         ByteBuffer byteBuffer = ByteBuffer.allocate(message.getBytes().length);
         byteBuffer.put(message.getBytes());
-        int i = 100000;
+        
+        int i = Integer.parseInt(args[1]);
         System.out.println("send start "+(new Date()).toString());
         while(i>0)
         {

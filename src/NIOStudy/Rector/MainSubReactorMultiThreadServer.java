@@ -1,4 +1,4 @@
-package Rector;
+package NIOStudy.Rector;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -83,7 +83,7 @@ public class MainSubReactorMultiThreadServer {
                             readHandler(selectionKey);
                         }
                     });
-                    iterator.remove();
+                    iterator.remove();  //必须移除，否则会出现多线程同时读一个SocketChannel
                 }
             }
             subSelector.select();
@@ -105,6 +105,10 @@ public class MainSubReactorMultiThreadServer {
             System.out.println("accept client connection " + socketChannel.getLocalAddress() + " and register to subSelector");
         }
     }
+    //接收数据处理
+  	//理论上，前一个socketChannel还没有read完所有数据，下一次select也可能会处理到相同的socketchannel，
+  	//所以，此处
+  	//TODO：最好是取消select监听read事件，等处理完毕之后再添加。
     private void readHandler(SelectionKey selectionKey) {
         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(100);

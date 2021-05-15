@@ -1,4 +1,4 @@
-package Rector;
+package NIOStudy.Rector;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -19,6 +19,7 @@ public class ReactorMultiThreadServer {
 					TimeUnit.MINUTES, 
 					new ArrayBlockingQueue<Runnable>(200), 
 					new ThreadPoolExecutor.CallerRunsPolicy());
+	
 	private void start() throws IOException {
 		
 		Selector selector = Selector.open();
@@ -32,9 +33,9 @@ public class ReactorMultiThreadServer {
                 final SelectionKey selectionKey = iterator.next();
                 if (selectionKey.isAcceptable()) {
                     System.out.println("acceptable");
-                    acceptHandler(selectionKey); // 单线程同步处理接收就绪
+                    acceptHandler(selectionKey); // 单线程同步处理连接就绪
                 } else if (selectionKey.isReadable()) {
-                    System.out.println("readable");
+                    System.out.println("readable");//多线程处理数据接收
                     eventHandlerPool.submit(new Runnable() {
                         @Override
                         public void run() {
@@ -67,6 +68,9 @@ public class ReactorMultiThreadServer {
         System.out.println("accept client connection " + socketChannel.getLocalAddress());
     }
 	//接收数据处理
+	//理论上，前一个socketChannel还没有read完所有数据，下一次select也可能会处理到相同的socketchannel，
+	//所以，此处
+	//TODO：最好是取消select监听read事件，等处理完毕之后再添加。
 	private void readHandler(SelectionKey selectionKey) 
 	{
 		
