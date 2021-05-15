@@ -17,7 +17,8 @@ JAVA 1.8
   * FileChannel读写文件的一种channel，为了配合Select读写文件，就得用这个，如果只是想读写文件，就直接用File相关的Stream；[详细介绍](http://blog.51cto.com/ggwhsd/2341370)
 
 * NIO 单独 客户端 [示例](./src/NIOStudy/Client.java)
-* NIO 单独 服务器端 [示例](./src/NIOStudy/Server.java)
+* NIO 单独 服务器端，多路复用方式 [示例](./src/NIOStudy/Server.java)
+* NIO 单独 服务器端，非多路复用方式  
 * NIO 单独 回调示例
 * NIO 单独 Reactor方式编程
 

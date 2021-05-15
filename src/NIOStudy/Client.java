@@ -12,7 +12,7 @@ public class Client {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		//´´½¨SocketChannel
 		SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress("192.168.1.6",28888));
+        socketChannel.connect(new InetSocketAddress(args[0],28888));
 
         String message = "today is sunday and we say hello to you ,do you know i miss you.";
         message +=message;

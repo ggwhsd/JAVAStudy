@@ -49,9 +49,9 @@ public class Server {
 	private ServerSocketChannel createNIOServerSocketChannel() throws IOException {
 		
 		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-		System.out.println("192.168.101.21");
+		System.out.println(ip);
        // serverSocketChannel.bind(new InetSocketAddress(InetAddress.getLocalHost(), 28888));
-		serverSocketChannel.bind(new InetSocketAddress("192.168.1.6", 28888));
+		serverSocketChannel.bind(new InetSocketAddress(ip, 28888));
 		serverSocketChannel.configureBlocking(false);
         return serverSocketChannel;
 	}
@@ -83,8 +83,11 @@ public class Server {
         }
     }
 	private long  count=0 ;
+	public String ip = "";
 	public static void main(String[] args) throws IOException{
+		
 		Server server = new Server();
+		server.ip= args[0];
 		server.start();
 	}
 }
