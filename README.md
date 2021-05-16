@@ -18,7 +18,7 @@ JAVA 1.8
 
 * NIO 单独 客户端 [示例](./src/NIOStudy/Client.java)
 * NIO 单独 服务器端，多路复用方式，也可以叫做Reactor模式之一，单线程单个select监听accept、read事件，以及单线程处理所有连接的read数据 [示例](./src/NIOStudy/Server.java)
-* NIO 单独 服务器端，非多路复用方式，  [示例](./src/NIOStudy/ServerThread.java)
+* NIO 单独 服务器端，非多路复用方式，每个线程循环read一个socketchannel数据。  [示例](./src/NIOStudy/ServerThread.java)
 * NIO 单独 回调示例
 * NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单线程select处理accept、read事件，多线程处理read数据。[示例](./src/NIOStudy/Rector/ReactorMultiThreadServer.java)
 * NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单个线程select监听accept，另一个线程select监听socketchannel的read事件，多个线程处理read数据。[示例](./src/NIOStudy/Rector/MainSubReactorMultiThreadServer.java)
@@ -29,9 +29,6 @@ JAVA 1.8
 * json 库 使用了gson库。 [示例](./src/baseAPI/gsonBase.java)
 * System.gc，以及finalize方法 [示例](./src/baseAPI/useSystem.java)
 * 自定义注解，以及使用。[示例](./src/AnnotationStudy/AnnotationTest.java)
-
-
-
 
 * 线程库
    * 线程的创建和使用。 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)
