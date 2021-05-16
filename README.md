@@ -19,7 +19,7 @@ JAVA 1.8
 * NIO 单独 客户端 [示例](./src/NIOStudy/Client.java)
 * NIO 单独 服务器端，多路复用方式，也可以叫做Reactor模式之一，单线程单个select监听accept、read事件，以及单线程处理所有连接的read数据 [示例](./src/NIOStudy/Server.java)
 * NIO 单独 服务器端，非多路复用方式，每个线程循环read一个socketchannel数据。  [示例](./src/NIOStudy/ServerThread.java)
-* NIO 单独 回调示例
+* NIO 单独 线程中，future的使用.[示例](./src/NIOStudy/Future/FutureDemo.java)
 * NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单线程select处理accept、read事件，多线程处理read数据。[示例](./src/NIOStudy/Rector/ReactorMultiThreadServer.java)
 * NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单个线程select监听accept，另一个线程select监听socketchannel的read事件，多个线程处理read数据。[示例](./src/NIOStudy/Rector/MainSubReactorMultiThreadServer.java)
 * 多路复用对于连接数多，并且数据量并不大的情况下，也就是高并发的情况特别有效。 连接数少但是单个连接数据量大的情况，复用方式处理时间上可能会稍长，可以考虑选择非多路复用方式。
@@ -56,7 +56,7 @@ JAVA 1.8
    * 每个类在jvm中只有首次被主动调用才会进行初始化，6种主动调用。[示例](./src/classLoaderStudy/ClassInit1.java)
    * JVM中内置的三个ClassLoader [示例](./src/ClassLoaderStudy/classLoaderTest.java)
    * 自定义加载类方式1[示例](./src/ClassLoaderStudy/MyClassLoader.java)
-   * 自定义加载类方式2，和示例1本质一样，只是代码示例更多一些，通过循环导入class文件进行热部署效果示例。[示例](./src/OtherPorjects/NIO/src/classLoader/LoaderTest.java)
+   * 自定义加载类方式2，和示例1本质一样，只是代码示例更多一些，通过循环导入test.class文件进行热部署效果示例。[示例](./src/ClassLoaderStudy/LoadTest.java)
 
 * 单例模式的几种方式
    * 饿汉模式,可以保证多个线程下的唯一实例。[示例](./src/DesignPattern/Sigleton/Singleton01.java)

@@ -1,13 +1,16 @@
-package classLoader;
+package classLoaderStudy;
 
 import java.lang.reflect.InvocationTargetException;
 
+///热部署和自定义加载类
 public class LoaderTest {
 
 	public String ShowHello()
 	{
 		return "hello";
 	}
+	
+	
 	public static void main(String[] args) {
 		
 		System.out.println(System.getProperty("java.ext.dirs"));
@@ -21,7 +24,7 @@ public class LoaderTest {
 		ClassLoader loader = LoaderTest.class.getClassLoader();
 		try {
             
-            Class testClass = loader.loadClass("classLoader.LoaderTest");
+            Class testClass = loader.loadClass("classLoaderStudy.LoaderTest");
 
             System.out.println(testClass.getClassLoader());
             // 转化为对应类的实例
@@ -49,6 +52,7 @@ public class LoaderTest {
 			}
         MyClassLoader classLoader = new MyClassLoader();
         try {
+        	//加载test.class文件
         	Class test = classLoader.loadClass("Test");
 			try {
 				classLoader.loadClass("Test").getMethod("test").invoke(test.newInstance());

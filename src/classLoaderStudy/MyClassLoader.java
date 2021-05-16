@@ -1,7 +1,9 @@
 package classLoaderStudy;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,6 +34,7 @@ public class MyClassLoader extends ClassLoader{
 		this.classDir = Paths.get(classDir);
 	}
 	
+	///方法1：从文件中读取字节流
 	private byte[] readClassBytes(String name)
 	throws ClassNotFoundException
 	{
@@ -51,6 +54,25 @@ public class MyClassLoader extends ClassLoader{
 			throw new ClassNotFoundException("Load the class "+  name +" occur error.",e);
 		}
 	}
+	
+	///方法2：从文件流读取到字节流中
+		private byte[] getClassData(String path) {
+	        try (InputStream ins = new FileInputStream(path);
+	             ByteArrayOutputStream baos = new ByteArrayOutputStream()
+	        ) {
+
+	            int bufferSize = 4096;
+	            byte[] buffer = new byte[bufferSize];
+	            int bytesNumRead = 0;
+	            while ((bytesNumRead = ins.read(buffer)) != -1) {
+	                baos.write(buffer, 0, bytesNumRead);
+	            }
+	            return baos.toByteArray();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return null;
+	    }
 	
 	@Override
 	/*
@@ -74,6 +96,8 @@ public class MyClassLoader extends ClassLoader{
 		return "My ClassLoader";
 	}
 	public static void main(String[] args) {
+		
+		
 		
 		MyClassLoader classLoader = new MyClassLoader();
 		Class<?> aClass  =null;

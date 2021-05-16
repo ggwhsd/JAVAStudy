@@ -1,3 +1,5 @@
+
+package classLoaderStudy;
 //放到g:\\盘根目录下，编译成class文件 ：javac -encoding utf8 Test.java
 //然后启动MyClassLoader程序，在运行期间，可以改动Test代码，重新编译，可以看到MyClassLoader中会更新会最新的代码。
 public class Test {
