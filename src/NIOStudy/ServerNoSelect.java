@@ -71,7 +71,7 @@ public class ServerNoSelect {
         
         System.out.println("accept client connection " + socketChannel.getLocalAddress());
     }
-	//每个线程处理一个socketChannel
+	//每个线程处理一个socketChannel,采用轮询方式，直到socket释放
 	private void readThread(SocketChannel socketchannel) throws IOException 
 	{
 	    long  count=0 ;

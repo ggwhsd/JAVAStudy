@@ -13,10 +13,8 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class MainSubReactorMultiThreadServer {
-	private ThreadPoolExecutor eventHandlerPool = new ThreadPoolExecutor(10, 50, 2, 
-			TimeUnit.MINUTES, new ArrayBlockingQueue<Runnable>(200), new ThreadPoolExecutor.CallerRunsPolicy());
-	private void start() throws IOException {
+public class MainSubReactorThreadServer {
+		private void start() throws IOException {
 		final Selector mainSelector = Selector.open();
         final Selector subSelector = Selector.open();
         new Thread(new Runnable() {
@@ -77,13 +75,8 @@ public class MainSubReactorMultiThreadServer {
                 final SelectionKey selectionKey = iterator.next();
                 if (selectionKey.isReadable()) {
                     System.out.println("readable");
-                    eventHandlerPool.submit(new Runnable() {
-                        @Override
-                        public void run() {
-                            readHandler(selectionKey);
-                        }
-                    });
-                    iterator.remove();  //必须移除，否则会出现多线程同时读一个SocketChannel
+                    readHandler(selectionKey);
+                    iterator.remove();  
                 }
             }
             subSelector.select();
@@ -105,10 +98,7 @@ public class MainSubReactorMultiThreadServer {
             System.out.println("accept client connection " + socketChannel.getLocalAddress() + " and register to subSelector");
         }
     }
-    //接收数据处理
-  	//理论上，前一个socketChannel还没有read完所有数据，下一次select也可能会处理到相同的socketchannel，
-  	//所以，此处
-  	//TODO：最好是取消select监听read事件，等处理完毕之后再添加。
+
     private void readHandler(SelectionKey selectionKey) {
         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(100);
@@ -129,7 +119,7 @@ public class MainSubReactorMultiThreadServer {
         }
     }
     public static void main(String[] args) throws IOException {
-        MainSubReactorMultiThreadServer reactorServer = new MainSubReactorMultiThreadServer();
+        MainSubReactorThreadServer reactorServer = new MainSubReactorThreadServer();
         reactorServer.start();
     }
 }

@@ -20,9 +20,9 @@ JAVA 1.8
 * NIO 单独 服务器端，多路复用方式，也可以叫做Reactor模式之一，单线程单个select监听accept、read事件，以及单线程处理所有连接的read数据 [示例](./src/NIOStudy/Server.java)
 * NIO 单独 服务器端，非多路复用方式，每个线程循环read一个socketchannel数据。  [示例](./src/NIOStudy/ServerThread.java)
 * NIO 单独 线程中，future的使用.[示例](./src/NIOStudy/Future/FutureDemo.java)
-* NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单线程select处理accept、read事件，多线程处理read数据。[示例](./src/NIOStudy/Rector/ReactorMultiThreadServer.java)
-* NIO 单独 【需要性能测试，看看是否会出现问题】Reactor模式，单个线程select监听accept，另一个线程select监听socketchannel的read事件，多个线程处理read数据。[示例](./src/NIOStudy/Rector/MainSubReactorMultiThreadServer.java)
+* NIO 单独 Reactor模式，单线程select处理accept、read事件，另一个单线程select处理read数据。[示例](./src/NIOStudy/Rector/MainSubReactorThreadServer.java)
 * 多路复用对于连接数多，并且数据量并不大的情况下，也就是高并发的情况特别有效。 连接数少但是单个连接数据量大的情况，复用方式处理时间上可能会稍长，可以考虑选择非多路复用方式。
+* NIO 还可以通过多线程多个用于accept的select，这样就可以监听不同端口，多个用于read的select，将不同的channel进行分组，每个read的select处理一组channel的read事件。这样多线程之间就不会共用channel了。
 
 * NumberFormat类，用于转换各种数字到字符串，内置了很多转换格式，用于满足字符串显示需求。包括整数、小数、百分比，以及不同语言下的显示。
 * sigar库 获取系统信息包括内存、操作系统、网卡、磁盘和CPU信息，以及CPU运行情况等系统性能指标。 [示例](./src/baseAPI/useSigar.java) 
