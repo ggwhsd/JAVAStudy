@@ -1,12 +1,12 @@
 # JAVAStudy
 JAVA 1.8
 
-* 新增Log4j的使用示例。[示例](./src/logStudy/useLog4J.java) ，[log4j的详细介绍](http://blog.51cto.com/ggwhsd/2340510)
 * 关于java中时间的使用。[示例](./src/baseAPI/useDate.java)   
 * 国际化ResourceBundle的使用。 [示例](./src/baseAPI/useResourceBundle.java) ,  [ResourceBundle的详细介绍](http://blog.51cto.com/ggwhsd/2340539)
 * Math库的使用。  [示例](./src/baseAPI/useMath) 
 * 运行时操作Runtime类的使用，读取内存使用情况，垃圾回收，调用外部进程(更详细的可以参考NetworkStudy目录下的示例)，获取可用的cpu个数。 [示例](./src/baseAPI/useRuntime)
 * StringBuffer类，相比较String，提升代码性能。StringBuffer是线程安全的。 StringBuffer清空，可以用setLength(0)或者delete(0, strBuff.length())，两者差不多，不建议new StringBuffer("")。[示例](./src/baseAPI/useStringBuffer.java)
+* String关于中文的使用，以及字节数组的胡转换。 [示例](./src/baseAPI/useString.java)
 * TCP socket的client简单使用[示例客户端](./src/NetworkStudy/TcpTest.java)
 * TCP socket的server简单使用[示例服务端](./src/NetworkStudy/Server.java)
 * java调用其他程序或者命令并获取返回值。[示例](./src/NetworkStudy/NetStat.java)
@@ -23,12 +23,15 @@ JAVA 1.8
 * NIO 单独 Reactor模式，单线程select处理accept、read事件，另一个单线程select处理read数据。[示例](./src/NIOStudy/Rector/MainSubReactorThreadServer.java)
 * 多路复用对于连接数多，并且数据量并不大的情况下，也就是高并发的情况特别有效。 连接数少但是单个连接数据量大的情况，复用方式处理时间上可能会稍长，可以考虑选择非多路复用方式。
 * NIO 还可以通过多线程多个用于accept的select，这样就可以监听不同端口，多个用于read的select，将不同的channel进行分组，每个read的select处理一组channel的read事件。这样多线程之间就不会共用channel了。
+* 自定义注解，以及使用。[示例](./src/AnnotationStudy/AnnotationTest.java)
+* System.gc，以及finalize方法 [示例](./src/baseAPI/useSystem.java)
+
 
 * NumberFormat类，用于转换各种数字到字符串，内置了很多转换格式，用于满足字符串显示需求。包括整数、小数、百分比，以及不同语言下的显示。
 * sigar库 获取系统信息包括内存、操作系统、网卡、磁盘和CPU信息，以及CPU运行情况等系统性能指标。 [示例](./src/baseAPI/useSigar.java) 
 * json 库 使用了gson库。 [示例](./src/baseAPI/gsonBase.java)
-* System.gc，以及finalize方法 [示例](./src/baseAPI/useSystem.java)
-* 自定义注解，以及使用。[示例](./src/AnnotationStudy/AnnotationTest.java)
+
+* 新增Log4j的使用示例。[示例](./src/logStudy/useLog4J.java) ，[log4j的详细介绍](http://blog.51cto.com/ggwhsd/2340510)
 
 * 线程库
    * 线程的创建和使用。 [示例1](./concurrent/Thread_01/RunnableTest.java) -- [示例2](./concurrent/Thread_01/ThreadCreateTest.java)

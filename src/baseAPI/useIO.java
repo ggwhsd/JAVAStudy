@@ -155,10 +155,10 @@ class useMemoryStream
 /*
  * 管道字节流的使用，同一个进程类的不同线程或者模块通信的一种方式，比socket效率高，但是只能同一个进程内。
  */
-class Send implements Runnable
+class PipeSend implements Runnable
 {
 	private PipedOutputStream pos  = null;
-	public Send()
+	public PipeSend()
 	{
 		this.pos = new PipedOutputStream();
 	}
@@ -199,10 +199,10 @@ class Send implements Runnable
 	}
 };
 
-class Receive implements Runnable
+class PipeReceive implements Runnable
 {
 	private PipedInputStream pis = null;
-	public Receive() 
+	public PipeReceive() 
 	{
 		this.pis = new PipedInputStream();
 	}
@@ -242,8 +242,8 @@ class pipedTest
 {
 	public void pipedStream()
 	{
-		Send s = new Send();
-		Receive r = new Receive();
+		PipeSend s = new PipeSend();
+		PipeReceive r = new PipeReceive();
 		try {
 			s.getPos().connect(r.getPis());
 		}
@@ -395,7 +395,165 @@ class useFile
 	}
 };
 
+//复制目录，并且筛选原目录下后缀位java的文件，将其改为.jad
+class CopyFiles {
+
+	public void CopyDir(String str_srcDir, String str_dstDir) throws IOException
+	{
+		File srcDir = new File(str_srcDir);
+		if((srcDir.exists()&&srcDir.isDirectory())==false)
+		{
+			System.out.println("目录不存在");
+			return;
+		}
+		File[] files = srcDir.listFiles(new FilenameFilter() {
+
+			@Override
+			public boolean accept(File dir, String name) {
+				
+				return name.endsWith("java");
+			}});
+		
+		System.out.println("文件个数:"+files.length);
+		File dstDir = new File(str_dstDir);
+		if(dstDir.exists()==false)
+			dstDir.mkdir();
+		for(File f:files)
+		{
+			FileInputStream fis = new FileInputStream(f);
+			String dstFileName = f.getName().replaceAll("\\.java$", ".jad");
+			FileOutputStream fos = new FileOutputStream(new File(dstDir,dstFileName));
+			try {
+				copy(fis,fos);
+			} catch (Exception e) {
+				
+				e.printStackTrace();
+			}
+			fis.close();
+			fos.close();
+		}
+	}
+	
+	private void copy(InputStream ips, OutputStream ops) throws Exception
+	{
+		int len = 0;
+		byte[] buf = new byte[1024];
+		while((len = ips.read(buf))!=-1)
+		{
+			ops.write(buf,0,len);
+		}
+	}
+	
+	public static void testCopyFiles()
+	{
+		CopyFiles cf =new CopyFiles();
+		try {
+			cf.CopyDir("C:\\Users\\a\\eclipse-workspace\\test\\src\\a1", "C:\\Users\\a\\eclipse-workspace\\test\\src\\a2\\dstFiles");
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+}
+
+class FileManager {
+	String[] words = null;
+	int pos = 0;
+	public FileManager(String filename, char[] seperators) throws Exception
+	{
+		
+		File f = new File(filename);
+		InputStreamReader isr = new InputStreamReader(new FileInputStream(filename),"utf-8");
+		BufferedReader fr = new BufferedReader(isr);
+		
+		System.out.println("file.length:"+f.length());
+		char[] buf = new char[(int)f.length()];
+		int len = fr.read(buf);
+		String results = new String(buf,0,len);
+		String regex = null;
+		if(seperators.length>1)
+		{
+			regex = ""+seperators[0]+"|"+seperators[1];
+		}
+		else
+		{
+			regex = ""+seperators[0];
+		}
+		words = results.split(regex);		
+	}
+	
+	public String nextWord()
+	{
+		if(pos == words.length)
+		{
+			return null;
+		}
+		return words[pos++];
+	}
+}
+class FileMerge {
+	public FileMerge()
+	{
+		
+	}
+	public void Merge(String filename,String seperators,
+			String filename2,String seperators2,
+			String filename3)
+	{
+		try {
+			FileManager f1 = new FileManager(filename,seperators.toCharArray());
+			FileManager f2 = new FileManager(filename2,seperators.toCharArray());
+			//默认gbk编码写入
+			FileWriter f3 = new FileWriter(filename3);
+			//BufferWriter bw = new BufferWriter(new OutputStreamWriter(new FileOutputStream(filename3)),"utf-8")
+			String aWord = null;
+			String bWord = null;
+			while((aWord=f1.nextWord())!=null)
+			{
+				f3.write(aWord+"\n");
+				bWord = f2.nextWord();
+				if(bWord!=null)
+				{
+					f3.write(bWord+"\n");
+				}
+			}
+			
+			while((bWord=f2.nextWord())!=null)
+			{
+				f3.write(bWord+"\n");
+			}
+			f3.close();
+		} catch (Exception e) {
+		
+			e.printStackTrace();
+		}
+		
+		
+	
+	}
+}
+
 public class useIO {
+	
+	public static void UsePrintWriter()
+	{
+		String str = "printWriter";  //用法和BufferWriter差不多。
+		//字符文本
+		PrintWriter pw;
+		try {
+			pw = new PrintWriter("2.txt","utf-8");
+			pw.write(str);
+			pw.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 	public static void main(String[] args) {
 		//useByteStream.testFileOutputStream();
 		//useByteStream.testFileInputStream();
@@ -408,6 +566,8 @@ public class useIO {
 		//useBuffer.testBufferWriter();
 		//useFile.testFile();
 		//useBuffer.testBufferWriter2();
+		//CopyFiles.testCopyFiles();
+		
 	}
 }
 
