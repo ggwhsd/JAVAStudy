@@ -1,9 +1,10 @@
-package a4;
+package algorithm;
 
 public class BTree {
 	private Node root = new Node();
 	public BTree()
 	{
+		//随机生成20个节点元素
 		int [] data = new int[20];
 		for(int i = 0; i<data.length; i++)
 		{
@@ -37,5 +38,17 @@ public class BTree {
 	public void AfterList()
 	{
 		root.afterList();
+	}
+	
+	private static void test()
+	{
+		BTree bt = new BTree();
+		System.out.println();
+		bt.PreList();
+		System.out.println();
+		bt.MiddList();
+		System.out.println();
+		bt.AfterList();
+		System.out.println();
 	}
 }

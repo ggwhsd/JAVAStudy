@@ -1,9 +1,9 @@
-package a5;
+package baseSyntax;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.Comparator;
@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeSet;
-
 
 class User
 {
@@ -32,13 +31,10 @@ class User
 	
 	
 }
-
-public class SortName {
-
-
+public class SortCompare {
 	public void Deal() throws FileNotFoundException
 	{
-		Map results = new HashMap();
+		Map<String,Integer> results = new HashMap<String,Integer>();
 		FileInputStream ips = new FileInputStream("NameList.txt");
 		BufferedReader in=null;
 		try {
@@ -60,10 +56,28 @@ public class SortName {
 			
 		}
 	}
-	
-	public void sort(Map results)
+	//拆分行，获取字段，统计第二个字段个数
+	private void calc(String line,Map<String, Integer> map)
 	{
-		TreeSet sortedResults = new TreeSet(new Comparator() {
+		if(!"".equals(line.trim()))
+		{
+			String [] results = line.split(",");
+			if(results.length==3)
+			{
+				String name = results[1];
+				Integer value = (Integer)map.get(name);
+				if(value==null) value=0;
+				map.put(name, value+1);
+				
+			}
+		}
+			
+			
+	}
+	public void sort(Map<String, Integer> results)
+	{
+		//实现Comparator类的compare接口
+		TreeSet<User> sortedResults = new TreeSet<User>(new Comparator<Object>() {
 			public int compare(Object o1, Object o2)
 			{
 				User user1 = (User)o1;
@@ -83,7 +97,7 @@ public class SortName {
 			}
 		});
 		
-		Iterator iterator= results.keySet().iterator();
+		Iterator<String> iterator= results.keySet().iterator();
 		while(iterator.hasNext())
 		{
 			String name = (String)iterator.next();
@@ -95,33 +109,14 @@ public class SortName {
 		}
 		printResults(sortedResults);
 	}
-	
-	private void printResults(TreeSet sortedResults)
+	private void printResults(TreeSet<User> sortedResults)
 	{
-		Iterator iterator = sortedResults.iterator();
+		Iterator<User> iterator = sortedResults.iterator();
 		while(iterator.hasNext())
 		{
-		User user = (User)iterator.next();
-		System.out.println(user.name +":" + user.value);
+			User user = (User)iterator.next();
+			System.out.println(user.name +":" + user.value);
 		}
 				
-	}
-	
-	private void calc(String line,Map map)
-	{
-		if(!"".equals(line.trim()))
-		{
-			String [] results = line.split(",");
-			if(results.length==3)
-			{
-				String name = results[1];
-				Integer value = (Integer)map.get(name);
-				if(value==null) value=0;
-				map.put(name, value+1);
-				
-			}
-		}
-			
-			
 	}
 }

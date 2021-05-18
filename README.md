@@ -25,8 +25,7 @@ JAVA 1.8
 * NIO 还可以通过多线程多个用于accept的select，这样就可以监听不同端口，多个用于read的select，将不同的channel进行分组，每个read的select处理一组channel的read事件。这样多线程之间就不会共用channel了。
 * 自定义注解，以及使用。[示例](./src/AnnotationStudy/AnnotationTest.java)
 * System.gc，以及finalize方法 [示例](./src/baseAPI/useSystem.java)
-
-
+* 自定义Comparator类的compare实现，容器Map中的比较使用。[示例](./src/baseSyntax/SortCompare.java)
 * NumberFormat类，用于转换各种数字到字符串，内置了很多转换格式，用于满足字符串显示需求。包括整数、小数、百分比，以及不同语言下的显示。
 * sigar库 获取系统信息包括内存、操作系统、网卡、磁盘和CPU信息，以及CPU运行情况等系统性能指标。 [示例](./src/baseAPI/useSigar.java) 
 * json 库 使用了gson库。 [示例](./src/baseAPI/gsonBase.java)
@@ -95,5 +94,7 @@ JAVA 1.8
    * 桥接模式，强调两个模块可以自由变化，但是又通过接口和继承组合在一起。 [示例](./src/DesignPattern/Bridge/BridgeTest.java)
    * 享元模式，实际上就是线程池的实现模式。 [示例](./src/DesignPattern/Flyweight/FlyweightTest.java)
    
+* 算法和数据结构
+   * 二叉树 [示例](./src/algorithm/BTree.java)
    
    

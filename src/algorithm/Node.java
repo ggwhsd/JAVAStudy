@@ -1,4 +1,4 @@
-package a4;
+package algorithm;
 
 public class Node {
 	public int value;
@@ -52,7 +52,7 @@ public class Node {
 			return left.find(value);
 		}
 	}
-	
+	//œ»–Ú±È¿˙
 	public void preList()
 	{
 		System.out.print(this.value+ ",");
@@ -74,6 +74,5 @@ public class Node {
 		if(right!=null) right.afterList();
 		System.out.print(this.value+ ",");
 	}
-	
 	
 }
