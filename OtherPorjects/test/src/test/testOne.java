@@ -34,34 +34,8 @@ public class testOne {
 
 	
 	
-	
-	private static void test_a4()
-	{
-		BTree bt = new BTree();
-		System.out.println();
-		bt.PreList();
-		System.out.println();
-		bt.MiddList();
-		System.out.println();
-		bt.AfterList();
-		System.out.println();
-	}
-	
-	private static void test_a5()
-	{
-		SortName sn =new SortName();
-		try {
-			sn.Deal();
-		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
-		}
-	}
-	private static void test_a6()
-	{
-		DiGui dg = new DiGui();
-		dg.calcShow();
-	}
+
+
 	private static void test_a7()
 	{
 RMB rmb = new RMB();

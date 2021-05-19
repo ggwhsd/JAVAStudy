@@ -1,4 +1,4 @@
-package a6;
+package algorithm;
 
 public class DiGui {
 	public void calcShow()
@@ -16,9 +16,16 @@ public class DiGui {
 			
 			doubleNum(n*2);
 		}
+		//若相等，则表示最后一次递归结束，开始回调。
 		if(myCount == count)
 			System.out.println("=================");
 		System.out.println(n);
 
+	}
+	
+	public static void test()
+	{
+		DiGui dg = new DiGui();
+		dg.calcShow();
 	}
 }

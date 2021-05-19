@@ -1,4 +1,4 @@
-package a7;
+package algorithm;
 
 public class RMB {
 	private char[] data= new char[] {
@@ -7,6 +7,7 @@ public class RMB {
 	private char[] units = new char[] {
 			'元','拾','佰','仟','万','拾','佰','仟','亿'
 	};
+	//将数字转换成中文
 	public String ConvertToString(int price)
 	{
 		StringBuilder sbf = new StringBuilder();
@@ -20,5 +21,12 @@ public class RMB {
 		}
 		return sbf.toString();
 	}
+	public static void main(String[] args) {
+	{
+		RMB rmb = new RMB();
+		System.out.println(rmb.ConvertToString(123456));
+	}
 	
+	
+	}
 }

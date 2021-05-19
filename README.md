@@ -96,5 +96,7 @@ JAVA 1.8
    
 * 算法和数据结构
    * 二叉树 [示例](./src/algorithm/BTree.java)
+   * 递归 [示例](./src/algorithm/DiGui.java)
+   * 数字和人民币中文转换 [示例](./src/algorithm/RMB.java)
    
    
