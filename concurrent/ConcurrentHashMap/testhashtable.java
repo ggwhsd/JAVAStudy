@@ -1,10 +1,13 @@
 package ConcurrentHashMap;
 
-public class test2 {
+public class testhashtable {
 
+	/*
+	 * hashtable是线程安全的，其他hashmap一样。 
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	MyService2 service = new MyService2();
+		
+	MyServiceHashtable service = new MyServiceHashtable();
 		
 		Thread2A a = new Thread2A(service);
 		Thread2B b = new Thread2B(service);

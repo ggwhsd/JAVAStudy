@@ -3,6 +3,7 @@ package ConcurrentHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MyService5 {
+
 	public ConcurrentHashMap map = new ConcurrentHashMap();
 	public MyService5()
 	{

@@ -1,6 +1,9 @@
 package ConcurrentHashMap;
 
-public class test4 {
+public class testhashtable2 {
+	/*
+	 * hashtable虽然是线程安全的，但是当一个线程在迭代器读取hashtable时，另一个线程更新操作，使得其迭代器触发异常。
+	 */
 	public static void main(String[] args)
 	{
 		try

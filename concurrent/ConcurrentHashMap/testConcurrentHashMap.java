@@ -1,9 +1,12 @@
 package ConcurrentHashMap;
 
-public class test3 {
+public class testConcurrentHashMap {
 
+	/*
+	 * ConcurrentHashMap并发hashmap，比hashtable性能更好。当然比hashmap性能稍弱些。
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		MyService3 service = new MyService3();
 		Thread3A a = new Thread3A(service);
 		Thread3B b = new Thread3B(service);

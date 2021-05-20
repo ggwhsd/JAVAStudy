@@ -1,10 +1,13 @@
 package ConcurrentHashMap;
 
-public class test1_2 {
+public class testhasmap {
 
+	/*
+	 * HashMap非线程安全，同时启动两个线程就会出现数据不一致问题。最终个数不一定是10000个，有时候是9999，有时候是其他数据
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		MyService1 service = new MyService1();
+		
+		MyServicehashMap service = new MyServicehashMap();
 		
 		Thread1A a = new Thread1A(service);
 		Thread1B b = new Thread1B(service);
@@ -14,7 +17,7 @@ public class test1_2 {
 		
 		try
 		{
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		}
 		catch(InterruptedException e)
 		{

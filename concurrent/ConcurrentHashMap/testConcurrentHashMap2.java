@@ -2,10 +2,13 @@ package ConcurrentHashMap;
 
 import java.util.Collections;
 
-public class test5 {
+public class testConcurrentHashMap2 {
 
+	/*
+	 * concurrenthashmap 当多线程通过迭代器读取时，其他线程更新，也可以安全操作，不会导致迭代器并发冲突。
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		try
 		{
 			MyService5 service = new MyService5();

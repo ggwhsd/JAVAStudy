@@ -1,8 +1,8 @@
 package ConcurrentHashMap;
 
 public class Thread2B extends Thread {
-	private MyService2 service;
-	public Thread2B(MyService2 service)
+	private MyServiceHashtable service;
+	public Thread2B(MyServiceHashtable service)
 	{
 		super();
 		this.service = service;
