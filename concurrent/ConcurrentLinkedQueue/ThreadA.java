@@ -9,7 +9,7 @@ public class ThreadA extends Thread{
 		this.service = service;
 	}
 	public void run(){
-		for(int i=0; i< 50; i++)
+		for(int i=0; i< 500; i++)
 		{
 			service.queue.add("threadA"+(i+1));
 			

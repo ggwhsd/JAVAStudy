@@ -1,9 +1,9 @@
 package ConcurrentLinkedQueue;
 
-public class test1 {
+public class testConcurrentLinkedQueue {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		try
 		{
 			MyService1 service = new MyService1();

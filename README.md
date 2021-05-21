@@ -48,14 +48,14 @@ JAVA 1.8
    
 * 并发容器库
    * ConcurrentHashMap
-      * hashmap 非线程安全 [示例](./src/ConcurrentHashMap/testhashmap.java)
-      * hashtable 线程安全 [示例](./src/ConcurrentHashMap/testhashtable.java)
-      * concurrentHashMap 专为并发设计hashmap [示例](./src/ConcurrentHashMap/testConcurrentHashMap.java)
-      * hashtable 本身线程安全，但是其迭代器是不能多线程同时读和增删数据的。[示例](./src/ConcurrentHashMap/testhashtable2.java)
-      * concurrentHashMap，支持迭代器多线程安全更新。 [示例](./src/ConcurrentHashMap/testConcurrentHashMap2.java)
+      * hashmap 非线程安全 [示例](./concurrent/ConcurrentHashMap/testhashmap.java)
+      * hashtable 线程安全 [示例](./concurrent/ConcurrentHashMap/testhashtable.java)
+      * concurrentHashMap 专为并发设计hashmap [示例](./concurrent/ConcurrentHashMap/testConcurrentHashMap.java)
+      * hashtable 本身线程安全，但是其迭代器是不能多线程同时读和增删数据的。[示例](./concurrent/ConcurrentHashMap/testhashtable2.java)
+      * concurrentHashMap，支持迭代器多线程安全更新。 [示例](./concurrent/ConcurrentHashMap/testConcurrentHashMap2.java)
       
-   * ConcurrentLinkedQueue
-   * ConcurrentSkipListMap
+   * ConcurrentLinkedQueue [示例](./concurrent/ConcurrentLinkedQueue/testConcurrentLinkedQueue)
+   * ConcurrentSkipListMap 
    * ConcurrentSkipset
    * ExchangerTest
    
