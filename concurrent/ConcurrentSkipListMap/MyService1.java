@@ -3,7 +3,10 @@ package ConcurrentSkipListMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 
 public class MyService1 {
-	public ConcurrentSkipListMap map = new ConcurrentSkipListMap();
+	/*
+	 * ConcurrentSkipListMap 支持更高的并发。ConcurrentSkipListMap 的存取时间是log（N），和线程数几乎无关
+	 */
+	public ConcurrentSkipListMap<Userinfo, String> map = new ConcurrentSkipListMap();
 	public MyService1()
 	{
 		Userinfo userinfo1 = new Userinfo(1,"username1");

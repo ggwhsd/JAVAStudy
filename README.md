@@ -54,8 +54,8 @@ JAVA 1.8
       * hashtable 本身线程安全，但是其迭代器是不能多线程同时读和增删数据的。[示例](./concurrent/ConcurrentHashMap/testhashtable2.java)
       * concurrentHashMap，支持迭代器多线程安全更新。 [示例](./concurrent/ConcurrentHashMap/testConcurrentHashMap2.java)
       
-   * ConcurrentLinkedQueue [示例](./concurrent/ConcurrentLinkedQueue/testConcurrentLinkedQueue)
-   * ConcurrentSkipListMap 
+   * ConcurrentLinkedQueue [示例](./concurrent/ConcurrentLinkedQueue/testConcurrentLinkedQueue.java)
+   * ConcurrentSkipListMap，Skip list(跳表）是一种可以代替平衡树的数据结构。一般情况下，性能比concurrenthashMap慢几倍。[示例](./concurrent/ConcurrentLinkedQueue/TestConcurrentSkipListMap.java)
    * ConcurrentSkipset
    * ExchangerTest
    
