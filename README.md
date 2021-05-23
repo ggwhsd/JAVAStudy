@@ -56,8 +56,8 @@ JAVA 1.8
       
    * ConcurrentLinkedQueue [示例](./concurrent/ConcurrentLinkedQueue/testConcurrentLinkedQueue.java)
    * ConcurrentSkipListMap，Skip list(跳表）是一种可以代替平衡树的数据结构。一般情况下，性能比concurrenthashMap慢几倍。[示例](./concurrent/ConcurrentLinkedQueue/TestConcurrentSkipListMap.java)
-   * ConcurrentSkipset
-   * ExchangerTest
+   * ConcurrentSkipset ，数据类实现了equals接口、comparable接口、hashcode接口。 集合不能有重复。示例[./concurrent/TestConcurrentSkipListSet.java]
+   * Exchanger, 两个线程之间同步安全的交换数据的一种方式。本质上与notify和wait相似。 [示例](./concurrent/ExchangerTest.java)
    
 
 * ClassLoader类加载
@@ -105,4 +105,7 @@ JAVA 1.8
    * 递归 [示例](./src/algorithm/DiGui.java)
    * 数字和人民币中文转换 [示例](./src/algorithm/RMB.java)
    
+* Netty网络库的使用 *
+   * Netty底层也用的NIO的那套机制，简化了使用者，只要传入几个参数，即可创建网络功能。创建一个server。 [示例](./OtherProjects/Netty/src/main/java/Demo/TestNetty.java)
+   * NioEventLoopGroup可以理解为一个线程池，内部维护了一组线程，每个线程负责处理多个Channel上的事件，而一个Channel只对应于一个线程，这样可以回避多线程下的数据同步问题。
    

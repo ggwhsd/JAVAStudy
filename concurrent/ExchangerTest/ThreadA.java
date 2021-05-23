@@ -15,6 +15,7 @@ public class ThreadA extends Thread {
 			System.out.println(Thread.currentThread().getName()+":begin");
 			System.out.println(Thread.currentThread().getName()+":"
 								+ exchanger.exchange("chineseA"));
+			Thread.sleep(1000);
 			System.out.println(Thread.currentThread().getName()+":end");
 			
 		}catch(InterruptedException e){

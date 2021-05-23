@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 public class MyService1 {
 	/*
 	 * ConcurrentSkipListMap 支持更高的并发。ConcurrentSkipListMap 的存取时间是log（N），和线程数几乎无关
+	   数据需要实现Comparable接口，以便顺序。
 	 */
 	public ConcurrentSkipListMap<Userinfo, String> map = new ConcurrentSkipListMap();
 	public MyService1()

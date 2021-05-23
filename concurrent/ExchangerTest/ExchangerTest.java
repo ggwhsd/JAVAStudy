@@ -4,16 +4,20 @@ import java.util.concurrent.Exchanger;
 
 public class ExchangerTest {
 
+	/*
+	 * Exchanger适用于两个线程之间同步安全交互数据。  
+	 * 当A线程进入Exchanger.exchange方法时，会阻塞，直到B线程调用了该方法，此时AB线程完成数据交互，都继续往下执行。
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		Exchanger<String> exchanger = new Exchanger<String>();
 		
 		ThreadA a = new ThreadA(exchanger);
-		a.setName("test1");
+		a.setName("testA");
 		a.start();
 		
 		ThreadB b = new ThreadB(exchanger);
-		b.setName("");
+		b.setName("testB");
 		b.start();
 		System.out.println("main End");
 	}
