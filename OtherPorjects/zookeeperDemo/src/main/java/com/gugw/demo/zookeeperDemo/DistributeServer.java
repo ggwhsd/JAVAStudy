@@ -16,7 +16,7 @@ public class DistributeServer {
 		
 	}
 	
-	private String connctString = "192.168.101.21:30183";
+	private String connctString = "192.168.101.21:2181";
 	private int sessionTimeout = 2000;
 	private ZooKeeper zkClient=null;
 	
@@ -35,7 +35,6 @@ public class DistributeServer {
     		
     				
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 	}

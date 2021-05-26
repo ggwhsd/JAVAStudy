@@ -27,16 +27,17 @@ private ZooKeeper zkClient;
 			for(String child : children)
 			{
 				byte[] data=zkClient.getData("/server/"+child, false, null);
+				System.out.println("+"+child);
 				if(data!=null)
 					hosts.add(new String(data));
 			}
 			
 			System.out.print(hosts);
 		} catch (KeeperException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 

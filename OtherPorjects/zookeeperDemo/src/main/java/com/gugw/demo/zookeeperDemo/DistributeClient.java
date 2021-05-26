@@ -14,7 +14,7 @@ import org.apache.zookeeper.ZooDefs.Ids;
 
 public class DistributeClient {
 
-	private String connctString = "192.168.101.21:30183";
+	private String connctString = "192.168.101.21:2181";
 	private int sessionTimeout = 2000;
 	private ZooKeeper zkClient=null;
 	
@@ -27,21 +27,18 @@ public class DistributeClient {
 	{
 		
 		try {
-    		zkClient=new ZooKeeper(connctString,sessionTimeout,null
-			);
+    		zkClient=new ZooKeeper(connctString,sessionTimeout,null);
     		try {
 				zkClient.addWatch("/server", new DistributeWatcher(zkClient), AddWatchMode.PERSISTENT);
 			} catch (KeeperException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
-			}
-    		
-    				
+			}		
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} 
 	}

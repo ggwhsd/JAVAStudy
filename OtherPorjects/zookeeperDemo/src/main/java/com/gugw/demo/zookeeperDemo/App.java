@@ -8,6 +8,7 @@ import org.apache.zookeeper.KeeperException;
  */
 public class App 
 {
+	//参数为主机名
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -25,22 +26,11 @@ public class App
 	        DistributeServer server = new DistributeServer();
 	        server.getConnect();
 	        try {
-	        	
-	        	
-	        	
 				server.reister(args[0]);
 				server.business();
-				
-				
-				
-				
-				
-				
 	        } catch (KeeperException e) {
-				
 				e.printStackTrace();
 			} catch (InterruptedException e) {
-				
 				e.printStackTrace();
 			}
         }

@@ -108,4 +108,5 @@ JAVA 1.8
 * Netty网络库的使用 *
    * Netty底层也用的NIO的那套机制，简化了使用者，只要传入几个参数，即可创建网络功能。创建一个server。 [示例](./OtherProjects/Netty/src/main/java/Demo/TestNetty.java)
    * NioEventLoopGroup可以理解为一个线程池，内部维护了一组线程，每个线程负责处理多个Channel上的事件，而一个Channel只对应于一个线程，这样可以回避多线程下的数据同步问题。
-   
+ 
+* Zookeeper的关于添加Watcher的使用 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/zookeeperDemo/App.java) 
