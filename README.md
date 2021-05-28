@@ -113,5 +113,5 @@ JAVA 1.8
 
 * Redis客户端*
    * 连接池的使用. [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java)
-   * 常用数据结构的使用 https://blog.csdn.net/lixiaoxiong55/article/details/81592800
-   * 常用案例
+   * 常用数据结构的使用，字符串增删改查。列表增删改查。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java) 
+   * https://blog.csdn.net/lixiaoxiong55/article/details/81592800
