@@ -139,7 +139,7 @@ public class redisApp {
     	jedis.flushDB();
     	
     }
-    
+    //列表操作
     public static void ListOp(Jedis jedis)
     {
     	
@@ -171,6 +171,92 @@ public class redisApp {
     	
     }
     
+    //集合操作
+    public static void SetOp(Jedis jedis)
+    {
+    	System.out.println("向sets集合中加入元素："+jedis.sadd("sets", "1")); 
+        System.out.println("向sets集合中加入元素："+jedis.sadd("sets", "2"));
+        showln("集合中有如下数据:");
+        for(String value :jedis.smembers("sets"))
+        {
+        	showln(value);
+        }
+        showln("删除集合中某个元素");
+        jedis.srem("sets", "1");
+        showln("集合中有如下数据:");
+        for(String value :jedis.smembers("sets"))
+        {
+        	showln(value);
+        }
+        System.out.println("判断是否在集合sets中："+jedis.sismember("sets", "2"));
+        
+        System.out.println("sets2中添加元素1："+jedis.sadd("sets2", "1")); 
+        System.out.println("sets2中添加元素2："+jedis.sadd("sets2", "2")); 
+        showln("集合操作");
+        showln("sets中交集合："+jedis.sinter("sets2", "sets")); 
+        showln("sets中并集合："+jedis.sunion("sets","sets2"));
+        showln("sets中差集合："+jedis.sdiff("sets","sets2"));
+    }
+    
+    //有效集合
+    public static void SortedSetOp(Jedis jedis)
+    {
+    	System.out.println("向zsets集合中加入元素："+jedis.zadd("zsets", 1.0,"1")); 
+        System.out.println("向zsets集合中加入元素："+jedis.zadd("zsets", 2.0,"2"));
+        showln(""+jedis.zrange("zsets", 0, -1));
+        showln("集合中有如下数据:");
+        for(String value :jedis.zrange("sets",0,-1))
+        {
+        	showln(value);
+        }
+        showln("删除集合中某个元素");
+        jedis.zrem("sets", "1");
+        showln("集合中有如下数据:");
+        for(String value :jedis.zrange("sets",0,-1))
+        {
+        	showln(value);
+        }
+        showln("统计zsets中元素个数："+jedis.zcard("zset") );
+        showln("统计zsets中某个权重范围的元素个数："+jedis.zcount("zset",0,5) );
+        showln("查看zsets中某个元素的权重:"+jedis.zscore("zset","1"));
+
+    }
+    
+    public static void HashOp(Jedis jedis)
+    {
+    	showln("向hashdb中添加key和value"+jedis.hset("hashdb", "key1", "value1"));
+    	showln("向hashdb中添加key和value"+jedis.hset("hashdb", "key2", "value2"));
+    	showln("获取hashdb中的所有value");
+    	for(String value :jedis.hvals("hashdb"))
+        {
+        	showln(value);
+        }
+    	showln("获取hashdb中的所有key");
+    	for(String key :jedis.hkeys("hashdb"))
+        {
+        	showln(key);
+        }
+    	jedis.hdel("hashdb", "key1");
+    	showln("对hashdb中key3进行增加数值计算");
+    	jedis.hincrBy("hashdb", "key3", 1);
+    	jedis.hincrBy("hashdb", "key3", 1);
+    	showln("判断是否存在某个key:"+jedis.hexists("hashdb","key3"));
+    	showln("获取是否存在某个key:"+jedis.hget("hashdb","key3"));
+    	showln("获取是否存在某个key:"+jedis.hmget("hashdb","key3","key1"));
+    	
+    }
+    
+    //redis的其他一些操作
+    public static void OthreOP(Jedis jedis)
+    {
+    	//showln("将数据同步保存到磁盘"+jedis.save());
+    	//showln("将数据异步保存到磁盘"+jedis.bgsave());
+    	showln("获取上次保存的时间戳"+jedis.lastsave() + " 时间:"+new Date(jedis.lastsave()).toString());
+    	//showln("保存数据到磁盘，并且关闭redis server，该操作会中断所有其他客户端到server上的连接"+jedis.shutdown());
+    	showln("获取redis上的统计信息"+jedis.info());
+    	
+    }
+    
 	public static void main(String[] args) throws InterruptedException {
 		
 		Jedis jedis = getJedis();
@@ -189,7 +275,8 @@ public class redisApp {
 		showln(jedis.get("SetKey"));
 		//ShowAllKeys(jedis);
 		ListOp(jedis);
-		
+		SetOp(jedis);
+		SortedSetOp(jedis);
 	}
 
 }
