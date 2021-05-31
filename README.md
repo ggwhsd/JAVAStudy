@@ -45,6 +45,7 @@ JAVA 1.8
    * 线程池，创建单一线程池，实际上就是一个不阻塞当前执行线程的fifo的队列，例如消息总线的实现方式，GUI单线程等。newSingleThreadExecutor,以及Executors.newSingleThreadExecutor()。 [示例](./concurrent/ThreadPoolTest/Run4.java)
    * 线程池，重定义创建线程的方法，实现ThreadFactory接口 [示例](./concurrent/ThreadPoolTest2/test.java)
    * 线程池，继承ThreadPoolExecutor，实现自定义的线程池,并且重写了afterExecute和beginExecute。 [示例](./concurrent/ThreadPoolTest3/)
+   * ThreadLocal 
    
 * 并发容器库
    * ConcurrentHashMap
@@ -116,5 +117,11 @@ JAVA 1.8
    * 常用数据结构的使用，字符串增删改查。列表增删改查。集合的增删改查。有序集合的增删改查。哈希的增删改查。常用管理接口。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java) 
    * 事务的开启、执行、取消。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisTransactionApp.java)
 
+* ActiveMQ 客户端*
+   * 连接，订阅广播Topic方式 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
+   * Queue队列方式,生产者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Producer.java)
+   * Queue队列方式,消费者 [示例]()
+   https://www.cnblogs.com/jaycekon/p/6225058.html
+   
 * Spring Cloud
  
