@@ -16,7 +16,13 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class Producer {
 	private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
 	private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
-	private static final String BROKEN_URL = ActiveMQConnection.DEFAULT_BROKER_URL;
+	private static String BROKEN_URL = ActiveMQConnection.DEFAULT_BROKER_URL;
+	public static String getBROKEN_URL() {
+		return BROKEN_URL;
+	}
+	public static void setBROKEN_URL(String bROKEN_URL) {
+		BROKEN_URL = bROKEN_URL;
+	}
 	AtomicInteger count = new AtomicInteger(0);
 	
 	ConnectionFactory connectionFactory;
@@ -68,4 +74,11 @@ public class Producer {
             e.printStackTrace();
         }
 	}
+	public static String getUsername() {
+		return USERNAME;
+	}
+	public static String getPassword() {
+		return PASSWORD;
+	}
+
 }

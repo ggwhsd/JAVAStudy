@@ -118,9 +118,10 @@ JAVA 1.8
    * 事务的开启、执行、取消。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisTransactionApp.java)
 
 * ActiveMQ 客户端*
-   * 连接，订阅广播Topic方式 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
    * Queue队列方式,生产者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Producer.java)
-   * Queue队列方式,消费者 [示例]()
+   * Queue队列方式,消费者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Comsumer.java)
+   * Queue的使用。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
+   * Topic的使用
    https://www.cnblogs.com/jaycekon/p/6225058.html
    
 * Spring Cloud
