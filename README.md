@@ -45,7 +45,9 @@ JAVA 1.8
    * 线程池，创建单一线程池，实际上就是一个不阻塞当前执行线程的fifo的队列，例如消息总线的实现方式，GUI单线程等。newSingleThreadExecutor,以及Executors.newSingleThreadExecutor()。 [示例](./concurrent/ThreadPoolTest/Run4.java)
    * 线程池，重定义创建线程的方法，实现ThreadFactory接口 [示例](./concurrent/ThreadPoolTest2/test.java)
    * 线程池，继承ThreadPoolExecutor，实现自定义的线程池,并且重写了afterExecute和beginExecute。 [示例](./concurrent/ThreadPoolTest3/)
-   * ThreadLocal 
+   * ThreadLocal。该变量在每个线程中都会生成一个本地线程的副本，所有操作都是针对该副本，这样对于一些非线程安全的类对象，就可以通过每个线程副本独立安全的提供功能。
+   那么为什么不直接代码块内部创建一个局部变量？可以直接创建，每个线程在调用一次时候，都new一个对象没有问题，但是这样子开销会随着线程运行次数的增加而增加，如果我们用的线程池是8个，采用ThreadLocal只要创建8个副本，而不采用的话，则是按照线程执行次数计算。 [示例](./concurrent/ThreadLocalStudy/appTest.java)
+  讲的很容易理解。 
    
 * 并发容器库
    * ConcurrentHashMap
