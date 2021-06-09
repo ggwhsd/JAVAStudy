@@ -123,7 +123,7 @@ JAVA 1.8
    * Queue队列方式,生产者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Producer.java)
    * Queue队列方式,消费者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Comsumer.java)
    * Queue的使用。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
-   * Topic的使用
+   * Topic的使用 
    https://www.cnblogs.com/jaycekon/p/6225058.html
    
 * Spring Cloud
