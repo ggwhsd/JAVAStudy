@@ -115,14 +115,14 @@ JAVA 1.8
 * Zookeeper的关于添加Watcher的使用 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/zookeeperDemo/App.java)
 
 * Redis客户端*
-   * 连接池的使用. [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java)
-   * 常用数据结构的使用，字符串增删改查。列表增删改查。集合的增删改查。有序集合的增删改查。哈希的增删改查。常用管理接口。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java) 
-   * 事务的开启、执行、取消。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisTransactionApp.java)
+   * 连接池的使用. [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java)
+   * 常用数据结构的使用，字符串增删改查。列表增删改查。集合的增删改查。有序集合的增删改查。哈希的增删改查。常用管理接口。 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisApp.java) 
+   * 事务的开启、执行、取消。 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/redis/redisTransactionApp.java)
 
 * ActiveMQ 客户端*
-   * Queue队列方式,生产者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Producer.java)
-   * Queue队列方式,消费者 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Comsumer.java)
-   * Queue的使用。 [示例](./OtherPorjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
+   * Queue队列方式,生产者 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Producer.java)
+   * Queue队列方式,消费者 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/Comsumer.java)
+   * Queue的使用。 [示例](./OtherProjects/zookeeperDemo/src/main/java/com/gugw/demo/activeMQ/activeMQApp.java)
    * Topic的使用 
    https://www.cnblogs.com/jaycekon/p/6225058.html
    
@@ -153,5 +153,7 @@ JAVA 1.8
    * Spring Cloud Zookeeper
    * Spring Cloud Stream
    
+* Spring Cloud 服务网关：具备路由、负载均衡、权限控制等功能，隔离客户端和微服务，向客户端隐藏应用服务的划分和集成细节。
+[示例](./OtherProjects/SpringBootRoute/HELP.md)
 
  
