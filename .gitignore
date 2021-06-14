@@ -3,8 +3,6 @@ bin/
 .DS_Store
 log/
 *.class
-
-
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
