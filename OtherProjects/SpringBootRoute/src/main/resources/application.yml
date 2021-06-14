@@ -7,3 +7,10 @@ spring:
           uri: http://www.baidu.com/
           predicates:
             - Path=/baidu
+        - id: hello_route
+          uri: http://localhost:9000/hellos/
+          predicates:
+            - Path=/h1/**
+          filters:
+            - StripPrefix=1
+          
