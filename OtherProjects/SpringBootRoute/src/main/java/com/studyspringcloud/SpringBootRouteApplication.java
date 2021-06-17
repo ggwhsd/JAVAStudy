@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 import com.studyspringcloud.filter.ElapsedFilter;
-
-
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 @SpringBootApplication
 public class SpringBootRouteApplication {
@@ -29,6 +29,15 @@ public class SpringBootRouteApplication {
 						)
 				.build();
 	}
+	
+	//为了使用ribbon的功能
+	@Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+
+        return new RestTemplate();
+    }
+	
 	public static void main(String[] args) {
 		
 		SpringApplication.run(SpringBootRouteApplication.class, args);
