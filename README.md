@@ -157,7 +157,7 @@ JAVA 1.8
 * Spring Cloud gateway：具备路由、负载均衡、权限控制等功能，隔离客户端和微服务，向客户端隐藏应用服务的划分和集成细节。
 [示例](./OtherProjects/SpringBootRoute/HELP.md)
 
-
+* Spring Cloud EurekaServer [示例](./OtherProjects/SpingBootEurekaServer/HELP.md)
 
 
  
