@@ -158,6 +158,6 @@ JAVA 1.8
 [示例](./OtherProjects/SpringBootRoute/HELP.md)
 
 * Spring Cloud EurekaServer [示例](./OtherProjects/SpingBootEurekaServer/HELP.md)
-
-
+* Spring Cloud EurekaClient，且为服务提供者。 [示例](./OtherProjects/SpingBootEurekaClient/HELP.md)
+* Spring Cloud EurekaClient，且为服务消费者。此处演示利用服务中心提供的服务，服务消费者发起消费，进行负载均衡到多个相同服务的服务提供者。 [示例](./OtherProjects/SpingBootEurekaClientConsumer/HELP.md)
  
