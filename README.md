@@ -157,10 +157,18 @@ JAVA 1.8
 * Spring Cloud gateway：具备路由、负载均衡、权限控制等功能，隔离客户端和微服务，向客户端隐藏应用服务的划分和集成细节。
 [示例](./OtherProjects/SpringBootRoute/HELP.md)
 
-* Spring Cloud EurekaServer [示例](./OtherProjects/SpringBootEurekaServer/HELP.md)
+* Spring Cloud EurekaServer ，注册中心 。  [示例](./OtherProjects/SpringBootEurekaServer/HELP.md)
+
+* SPring Cloud Zookeeper 也可以用于注册中心，具体示例可以网上查找。
 
 * Spring Cloud EurekaClient，且为服务提供者。 [示例](./OtherProjects/SpringBootEurekaClient/HELP.md)
 
 * Spring Cloud EurekaClient，且为服务消费者。此处演示利用服务中心提供的服务，服务消费者发起消费，进行负载均衡到多个相同服务的服务提供者。 [示例](./OtherProjects/SpingBootEurekaClientConsumer/HELP.md)
 
 * Spring Cloud Security ,登录验证模块。 [实例](./OtherProjects/SpringBootSecurity/HELP.md)
+
+* Spring Cloud Hystrix， 断路器，提供了熔断、隔离、回退、缓存、监控等功能。
+
+* Spring Cloud Config，配置中心，Server和Client模式。  
+
+* Spring Cloud Zookeeper也可以用作配置。 示例演示了快捷方式从zookeeper中加载数据到程序中。    [示例](./OtherProjects/SpringBootZookeeperConfig/HELP.md)                                                             
