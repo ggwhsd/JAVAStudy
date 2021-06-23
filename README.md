@@ -171,4 +171,10 @@ JAVA 1.8
 
 * Spring Cloud Config，配置中心，Server和Client模式。  
 
-* Spring Cloud Zookeeper也可以用作配置。 示例演示了快捷方式从zookeeper中加载数据到程序中。    [示例](./OtherProjects/SpringBootZookeeperConfig/HELP.md)                                                             
+* Spring Cloud Zookeeper也可以用作配置。 示例演示了快捷方式从zookeeper中加载数据到程序中。    [示例](./OtherProjects/SpringBootZookeeperConfig/HELP.md)
+
+* Spring Cloud Sleuth 服务跟踪，利用日志库来记录，我觉得就是日志记录。
+
+* SPring Cloud Zipkin 服务跟踪，server和client模式。  client所有接收请求都会记录日志到Server中，在CLient中无需显示调用相关Zipkin请求。
+
+* Spring Cloud Bus 是消息，结合Kafka或者RabbitMQ等进行广播消息。 只用spring cloud config的时候，一旦config server上保存的配置数据变化，需要重启config client应用，但结合spring cloud config 和 bus，可以实现通过对 config server上发送一个bus-refresh，配置自动同步到所有 config client上。                                                             
