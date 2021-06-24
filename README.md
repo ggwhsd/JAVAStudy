@@ -141,18 +141,7 @@ JAVA 1.8
    * Spring LDAP
    * SPring Session
 
-* Spring Cloud 包含
-   * Spring Cloud Config
-   * Spring Cloud Bus
-   * Spring Cloud Netflix
-   * Spring Cloud for Cloud Foundary
-   * Spring Cloud Sleuth
-   * Spring Cloud Data Flow
-   * Spring Cloud Security
-   * Spring Cloud Consul
-   * Spring Cloud Zookeeper
-   * Spring Cloud Stream
-   
+# Spring Cloud 
 
 * Spring Cloud gateway：具备路由、负载均衡、权限控制等功能，隔离客户端和微服务，向客户端隐藏应用服务的划分和集成细节。
 [示例](./OtherProjects/SpringBootRoute/HELP.md)
@@ -177,4 +166,8 @@ JAVA 1.8
 
 * SPring Cloud Zipkin 服务跟踪，server和client模式。  client所有接收请求都会记录日志到Server中，在CLient中无需显示调用相关Zipkin请求。
 
-* Spring Cloud Bus 是消息，结合Kafka或者RabbitMQ等进行广播消息。 只用spring cloud config的时候，一旦config server上保存的配置数据变化，需要重启config client应用，但结合spring cloud config 和 bus，可以实现通过对 config server上发送一个bus-refresh，配置自动同步到所有 config client上。                                                             
+* Spring Cloud Bus 是消息，结合Kafka或者RabbitMQ等进行广播消息。 只用spring cloud config的时候，一旦config server上保存的配置数据变化，需要重启config client应用，但结合spring cloud config 和 bus，可以实现通过对 config server上发送一个bus-refresh，配置自动同步到所有 config client上。
+
+# web前端开发
+
+* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)                                                            

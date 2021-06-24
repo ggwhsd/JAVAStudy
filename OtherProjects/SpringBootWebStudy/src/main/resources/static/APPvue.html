@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue基本功能之数据变量</title>
+	<script src="./js/vue.min.js"></script>
+</head>
+<body>
+	<div id="dataVariable">
+		<h1>访问site : {{site}}</h1>
+		<h1>访问url : {{url}}</h1>
+		<h1>调用方法details： {{details()}}</h1>
+	</div>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#dataVariable',
+			data: {
+				
+				site: "属性site：localhost",
+				url: "属性url：localhost:8080",
+				alexa: "属性alexa排名：1"
+			},
+			methods: {
+				details: function() {
+					return  this.site + " vue的绑定方法，方法名为details";
+				}
+			}
+		})
+		document.write("<br>访问vue的自带属性 <br>")
+		document.write(vm.$el === document.getElementById('dataVariable')) // true
+		document.write("<br>访问vue的自定义属性 <br>")
+		document.write(vm.site) // true
+	
+	</script>
+</body>
+</html>
