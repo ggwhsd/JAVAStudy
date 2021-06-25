@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>计算computed属性和方法method的区别：计算属性有缓存机制，只有关联的属性数据发生变化，才会再次执行，而方法则是每次调用都会执行</h1>、
+<div id="example">
+  <p>Original message: "{{ message }}"</p>
+  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+  <p>method reversed message: "{{ reversedMessage1() }}"</p>
+   <p>Computed time message: "{{ timeMessage }}"</p>
+    <p>method time message: "{{ timeMessage1() }}"</p>
+    <p>控制台中执行 vm.reversedMessage,可以看到无论执行多少次，都不会变化</p>
+    <p>控制台中执行 vm.reversedMessage1(),可以看到无论执行多少次，每次都会变化</p>
+</div>
+
+<script type="text/javascript">
+var vm = new Vue({
+	  el: '#example',
+	  data: {
+	    message: 'Hello'
+	  },
+	  computed: {
+	    // 计算属性的 getter
+	    reversedMessage: function () {
+	      // `this` 指向 vm 实例
+	      return this.message.split('').reverse().join('')+ Date.now()
+	    },
+	    //因为date.now 是无绑定数据，所以后续就不会再变化。除非刷新整个页面。
+	    timeMessage : function() {
+	    	return Date.now()
+	    }
+	    
+	  },
+	  methods: {
+		  timeMessage1: function() {
+			  return Date.now()
+		  },
+		  reversedMessage1: function () {
+		      // `this` 指向 vm 实例
+		      return this.message.split('').reverse().join('')+ Date.now()
+		    },
+		  }
+	})
+	
+vm.message="hello"
+</script>
+</body>
+</html>
