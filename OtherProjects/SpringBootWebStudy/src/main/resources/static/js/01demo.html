@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    msg = prompt("请输入一个数字：")
+    alert("内嵌式js:你输入的数字：" + msg);
+    var str = "hello"
+    str = 1
+    str = str + 1
+    console.log(str)
+    console.log(typeof str)
+    var number = parseInt(str)
+    console.log(typeof number)
+    number = parseFloat("101.1")
+    console.log(number)
+
+
+
+    var arr = ['1', '2', '3']
+    for (var i = 0; i < 3; i++) {
+        console.log(arr[i])
+    }
+    arr[3] = '4'
+    console.log(arr[3])
+
+    function sayHi() {
+
+        var str = '';
+        for (var i = 1; i < 10; i++) {
+            for (var j = i; j < 10; j++) {
+                str = str + '★';
+            }
+            str = str + '\n';
+        }
+        console.log(str)
+    }
+
+    sayHi()
+
+    function add(number1, number2) {
+        return number1 + number2;
+    }
+
+
+    function add2() {
+        sum = 0
+        for (var i = 0; i < arguments.length; i++) {
+            sum += arguments[i]
+        }
+        return sum
+    }
+    alert(add2(1, 3, 5, 7, 9))
+
+    var fn1 = function() {
+        alert("函数式表达式方式声明函数")
+    }
+
+    //js创建对象 var obj = {}
+    var obj = {
+        name: "刘备",
+        age: 18,
+        sex: '男',
+        sayHi: function() {
+            console.log(this.name + " hi ")
+        }
+    }
+    obj.sayHi()
+
+    //js创建空对象
+    var obj1 = new Object()
+    obj.p1 = "p1"
+    obj.sayHi = function() {
+        console.log(this.p1 + " hi")
+    }
+
+    //构造函数
+    function Person(name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.sayHi = function() {
+            console.log("吾乃【" + name + "】")
+        }
+    }
+    var obj2 = new Person("关羽", 20, '男')
+    var obj3 = new Person("张飞", 20, '男')
+    console.log(obj2.name + " " + obj3.name)
+    obj2.sayHi()
+    obj3.sayHi()
+    for (var k in obj2) {
+        console.log(k + obj2[k]) //输出属性名和值
+    }
+</script>
+
+<script src="my.js">
+    //外部js
+</script>
+
+<body>
+    <h1>行内式js</h1>
+    <input type="button" value="眷思量" onclick="alert('喜欢女主哦')" />
+    <h1>调用函数</h1>
+    <input type="button" value="显示五角星" onclick="sayHi" />
+    <h1>作用域</h1>
+    <p>js只有全局和局部，function中的是局部，其他都是全局，没有块作用域，新版本中可能会有块作用域</p>
+</body>
+
+</html>

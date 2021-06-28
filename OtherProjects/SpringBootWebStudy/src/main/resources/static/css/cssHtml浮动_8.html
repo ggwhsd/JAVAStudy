@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .left,
+    .right {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: lawngreen;
+        border-width: 1px;
+        border-style: solid;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    .box {
+        width: 1200px;
+        height: 460px;
+        background-color: lightcyan;
+        margin: 0 auto;
+    }
+    
+    .boxleft {
+        float: left;
+        width: 230px;
+        height: 460px;
+        background-color: slateblue;
+    }
+    
+    .boxright {
+        float: left;
+        width: 970px;
+        height: 460px;
+        background-color: skyblue;
+    }
+</style>
+
+<body>
+    <div style="border-style: solid;">
+        <p>
+            布局有三种模式：
+            <ul>
+                <li>
+                    标准流: 块元素 占一行，行内元素按照顺序，从左到右。 这个也就是如何摆放盒子到适合的位置，布局就算完成。
+                </li>
+                <li>
+                    浮动：对于标准流，一些元素的位置方法不是很方便处理，用浮动的方式就会变得很方便。浮动可以改变元素默认的排列方式。
+                </li>
+                <li>
+                    定位：可以压住其他元素，并且在某个盒子内部自由移动位置，或者固定在屏幕某个位置。
+                </li>
+
+            </ul>
+        </p>
+    </div>
+    <div style="border-style: solid;">
+        <h1>浮动</h1>
+        <p>
+            float 元素用于创建浮动,将其移动到一边，直到左边缘或者右边缘触及包含块或者另一个浮动框的边缘。
+            <ul>
+                <li>浮动元素会脱离标准流的位置</li>
+                <li>会类似行内块元素显示，并顶部对齐</li>
+            </ul>
+        </p>
+        <div class="left"></div>
+        <div class="left" style="background-color: lemonchiffon;"></div>
+        <div class="left"></div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+p {
+    color: red;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overline;
+    text-indent: 2em;
+    line-height: 50px;
+}

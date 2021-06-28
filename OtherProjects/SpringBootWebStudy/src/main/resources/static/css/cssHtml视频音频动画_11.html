@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes move {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(1000px, 0);
+        }
+        50% {
+            transform: translate(1000px, 300px);
+        }
+        75% {
+            transform: translate(0px, 300px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    .move {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        animation-name: move;
+        animation-duration: 2s;
+    }
+</style>
+
+<body>
+    <div>
+        <video width="500px" controls height="400px" type="video/mp4" src="https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/51441df5c98050a1fe47c553c32c1b16.mp4"></video>
+    </div>
+    <div class="move">
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="app">
+<span v-if="value%2===0" style="color:red" >{{ value }}</span>
+<span v-else style="color:green" >{{ value }}</span>
+<h1>setTimeout</h1>
+<button v-on:click='mounted'>启动定时器</button>
+<button v-on:click='beforeDestroy'>关闭定时器</button>
+<br>
+<h1>setInterval</h1>
+<button v-on:click='mounted1'>启动定时器</button>
+<button v-on:click='beforeDestroy1'>关闭定时器</button>
+</div>
+
+<script text="text/javascript">
+
+
+var vm = new Vue({
+	el:"#app",
+	data:{
+		timer: '',
+		value: 0
+	},
+	methods:{
+		get: function(){
+			this.value++;
+			console.log(this.value);
+		},
+		mounted: function(){
+			this.timer = setTimeout(this.get, 1000);
+		},
+		mounted1: function(){
+			this.timer = setInterval(this.get, 1000);
+		},
+		beforeDestroy: function(){
+			console.log("close "+this.value);
+			clearTimeout(this.timer);
+		},
+		beforeDestroy1: function(){
+			console.log("close "+this.value);
+			clearInterval(this.timer);
+		}
+		
+	}
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link>
+    <style>
+        /* 选择器 {样式}*/
+        /*标签选择器*/
+        
+        div {
+            color: pink;
+        }
+        /*类选择器*/
+        
+        .red {
+            color: white;
+            background-color: red;
+            text-align: center;
+        }
+        
+        .blue {
+            color: white;
+            font-size: 12px;
+            background-color: blue;
+            text-align: center;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        /* id选择器 */
+        
+        #p2 {
+            color: green;
+        }
+        /*后代选择器:选择ol下的li*/
+        
+        ol li {
+            color: greenyellow;
+        }
+        /*子选择器*/
+        
+        .nav>a {
+            color: red;
+        }
+        /* 并集选择器: 同时作用于多个选择器*/
+        
+        .nav1,
+        .nav2 {
+            color: sienna;
+        }
+        /*伪类选择器*/
+        
+        a:link {
+            /*取消默认的下划线*/
+            text-decoration: none;
+            color: greenyellow;
+        }
+        
+        a:visited {
+            color: orange;
+        }
+        
+        a:hover {
+            color: skyblue;
+        }
+        
+        a:active {
+            color: green;
+        }
+        
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>css是个啥？</p>
+    <a href="#">超链接，没有下划线</a>
+    <p>第一个内容区域</p>
+    <p id="p2">第二个内容区域
+    </p>
+    <p>第三个内容区域</p>
+    <p>第四个内容区域</p>
+    <div class="blue box"></div>
+    <div class="box red"></div>
+    <div class=" box blue"></div>
+    <div class="box red"></div>
+    <ol>
+        <li>
+            1
+        </li>
+        <li>2</li>
+    </ol>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <div class=".nav">
+        <a href="#">儿子</a>
+        <p>
+            <a href="#">孙子</a>
+        </p>
+    </div>
+
+    <div class=".nav1">ddd1</div>
+    <div class=".nav2">ddd2</div>
+    <div>
+        <input type="text" value="输入">
+    </div>
+</body>
+
+</html>
