@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    console.log("调用内置对象Math")
+    console.log(Math.PI)
+    console.log(Math.max(1, 3, 5, 2, 6))
+    console.log("向下取整3.2：" + Math.floor(3.2))
+    console.log("向上取整3.2：" + Math.ceil(3.2))
+    console.log("四舍五入3.2:" + Math.round(3.2))
+    console.log("四舍五入-3.2:" + Math.round(-3.2))
+    console.log("绝对值-3.2:" + Math.abs(-3.2))
+    console.log("随机浮点数>=0,<1:" + Math.random())
+    console.log("随机整数>=5,<=10:" + Math.floor(Math.random() * (10 - 5 + 1)) + 5)
+
+    console.log("调用自定义数学函数")
+    var myMath = {
+        PI: Math.PI,
+        max: function() {
+            var maxNumber = arguments[0]
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > maxNumber) {
+                    maxNumber = arguments[i];
+                }
+
+            }
+            return maxNumber;
+        },
+        min: function() {
+            var minNumber = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] < minNumber) {
+                    minNumber = arguments[i]
+                }
+            }
+        }
+    }
+    console.log(myMath.PI)
+    console.log(myMath.max(1, 3, 5, 2))
+
+    console.log("使用内置对象Date")
+    var nowDate = new Date()
+    console.log(nowDate)
+    nowDate = new Date(2021, 6, 29)
+    console.log(nowDate)
+    nowDate = new Date(2021, 6, 29, 21, 29, 30)
+    console.log(nowDate)
+    var milliseconds = Date.now()
+    console.log(milliseconds)
+    nowDate = new Date(milliseconds)
+    console.log(nowDate)
+    nowDate = new Date("2021-06-29 21:29:30")
+    console.log(nowDate)
+</script>
+
+<body>
+
+</body>
+
+</html>
