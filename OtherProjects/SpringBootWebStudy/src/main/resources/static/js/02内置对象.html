@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="my.js">
+    //外部js
+</script>
 <script>
     console.log("调用内置对象Math")
     console.log(Math.PI)
@@ -52,11 +55,49 @@
     nowDate = new Date(2021, 6, 29, 21, 29, 30)
     console.log(nowDate)
     var milliseconds = Date.now()
+    nowDate = new Date("2021-06-29 21:29:30")
+    console.log(nowDate)
     console.log(milliseconds)
     nowDate = new Date(milliseconds)
     console.log(nowDate)
-    nowDate = new Date("2021-06-29 21:29:30")
-    console.log(nowDate)
+    console.log("年：" + nowDate.getFullYear())
+    console.log("月：" + nowDate.getMonth())
+    console.log("日:" + nowDate.getDate())
+    console.log("时:" + nowDate.getHours() + " 分：" + nowDate.getMinutes() + " 秒:" + nowDate.getSeconds())
+    console.log("utc年" + nowDate.getUTCFullYear())
+    console.log("一周第几天:" + nowDate.getDay())
+    console.log("总的毫秒数:" + nowDate.getTime() + " " + nowDate.valueOf())
+    console.log(countDown('2021-7-1 00:00:01'))
+
+    console.log("数组")
+    var arr = [1, 2, 3]
+    console.log(arr[0])
+
+    var arr1 = new Array(); //空数组
+    var arr2 = new Array(2); //数组长度
+    var arr2 = new Array(2, 3); //等价于  arr2 = [2,3]
+    console.log(arr2 instanceof Array)
+        //ie9，h5新增的方法
+    console.log(Array.isArray(arr2))
+        //新增元素的方法1
+    arr2.push(4);
+    //新增元素的方法2
+    arr2[3] = 5
+    console.log(arr2)
+    console.log("toString:" + arr2.toString())
+    console.log(arr2.join("-"))
+    console.log("aaa".concat("bbb"))
+    console.log("abcdefg".substr(1, 5))
+    console.log("abcdefg".replace('c', 'C'))
+    console.log("a-b-c-d-e".split("-"))
+    var arg = "111"
+        //普通变量时传值
+    console.log(SetArgument(arg))
+    console.log(arg)
+    var p1 = new Person("刘备")
+        //对象传引用
+    SetPerson(p1)
+    console.log(p1.name)
 </script>
 
 <body>
