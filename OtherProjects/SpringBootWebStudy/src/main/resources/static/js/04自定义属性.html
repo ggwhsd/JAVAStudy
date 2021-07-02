@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='demo' myIndex='1'></div>
+    <script>
+        var div = document.querySelector('div')
+        console.log('方式1属性值 element.id:' + div.id)
+        div.innerHTML = '方式1属性值:' + div.id + '<br/>'
+        console.log('方式2属性值:' + div.getAttribute('id'))
+        div.innerHTML += '方式2属性值 element.getAttribute:' + div.getAttribute('id') + '<br/>'
+
+        //自定义属性，只能用方式2
+        div.getAttribute('myIndex')
+        div.innerHTML += '获取自定义属性:' + div.getAttribute('myIndex') + '<br/>'
+        div.setAttribute('myIndex', '2')
+        div.innerHTML += '获取自定义属性:' + div.getAttribute('myIndex') + '<br/>'
+            //div.removeAttribute('myIndex')
+    </script>
+</body>
+
+</html>
