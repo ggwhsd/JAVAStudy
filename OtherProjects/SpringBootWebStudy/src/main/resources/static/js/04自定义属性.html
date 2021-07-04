@@ -24,6 +24,14 @@
         div.innerHTML += '获取自定义属性:' + div.getAttribute('myIndex') + '<br/>'
             //div.removeAttribute('myIndex')
     </script>
+
+    <div id='h5demo' data-myIndex='data-1'>
+    </div>
+    <script>
+        console.log(document.querySelector('#h5demo').getAttribute('data-myIndex'))
+        document.querySelector('#h5demo').innerHTML = document.querySelector('#h5demo').getAttribute('data-myIndex')
+            //ie11才支持 console.log('h5新的获取自定义属性方式：' + document.querySelector('#h5demo').dataset.myIndex)
+    </script>
 </body>
 
 </html>

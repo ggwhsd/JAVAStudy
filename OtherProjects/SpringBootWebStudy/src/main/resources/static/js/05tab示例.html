@@ -8,22 +8,62 @@
     <title>Document</title>
 </head>
 <style>
-
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .tab {
+        width: 978px;
+        margin: 100px auto;
+    }
+    
+    .tab_list {
+        height: 39px;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    
+    .tab_list li {
+        float: left;
+        height: 39px;
+        line-height: 39px;
+        padding: 0 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .item_info {
+        padding: 20px 0 0 20px;
+    }
+    
+    .tab_list .current {
+        background-color: #c81623;
+        color: #fff;
+    }
+    
+    .item {
+        display: none;
+    }
 </style>
 
 <body>
     <div class="tab">
         <div class="tab_list">
             <ul>
-                <li class="current">商品介绍</li>
-                <li>规格包装</li>
-                <li>售后保障</li>
-                <li>商品评价</li>
-                <li>手机社区</li>
+                <li class="current">tab0</li>
+                <li>tab1</li>
+                <li>tab2</li>
+                <li>tab3</li>
+                <li>tab4</li>
             </ul>
         </div>
         <div class="tab_con">
-            <div class="item">xxxxxxx</div>
+            <div class="item" style="display: block;">xxxxxxx</div>
             <div class="item">xxxxxxx</div>
             <div class="item">xxxxxxx</div>
             <div class="item">xxxxxxx</div>
@@ -31,6 +71,31 @@
         </div>
 
     </div>
+
+    <script>
+        var tab_list = document.querySelector('.tab_list');
+        var lis = tab_list.querySelectorAll('li');
+        var items = document.querySelectorAll('.item');
+        // for循环绑定点击事件
+        for (var i = 0; i < lis.length; i++) {
+            // 开始给5个小li 设置索引号 
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function() {
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                }
+                this.className = 'current';
+                var index = this.getAttribute('index');
+
+                console.log(index);
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none';
+                }
+                items[index].style.display = 'block';
+                items[index].innerHTML = "当前选择第" + index + "个展示内容"
+            }
+        }
+    </script>
 </body>
 
 </html>

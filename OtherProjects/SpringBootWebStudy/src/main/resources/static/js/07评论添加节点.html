@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div>
+        <textarea id='neirong' placeholder="请输入"></textarea>
+        <button id='add'>添加</button>
+        <ul id='results'></ul>
+    </div>
+
+    <script>
+        var body = document.querySelector('body')
+
+
+        var countRow = 10
+        for (; countRow > 0; countRow--) {
+            body.appendChild(document.createElement('textarea'))
+        }
+
+        var hr = document.createElement('hr');
+        body.insertBefore(hr, body.children[5])
+        body.insertBefore(document.createElement('hr'), body.lastElementChild)
+
+        var add = document.querySelector('#add')
+        var neirong = body.querySelector('#neirong')
+        var results = body.querySelector('#results')
+
+        add.onclick = function() {
+            var li = document.createElement('li')
+            results.appendChild(li)
+            li.innerHTML = neirong.value + "<a href='javascript:void(0)' > delete <a>" //javascript:void(0)阻止跳转
+            var delBtn = li.appendChild(document.createElement('button'))
+            delBtn.onclick = function() {
+                this.parentNode.parentNode.removeChild(this.parentNode)
+            }
+            var a = li.querySelector('a')
+            a.onclick = function() {
+                this.parentNode.parentNode.removeChild(this.parentNode)
+            }
+
+            delBtn.innerHTML = '删除'
+        }
+    </script>
+</body>
+
+</html>
