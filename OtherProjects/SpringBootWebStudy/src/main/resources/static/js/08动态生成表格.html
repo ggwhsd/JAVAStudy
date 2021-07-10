@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./my.js"></script>
+</head>
+<style>
+    table {
+        width: 500px;
+        margin: 100px auto;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    td,
+    th {
+        border: 1px solid #333;
+    }
+    
+    thead tr {
+        height: 40px;
+        background-color: #ccc;
+    }
+</style>
+
+<body>
+
+    <ul id='cloneTest'>
+        <li>
+            1
+        </li>
+        <li>
+            2
+        </li>
+    </ul>
+    <input type="text" id='number' placeholder="创建多少行数记录" /><button id='btn'>创建记录行</button>
+    <table id="table1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>rule</th>
+                <th>score</th>
+                <th>op</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        var ul = document.querySelector('#cloneTest');
+        //var liclone = ul.children[0].cloneNode(); //浅拷贝，不克隆节点中的内容
+        var liclone = ul.children[0].cloneNode(true); //深拷贝
+        ul.appendChild(liclone);
+
+        var datas = [{
+            name: 'name1',
+            rule: 'rule1',
+            score: '100'
+        }, {
+            name: 'name2',
+            rule: 'rule2',
+            score: '99'
+        }, {
+            name: 'name3',
+            rule: 'rule3',
+            score: '98'
+        }, {
+            name: 'name4',
+            rule: 'rule4',
+            score: ''
+        }, ];
+
+        //将字典数组的数据展现到表格上。
+        var table1 = document.querySelector('#table1');
+        var tbody = table1.querySelector("tbody");
+        for (var i = 0; i < datas.length; i++) {
+            //创建tr行
+            var tr = document.createElement('tr')
+            tbody.appendChild(tr);
+            for (var k in datas[i]) { //获取每个对象的每个属性
+                var td = document.createElement('td');
+                td.innerText = datas[i][k];
+                tr.appendChild(td);
+            }
+            var td = document.createElement('td');
+            td.innerHTML = "<a class='a_delete' href='javascript:void(0);'> 删除 </a> | ";
+            td.innerHTML += "<a class='a_add' href='javascript:void(0);'> 新增 </a> | ";
+            td.innerHTML += "<a class='a_update' href='javascript:void(0);'> 修改 </a>";
+            tr.appendChild(td);
+        }
+        var as = document.querySelectorAll('.a_delete')
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function() {
+                tbody.removeChild(this.parentNode.parentNode)
+            }
+        }
+        var as = document.querySelectorAll('.a_add')
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = fn;
+        }
+
+        function fn() {
+            clickAdd(this, tbody);
+        }
+
+        var as = document.querySelectorAll('.a_update')
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = function() {
+
+            }
+        }
+        var btn = document.querySelector('#btn')
+        btn.onclick = function() {
+            var rowNumber = document.querySelector('#number');
+
+            for (var i = 0; i < rowNumber.value; i++) {
+                var firstTr = tbody.querySelector('tr')
+                clickAdd(firstTr.querySelector('.a_add'), tbody);
+            }
+        }
+    </script>
+</body>
+
+</html>

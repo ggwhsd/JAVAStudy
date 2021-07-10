@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        position: absolute;
+        top: 2px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    button {
+        width: 200px;
+        height: 200px;
+    }
+    
+    div {
+        border: 2px solid rgb(145, 248, 127);
+    }
+    
+    .t1 {
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        background-color: pink;
+        text-align: center;
+    }
+    
+    .t2 {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        background-color: rgb(90, 87, 240);
+        text-align: center;
+    }
+    
+    .t3 {
+        width: 100px;
+        height: 100px;
+        margin: 25px auto;
+        background-color: rgb(166, 87, 240);
+        text-align: center;
+    }
+</style>
+
+<body>
+
+
+    <button>传统方式注册onclick，只能绑定一个有效的处理方法</button><br/>
+    <button>方法监听注册方式add，可以绑定多个处理方法，推荐方式，IE9之前不支持</button><br/>
+    <button>方法监听注册方法attach，非标准，IE9以前的方法。</button><br/>
+    <button>事件对象</button><br/>
+    <a href="www.baidu.com">阻止事件的默认行为，其不会跳转</a>
+    <textarea id='msg' style="width: 500px; height: 200px;"></textarea>
+    <p>
+        <strong>事件流：事件顺序</strong>
+        <ol>
+            <li>
+                捕获阶段，从上往下，从顶层往底层
+            </li>
+            <li>
+                当前目标
+            </li>
+            <li>
+                冒泡阶段，从下往上，从底层往上层。onclick可以冒泡，但是onblur、onmouseup等无冒泡阶段。
+            </li>
+
+        </ol>
+        JS代码只能捕获或者冒泡阶段中的一个。 onclick和attachEvent只能是冒泡，即最底层先执行，最上层最后执行。 实际常用的是冒泡方式。
+
+    </p>
+
+    <div class="t1" onclick='alert("onclick t1")'>
+        t1
+        <div class="t2" onclick="alert('onclick t2')">
+            t2
+            <div class="t3" onclick="alert('onclick t3')">t3</div>
+        </div>
+
+    </div>
+
+    <p>事件委托：不对每个子节点进行设置事件监听，而是对其父类进行设置，然后通过target来判断点击者，提高了程序效率和代码整洁度</p>
+    <ul id='eventDelegate'>
+        <li>点击1</li>
+        <li>点击2</li>
+        <li>点击3</li>
+    </ul>
+    <img src="imgs/xiao.jpg" alt="">
+    <p id='notcontextmenu'>不能在我这里使用右键,不能在我这鼠标选中文字</p>
+    <script>
+        var btns = document.querySelectorAll('button');
+        btns[0].onclick = function() {
+            alert(this.innerText)
+            this.onclick = null //点击只有一次有效。
+        }
+        btns[1].addEventListener('click', function() {
+            alert(this.innerText)
+
+        })
+        btns[1].addEventListener('click', function() {
+            alert("使用的是addEventListener")
+        })
+        btns[1].addEventListener('click', function() {
+            alert("会处理所有方法")
+        })
+
+        function fn() {
+            alert("只运行一次  " + this.innerText)
+            this.removeEventListener('click', fn)
+        }
+
+        btns[1].addEventListener('click', fn)
+
+        /* btns[2].attachEvent('onclick', function() {
+            alert("会处理所有方法")
+        })
+*/
+        btns[3].addEventListener('click', function(event) {
+            //event为事件对象，此处为鼠标
+            event = event || window.event //兼容性，现在都2021年了，这个问题一般来说没有了
+            console.log(event)
+            document.querySelector('#msg').innerHTML = event.target + ' ' + event.srcElement + '\r\n';
+            document.querySelector('#msg').innerHTML += event.type;
+
+        })
+        var divs = document.querySelectorAll('div')
+        divs[0].addEventListener('click', function() {
+                alert('addEventListener t1')
+            }, false) //false表示冒泡阶段，true为捕获阶段，可以观察结果
+        divs[1].addEventListener('click', function() {
+                alert('addEventListener t2')
+            }, false) //false表示冒泡阶段，true为捕获阶段，可以观察结果
+        divs[2].addEventListener('click', function(e) {
+                alert('addEventListener t3');
+                if (e && e.stopPropagation) {
+                    e.stopPropagation(); //ie 9之后的阻止冒泡
+                } else {
+                    e.cancelBubble = true; //ie 9之前的写法
+                }
+            }, false) //false表示冒泡阶段，true为捕获阶段，可以观察结果
+
+        var a = document.querySelectorAll('a')
+        a[0].addEventListener('click', function(e) {
+            e.preventDefault(); //ie 9以后
+            //阻止默认行为，比如<a>则阻止其跳转，sumbit则阻止其提交
+            // e.returnValue(); //ie 8里面可以用
+            return false; //兼容所有浏览器，但是只针对onclick方式。
+        })
+
+        var ul = document.querySelector('#eventDelegate')
+        ul.addEventListener('click', function(e) {
+            if (e.target.tagName == 'LI') {
+                console.log(e.target.parentNode.children)
+                for (var i = 0; i < e.target.parentNode.children.length; i++) {
+                    e.target.parentNode.children[i].style.backgroundColor = '';
+                }
+                e.target.style.backgroundColor = 'pink'
+            }
+        }, false)
+
+
+        var p = document.querySelector('#notcontextmenu')
+        p.addEventListener('contextmenu', function(e) {
+            e.preventDefault()
+        })
+        p.addEventListener('selectstart', function(e) {
+            e.preventDefault()
+        })
+
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove', function(e) {
+            // 1. mousemove只要我们鼠标移动1px 就会触发这个事件
+            // console.log(1);
+            // 2.核心原理： 每次鼠标移动，我们都会获得最新的鼠标坐标， 把这个x和y坐标做为图片的top和left 值就可以移动图片
+            var x = e.pageX;
+            var y = e.pageY;
+            console.log('x坐标是' + x, 'y坐标是' + y);
+            //3 . 千万不要忘记给left 和top 添加px 单位
+            pic.style.left = x - 50 + 'px';
+            pic.style.top = y - 40 + 'px';
+        });
+    </script>
+</body>
+
+</html>

@@ -33,3 +33,15 @@ function SetPerson(person) {
     person.name = "被替换的名字"
     return person
 }
+
+function clickAdd(thisObject, tbody) {
+    var newtr = thisObject.parentNode.parentNode.cloneNode(true)
+
+    tbody.appendChild(newtr)
+    newtr.querySelector('.a_add').onclick = function() {
+        clickAdd(this, tbody);
+    }
+    newtr.querySelector('.a_delete').onclick = function() {
+        tbody.removeChild(this.parentNode.parentNode)
+    }
+}
