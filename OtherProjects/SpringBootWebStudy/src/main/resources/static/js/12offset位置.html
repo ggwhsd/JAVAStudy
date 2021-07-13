@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: pink;
+    }
+</style>
+
+<body>
+
+    <div class='box'>
+
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        console.log("offsetWidth " + box.offsetWidth) //offset只能获取，不能修改
+        console.log("style.width " + box.style.width) //只能获取元素行内的定义，无法获取内嵌在style标签内的
+    </script>
+</body>
+
+</html>

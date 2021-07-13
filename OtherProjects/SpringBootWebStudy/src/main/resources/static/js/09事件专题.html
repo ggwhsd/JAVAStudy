@@ -186,6 +186,23 @@
             pic.style.left = x - 50 + 'px';
             pic.style.top = y - 40 + 'px';
         });
+
+        document.addEventListener("keyup", function(e) {
+            console.log("按键弹起了:" + e.key);
+            document.querySelector("#msg").innerText += e.key;
+            document.querySelector("#msg").focus();
+
+        })
+        document.addEventListener("keydown", function(e) {
+                console.log("按键下了down:" + e.key);
+
+            })
+            // press无法处理ctrl shift 上下左右 等功能键
+            //press事件的keycode区分字母大小写
+        document.addEventListener("keypress", function(e) {
+            console.log("按键下了press:" + e.key + ":" + e.keyCode);
+
+        })
     </script>
 </body>
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 300px;
+        width: 300px;
+        background-color: greenyellow;
+    }
+    
+    .div1 {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+    }
+    
+    .div2 {
+        height: 300px;
+        width: 300px;
+        background-color: greenyellow;
+    }
+</style>
+
+<body>
+    <input type='button' id='startTimer' value='启动setTimeout' />
+    <input type='button' id='stopTimer' value='停止clearTimeout' />
+    <input type='button' id='startInterval' value='启动Interval' />
+    <input type='button' id='stopInterval' value='停止Interval' />
+    <script>
+        //页面加载完毕之后，包括css、图片、flash等。才执行onload
+        window.addEventListener("load", function() {
+                alert('加载完毕')
+                var div = document.querySelector('div')
+                    //尺寸变化
+                window.addEventListener("resize", function() {
+                    //alert('浏览器大小变化了')
+                    if (window.innerWidth < 500) {
+                        div.style.display = 'none'
+                    } else {
+                        div.style.display = 'block'
+                    }
+                });
+
+                var btn1 = document.querySelector('#startTimer')
+                var btn2 = document.querySelector('#stopTimer')
+                var btn1Timeout = null
+                btn1.addEventListener('click', function() {
+                    btn1Timeout = setTimeout(function() {
+                        div.className = 'div1'
+                    }, 3000)
+                });
+                btn2.addEventListener('click', function() {
+                    clearTimeout(btn1Timeout);
+                })
+
+                var btn3 = document.querySelector('#startInterval')
+                var btn4 = document.querySelector('#stopInterval')
+                btn1Timeout = null
+                btn3.addEventListener('click', function() {
+                    btn1Timeout = setInterval(function() {
+                        if (div.className === 'div2') {
+                            div.className = 'div1'
+                        } else {
+                            div.className = 'div2'
+                        }
+                    }, 1000)
+                });
+                btn4.addEventListener('click', function() {
+                    clearInterval(btn1Timeout);
+                })
+            })
+            //页面加载完，不包括css、图片、flash等资源。 才执行
+        window.addEventListener("DOMContentLoaded", function() {
+            alert('Dom加载完毕')
+        })
+
+        function callback() {
+            console.log('定时器调用')
+        }
+        var timer1 = window.setTimeout(callback, 1000)
+
+        console.log(location.href)
+        console.log(location.host)
+        console.log(location.port)
+        console.log(location.pathname)
+        console.log(location.search)
+        console.log(location.hash)
+    </script>
+
+    <div>
+
+    </div>
+    </input>
+
+</html>
