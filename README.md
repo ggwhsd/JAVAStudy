@@ -170,4 +170,8 @@ JAVA 1.8
 
 # web前端开发
 
-* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)                                                            
+* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)   
+
+# 工具
+
+* 基于SpringBoot框架的web文件服务器，可以上传和下载特定目录文件。[示例](./OtherProjects/FileServerApp/HELP.md)                                                         
