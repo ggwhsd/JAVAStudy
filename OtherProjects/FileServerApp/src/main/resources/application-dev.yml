@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  mvc:    hiddenmethod:      filter:        enabled: true
+
+  servlet:
+    multipart:
+      max-file-size: 2000MB
+      max-request-size: 2001MB
+
+        
+file:
+  uploadFile: E:/UploadHouse
+movie:
+  dir: E:/电影
