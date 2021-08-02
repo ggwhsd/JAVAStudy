@@ -22,6 +22,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.config.SystemConfig;
+import com.example.demo.entity.FileDescripe;
 
 @Controller
 @RequestMapping("/file")
@@ -33,10 +34,16 @@ public class FileDownloads {
 	public ModelAndView list()
 	{
 		ModelAndView modelAndView = new ModelAndView();
-		List<String> arr = new ArrayList<String>();
+		List<FileDescripe> arr = new ArrayList<FileDescripe>();
 		File files = new File(info.getUploadPath());
-		for(String file : files.list() )
-			arr.add(file);
+		for(File file : files.listFiles())
+		{
+			FileDescripe f = new FileDescripe();
+			f.setName(file.getName());
+			f.setSize(file.length()/1024.0/1024.0);  //MB
+			f.setType(file.isDirectory()?"dir":"file");
+			arr.add(f);
+		}
 
 		modelAndView.setViewName("ListFiles");
 		modelAndView.addObject("arr", arr);

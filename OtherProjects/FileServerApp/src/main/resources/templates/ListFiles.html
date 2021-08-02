@@ -8,19 +8,27 @@
 <body>
 <div id="test1">
 <table>
-<thead>
-<tr>
-            <th>#</th>
-            <th>文件名</th>
-
-        </tr>
-        </thead>
-<tr th:each= "item,iterStat : ${arr}">
-<th scope="row" th:text="${iterStat.count}"></th>
-<th>
-  <a  th:href="@{/file/download(fileName=${item})}"  th:text="${item}"></a>
-  </th>
- </tr>
+	<thead>
+		<tr>
+		    <th>#</th>
+		    <th>文件名</th>
+		    <th>文件大小(MB)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each= "item,iterStat : ${arr}">
+			<th scope="row" th:text="${iterStat.count}">
+			</th>
+			<th th:if="${item.type} eq 'file'">
+			  <a  th:href="@{/file/download(fileName=${item.name})}"  th:text="${item.name}"></a>
+			</th>
+			<th th:if="${item.type} eq 'dir'" th:text="${item.name}">
+			</th>
+			<th>
+			  <label th:text="${#numbers.formatDecimal(item.size,1,2)}"></label>
+			</th>
+		 </tr>
+   </tbody>
   </table>
 </div>
 </body>
