@@ -170,7 +170,12 @@ JAVA 1.8
 
 # web前端开发
 
-* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)   
+* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)  
+* EChart柱状图和饼图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo1.html) 
+* EChart 异步更新柱状图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo2.html) 
+* EChart实时更新曲线图1 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo3.html) 
+* EChart实时更新曲线图2 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo4.html) 
+* EChart拖拽折线图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo5.html) 
 
 # 工具
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="https://cdn.jsdelivr.net/npm/echarts@5.2.0/dist/echarts.min.js"></script>-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <!-- Uncomment this line if you want to dataTool extension
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to use gl extension
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to echarts-stat extension
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to use map
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/china.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/world.js"></script>
+    -->
+    <!-- Uncomment these two lines if you want to use bmap extension
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=<Your Key Here>"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+    -->
+
+</head>
+
+<body>
+
+
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width: 600px; height:400px;"></div>
+    <script type="text/javascript">
+        var chartDom = document.getElementById('main');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+        var data = [
+
+        ]
+        var x_data = []
+
+        var count = 1
+
+        function addData(shift) {
+
+            x_data.push(count);
+            count += 1
+            data.push(Math.random() * 10);
+
+            if (shift) {
+                x_data.shift();
+                data.shift();
+            }
+
+
+        }
+
+        for (var i = 1; i < 50; i++) {
+            addData();
+        }
+
+        option = {
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: x_data
+            },
+            yAxis: {
+                boundaryGap: [0, '50%'],
+                type: 'value'
+            },
+            series: [{
+                name: '成交',
+                type: 'line',
+                smooth: true,
+                symbol: 'none',
+                stack: 'a',
+                areaStyle: {
+                    normal: {}
+                },
+                data: data
+            }]
+        };
+        setInterval(function() {
+            addData(true);
+            myChart.setOption({
+                xAxis: {
+                    data: x_data
+                },
+                series: [{
+                    name: '成交',
+                    data: data
+                }]
+            });
+        }, 2000);
+
+        option && myChart.setOption(option);
+    </script>
+
+</body>
+
+</html>
