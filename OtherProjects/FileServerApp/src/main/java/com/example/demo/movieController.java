@@ -1,7 +1,10 @@
 package com.example.demo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,8 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.config.SystemConfig;
+import com.example.demo.entity.FileDescripe;
 
 @Controller
 @RequestMapping("/movie")
@@ -28,6 +33,7 @@ public class movieController {
 	@Autowired
 	private SystemConfig info;
 	
+	//下载或播放视频文件
 	@ResponseBody
 	@RequestMapping(value="/",method = RequestMethod.GET)
 	public void movie(HttpServletRequest request, HttpServletResponse response,@RequestParam("filename") String filename)
@@ -58,11 +64,41 @@ public class movieController {
 			
 		}
 		catch(Exception err)
-		{
-			
-			
+		{	
 		}
-		
+	}
+	
+	//查看视频文件列表
+	@RequestMapping(value="/list",method = RequestMethod.GET)
+	public ModelAndView list()
+	{
+		ModelAndView modelAndView = new ModelAndView();
+		List<FileDescripe> arr = new ArrayList<FileDescripe>();
+		File files = new File(info.getmovieDir());
+		for(File file : files.listFiles())
+		{
+			FileDescripe f = new FileDescripe();
+			f.setName(file.getName());
+			f.setSize(file.length()/1024.0/1024.0);  //MB
+			f.setType(file.isDirectory()?"dir":"file");
+			arr.add(f);
+		}
+
+		modelAndView.setViewName("ListMovies");
+		modelAndView.addObject("arr", arr);
+		return modelAndView;
 		
 	}
+	
+	@RequestMapping("/play")
+	public ModelAndView play(@RequestParam("fileName") String filename)
+	{
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("movie");
+		modelAndView.addObject("movieName", filename);
+		return modelAndView;
+	}
+	
+	
+
 }
