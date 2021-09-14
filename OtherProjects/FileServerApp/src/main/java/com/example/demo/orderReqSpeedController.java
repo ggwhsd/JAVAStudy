@@ -7,11 +7,16 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.db.orderReqSpeedBean;
 import com.example.demo.db.orderReqSpeedBeanExample;
 import com.example.demo.db.orderReqSpeedBeanMapper;
+import com.example.demo.entity.FileDescripe;
+import com.example.demo.entity.OrderSpeedDateSum;
 import com.example.demo.entity.ResponseObject;
 
 
@@ -76,11 +81,28 @@ public class orderReqSpeedController {
 		ResponseObject rtnObject = new ResponseObject();
 
 		
-		List<String> results = orderReqSpeedMapper.selectSumBetweenActionDayRange(day1,day2);
+		List<OrderSpeedDateSum> results = orderReqSpeedMapper.selectSumBetweenActionDayRange(day1,day2);
 	 	rtnObject.getValues().put("count", results.size());
 		rtnObject.getValues().put("orderSum", results);
 		rtnObject.setCode(0);
 		rtnObject.setCodeDescribe("OK");
 		return rtnObject;
 	}
+	
+	@RequestMapping("/order")
+	public ModelAndView getHtml_OrderReqSpeed()
+	{
+		ModelAndView modelAndView = new ModelAndView();
+		
+		orderReqSpeedBeanExample example = new orderReqSpeedBeanExample();
+		example.createCriteria();
+		List<orderReqSpeedBean> results =	orderReqSpeedMapper.selectByExample(example);
+	
+		modelAndView.setViewName("orderSpeed");
+		
+		modelAndView.addObject("arr", results);
+		modelAndView.addObject("count",results.size());
+		return modelAndView;
+	}
+	
 }

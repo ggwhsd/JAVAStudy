@@ -2,6 +2,8 @@ package com.example.demo.db;
 
 import com.example.demo.db.orderReqSpeedBean;
 import com.example.demo.db.orderReqSpeedBeanExample;
+import com.example.demo.entity.OrderSpeedDateSum;
+
 import java.util.List;
 import org.apache.ibatis.annotations.DeleteProvider;
 import org.apache.ibatis.annotations.Insert;
@@ -58,7 +60,9 @@ public interface orderReqSpeedBeanMapper {
     @Select({"select sum(Order_volume) as SumOrder from staordvolbyid where ActionDate = #{actionDay,jdbcType=VARCHAR}"})
 	String selectSumByactionDay(String actionDay);
     
-    @Select({"select sum(Order_volume) as SumOrder, ActionDate from staordvolbyid where ActionDate between #{beginactionDay,jdbcType=VARCHAR} and #{endactionDay,jdbcType=VARCHAR} group by  ActionDate"})
-	List<String> selectSumBetweenActionDayRange(String beginactionDay,String endactionDay);
+    @Select({"select sum(Order_volume) as SumOrder, ActionDate as ActionDay from staordvolbyid where ActionDate between #{beginactionDay,jdbcType=VARCHAR} and #{endactionDay,jdbcType=VARCHAR} group by  ActionDate"})
+	List<OrderSpeedDateSum> selectSumBetweenActionDayRange(String beginactionDay,String endactionDay);
+    
+    
     
 }

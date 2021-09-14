@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<div class="alert alert-success">
+    <strong>成功!</strong> 查询到记录总数 <span th:text="${count}"></span>  
+  </div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>日期</th>
+        <th>合约</th>
+        <th>Total订单数</th>
+        <th>Avg订单数</th>
+        <th>Max订单数</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each= "item,iterStat : ${arr}">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${item.actiondate}"></td>
+        <td th:text="${item.instrumentid}"></td>
+         <td th:text="${item.orderVolume}"></td>
+          <td th:text="${item.secVolume}"></td>
+          <td th:text="${item.secMaxVolume}"></td>
+      </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
