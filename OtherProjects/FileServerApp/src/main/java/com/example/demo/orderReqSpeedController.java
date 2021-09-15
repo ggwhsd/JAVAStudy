@@ -41,6 +41,17 @@ public class orderReqSpeedController {
 	}
 	
 	@ResponseBody
+	@GetMapping("/order/reqSpeedAll2")
+	public Object getOrderReqSpeed2()
+	{
+		
+		orderReqSpeedBeanExample example = new orderReqSpeedBeanExample();
+	 List<orderReqSpeedBean> results =	orderReqSpeedMapper.selectByExample(example);
+	 
+		return results;
+	}
+	
+	@ResponseBody
 	@GetMapping("/order/reqSpeedByDay")
 	public ResponseObject getOrderReqSpeedByDay(String day,String symbol)
 	{
