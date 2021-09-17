@@ -82,3 +82,10 @@ The following guides illustrate how to use some features concretely:
 * 添加元素同时添加事件处理函数，实现自动新增表格和行记录，删除行记录。
 
 * 事件的三个阶段（事件流）：捕获、处理、冒泡。 事件注册的新接口（addEventListener）和旧接口（on开头）。事件处理函数匿名写法和非匿名写法。
+
+# bootstrapTable表格组件的使用
+
+[官网](https://examples.bootstrap-table.com/#welcome.html#view-source)
+[其他使用示例](https://www.itxst.com/Bootstrap-Table/QuickStart.html)
+[用的图标库](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
+通过https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself下载，然后根据提示把/webfonts和/css/all.css两个文件放到项目的static/assets目录下
