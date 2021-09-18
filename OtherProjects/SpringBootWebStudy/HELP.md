@@ -88,4 +88,29 @@ The following guides illustrate how to use some features concretely:
 [官网](https://examples.bootstrap-table.com/#welcome.html#view-source)
 [其他使用示例](https://www.itxst.com/Bootstrap-Table/QuickStart.html)
 [用的图标库](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
-通过https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself下载，然后根据提示把/webfonts和/css/all.css两个文件放到项目的static/assets目录下
+通过https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself下载，然后根据提示把/webfonts和/css/all.css两个文件放到项目的static/assets目录下。
+
+* 第一个示例，展示了表格的基本功能：表格列设置、请求url返回json格式数据并自动绑定到表格显示、客户端分页、客户端搜索、刷新、列显示选择、复选框、删除按钮、表格的语言环境、表格绑定相关自定义函数。[示例](src\main\resources\static\boostrapTable\demo1.html)。
+
+json格式如下:
+{
+  "total": 800,
+  "totalNotFiltered": 800,
+  "rows": [
+    {
+      "id": 0,
+      "name": "Item 0",
+      "price": "$0"
+    },
+    {
+      "id": 1,
+      "name": "Item 1",
+      "price": "$1"
+    },
+    ...
+}
+    
+
+* 第二个示例，展示了如何在已有的HTML格式的表格中，使用bootstrap-Table
+
+
