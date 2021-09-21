@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Use load data to update boostrapTable when you need</title>
+
+<link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    -->
+<link href="../assets/fontawesomefree/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+</head>
+<body>
+<button id="btn_refresh" > 手动刷新 </button>
+<button id='btn_timer'> 定时刷新10秒 </button>
+<table id="table">
+  <thead>
+    <tr>
+      <th data-field="id">ID</th>
+      <th data-field="name">Item Name</th>
+      <th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+	//$('#table') 这是jquery库的语法
+  var $table = $('#table')
+
+  var data = [
+      {
+        'id': 0,
+        'name': 'Item 0',
+        'price': '0'
+      },
+      {
+        'id': 1,
+        'name': 'Item 1',
+        'price': '1'
+      },
+      {
+        'id': 2,
+        'name': 'Item 2',
+        'price': '2'
+      },
+      {
+        'id': 3,
+        'name': 'Item 3',
+        'price': '3'
+      },
+      {
+        'id': 4,
+        'name': 'Item 4',
+        'price': '4'
+      },
+      {
+        'id': 5,
+        'name': 'Item 5',
+        'price': '5'
+      }
+    ]
+  
+  $(function() {
+    
+    $table.bootstrapTable({data: data})
+  })
+  
+  var $btn = $('#btn_refresh')
+  $btn.click(function() {
+	        
+            for (var i = 0; i < data.length; i++) {
+            	data[i].price = parseFloat(data[i].price) + 1
+            	data[i].price = ""+data[i].price
+            	
+            }
+            //$table.bootstrapTable({data: data})
+            $table.bootstrapTable('load',data)
+        })
+        
+   var $btnTimer = $('#btn_timer')
+   var time = 10
+   $btnTimer.click(function(){
+	   $btnTimer.attr('disabled',true);
+       var timer1 = setInterval(function() {
+    	   $btnTimer.text('剩下' + time + '秒')
+    	   $btn.click()
+    	   
+           if (time == 0) {
+        	   $btnTimer.attr('disabled',false);
+        	   $btnTimer.text('定时刷新10秒');
+               clearInterval(timer1);
+           }
+           time--;
+       }, 1000)
+   })
+  
+  
+</script>
+
+</body>
+</html>
