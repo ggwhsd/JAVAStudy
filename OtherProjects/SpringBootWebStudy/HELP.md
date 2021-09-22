@@ -90,7 +90,7 @@ The following guides illustrate how to use some features concretely:
 [用的图标库](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 通过https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself下载，然后根据提示把/webfonts和/css/all.css两个文件放到项目的static/assets目录下。
 
-* 第一个示例，展示了表格的基本功能：表格列设置、请求url返回json格式数据并自动绑定到表格显示、客户端分页、客户端搜索、刷新、列显示选择、复选框、删除按钮、表格的语言环境、表格绑定相关自定义函数。[示例](.\src\main\resources\static\boostrapTable\demo1.html)。
+* 第一个示例，展示了表格的典型功能：表格列设置、请求url返回json格式数据并自动绑定到表格显示、客户端分页、客户端搜索、刷新、列显示选择、复选框、删除按钮、表格的语言环境、表格绑定相关自定义函数。[示例](.\src\main\resources\static\boostrapTable\demo1.html)。
 
 json格式如下:
 {
@@ -114,5 +114,11 @@ json格式如下:
 * 第二个示例，展示了如何在已有的HTML格式的表格中，使用bootstrap-Table。[示例](.\src\main\resources\static\boostrapTable\demo2_useInHtmlTable.html)
 
 * 第三个示例，展示了如何通过单独设置json格式的data来绑定到bootstrap-table中进行刷新监视，展示如何通过按钮动态刷新变化的数据，利用定时器来展示动态刷新数据的效果。[示例](.\src\main\resources\static\boostrapTable\demo3_useDataLoad.html)
+
+* 第四个示例，展示模态显示，即对话框弹出方式显示表格。 [示例](.\src\main\resources\static\boostrapTable\demo4_useModal.html)
+
+* 第五个示例，展示列头的设置一个列头跨越多行或者多列。 [示例](.\src\main\resources\static\boostrapTable\demo5_useColSpan.html)
+
+* 第六个示例，子表，即表中嵌套表。 [示例](.\src\main\resources\static\boostrapTable\demo6_useSubTable.html)
 
 
