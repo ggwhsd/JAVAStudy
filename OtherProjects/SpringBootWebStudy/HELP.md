@@ -90,7 +90,7 @@ The following guides illustrate how to use some features concretely:
 [用的图标库](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 通过https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself下载，然后根据提示把/webfonts和/css/all.css两个文件放到项目的static/assets目录下。
 
-* 第一个示例，展示了表格的典型功能：表格列设置、请求url返回json格式数据并自动绑定到表格显示、客户端分页、客户端搜索、刷新、列显示选择、复选框、删除按钮、表格的语言环境、表格绑定相关自定义函数。[示例](.\src\main\resources\static\boostrapTable\demo1.html)。
+* 第一个示例，展示了表格的典型功能：表格列设置、请求url返回json格式数据并自动绑定到表格显示、服务器分页、客户端搜索、刷新、列显示选择、复选框、删除按钮、表格的语言环境、表格绑定相关自定义函数。[示例](.\src\main\resources\static\boostrapTable\demo1.html)。
 
 json格式如下:
 {
@@ -121,4 +121,41 @@ json格式如下:
 
 * 第六个示例，子表，即表中嵌套表。 [示例](.\src\main\resources\static\boostrapTable\demo6_useSubTable.html)
 
+* 第七个例子，json格式除了上述以外，也支持flat json，比如如下。 [示例](.\src\main\resources\static\boostrapTable\demo7_useFlatJson.html)
+'''
+[
+    {
+        "github": {
+            "name": "bootstrap-table",
+            "count": {
+                "stargazers": 768,
+                "forks": 183
+            },
+            "description": "An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. (supports twitter bootstrap v2 and v3)"
+        }
+    },
+    {
+        "github": {
+            "name": "multiple-select",
+            "count": {
+                "stargazers": 365,
+                "forks": 166
+            },
+            "description": "A jQuery plugin to select multiple elements with checkboxes :)"
+        }
+    },
+    {
+        "github": {
+            "name": "bootstrap-show-password",
+            "count": {
+                "stargazers": 37,
+                "forks": 13
+            },
+            "description": "Show/hide password plugin for twitter bootstrap."
+        }
+    }
+]
+'''
+
+* 最后一个例子，展示事件单击单元格事件绑定，单元格根据内容变换颜色，修改单元格值。 
 
