@@ -29,7 +29,11 @@
   <button id="button7" class="btn btn-secondary">create</button>
   <button id="button8" class="btn btn-secondary">获取数据</button>
   <button id="button9" class="btn btn-secondary">获取所选</button>
-  <button id="button9" class="btn btn-secondary">refresh</button>
+  <button id="button10" class="btn btn-secondary">refresh</button>
+   <button id="button11" class="btn btn-secondary">insertRow</button>
+     <button id="button12" class="btn btn-secondary">updateRow</button>
+      <button id="button13" class="btn btn-secondary">removeRow</button>
+     <button id="button14" class="btn btn-secondary">getOptions</button>
   <input id="text1" type="text" value="1"/>
 </div>
 
@@ -37,6 +41,7 @@
 <table id="table"
   data-toolbar="#toolbar"
   data-height="400"
+  data-click-to-select="true"
   data-virtual-scroll="true"
   data-show-columns="true">
   <thead>
@@ -85,6 +90,10 @@
   var $button8 =  $('#button8')
   var $button9 =  $('#button9')
   var $button10 =  $('#button10')
+  var $button11 =  $('#button11')
+  var $button12 =  $('#button12')
+  var $button13 =  $('#button13')
+  var $button14 =  $('#button14')
   
   $(function() {
     $table.bootstrapTable({data: getData(20)})
@@ -141,6 +150,43 @@
     	$table.bootstrapTable('refresh')
     })
     
+     $button11.click(function(){
+    	
+    	$table.bootstrapTable('insertRow',{index:1, row:{id:2,name:'insert',price:100}})
+    })
+    
+    $button12.click(function(){
+    	//replace 为true，则完全替换，若字段未写，也会替换为空。false，只是替换修改的字段。默认false
+    	$table.bootstrapTable('updateRow',{index:1, replace:true, row:{id:3,name:'update',price:100}})
+    })
+    
+     $button13.click(function(){
+    	//获取所选择行的id集合
+    	var selectIds = $.map($table.bootstrapTable('getSelections'),function(row){
+    		return row.id
+    	});
+    	alert(selectIds)
+    	$table.bootstrapTable('remove', {filed: 'id', values: selectIds})
+    	//$table.bootstrapTable('remove', {field: 'id',values: [0,1] });
+    })
+    
+    
+    
+     $button14.click(function(){
+    	 var options=$("#table").bootstrapTable('getOptions');
+    	alert(options)
+    })
+    
+    $('#table').on('click-row.bs.table', function (e, row, $element, field) {
+      alert(JSON.stringify(row));
+})
+
+$('#table').on('dblclick-row.bs.table', function (e, row, $element, field) {
+   alert(JSON.stringify(field));
+})
+    $('#table').on('click-cell.bs.table', function (e,field, value,  row, $element) {
+   alert(JSON.stringify(field));
+})
     
   })
   
