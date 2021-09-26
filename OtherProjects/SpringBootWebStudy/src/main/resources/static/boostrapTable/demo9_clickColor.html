@@ -16,6 +16,17 @@
     -->
 <link href="../assets/fontawesomefree/css/all.css" rel="stylesheet"> <!--load all styles -->
 
+<style>
+.bg-blue {
+    background-color: #0074D9 !important;
+}
+.bg-green {
+    background-color: green !important;
+}
+.bg-red {
+    background-color: red !important;
+}
+</style>
 </head>
 <body>
 <div id="toolbar">
@@ -34,28 +45,61 @@
      <button id="button12" class="btn btn-secondary">updateRow</button>
       <button id="button13" class="btn btn-secondary">removeRow</button>
      <button id="button14" class="btn btn-secondary">getOptions</button>
+     <button id="button15" class="btn btn-secondary">updateCell</button>
   <input id="text1" type="text" value="1"/>
 </div>
-
-
+<div>
+  <input id="text2" type="text" value="你输入了键盘"/>
+</div>
+<script>
+function priceColorFormatter(value, item, index) {
+	//item是一行数据
+	//value是单元格数据
+	//index是在行号
+    if (value==0) {
+        return '$-';
+    }
+    else if (value>=1) {
+       return '$'+value;
+    }
+    else 
+  	  {
+  	  	
+  	  }
+}
+function cellStyleFun(value, row, index) {
+	  console.log("cellStyleFun")
+    
+}
+</script>
 <table id="table"
   data-toolbar="#toolbar"
-  data-height="400"
+  data-height="800"
+  
   data-click-to-select="true"
   data-virtual-scroll="true"
-  data-show-columns="true">
+  data-show-columns="true"
+
+  >
   <thead>
     <tr>
     <th data-field="state" data-checkbox="true"></th>
       <th data-field="id">ID</th>
-      <th data-field="name">Item Name</th>
-      <th data-field="price">Item Price</th>
+      <th data-field="name" >Item Name</th>
+      <th data-field="price" 
+      data-formatter="priceColorFormatter" 
+      data-cellStyle="cellStyleFun" 
+      data-align ="center"
+      >Item Price</th>
     </tr>
   </thead>
 </table>
 
 <script>
   var $table = $('#table')
+  var selectCell=[]   //保存选中的dom对象
+  var selectRowIds = []
+  
   var total = 0
 
   function getData(number, isAppend) {
@@ -67,7 +111,7 @@
       data.push({
         'id': i,
         'name': 'Item ' + i,
-        'price': '$' + i
+        'price': i
       })
     }
     if (isAppend) {
@@ -94,9 +138,48 @@
   var $button12 =  $('#button12')
   var $button13 =  $('#button13')
   var $button14 =  $('#button14')
+  var $button15 =  $('#button15')
+  
+  
+  function rowStyleFun(row, index) {
+            var classes = [
+                'bg-blue',
+                'bg-green',
+                'bg-red'
+            ]
+
+
+            if (index % 2 === 0 && index / 2 < classes.length) {
+                return {
+                    classes: classes[index / 2]
+                }
+            }
+            else
+            	{
+            	return {
+	                css: {
+	                    color: 'red'
+	                	}
+            		}
+            	} 
+        }
+  
+
   
   $(function() {
-    $table.bootstrapTable({data: getData(20)})
+    $table.bootstrapTable({
+    	data: getData(20),
+    	uniqueId:"id",
+    	rowStyle: rowStyleFun,
+
+    	 //******前端分页设置****
+           pagination:true,
+           pageNumber:2,
+           pageSize:10,
+           pageList:"[10, 20, 50, 200]",
+           paginationHAlign:"left",
+           paginationDetailHAlign:"right"
+    	})
     //jquery语法添加click事件函数
     //添加按钮，触发bootstrapTable的反选功能
     $button.click(function () {
@@ -166,29 +249,142 @@
     		return row.id
     	});
     	alert(selectIds)
-    	$table.bootstrapTable('remove', {filed: 'id', values: selectIds})
+    	$table.bootstrapTable('remove', {field: 'id', values: selectIds})
     	//$table.bootstrapTable('remove', {field: 'id',values: [0,1] });
     })
     
     
     
-     $button14.click(function(){
+    $button14.click(function(){
     	 var options=$("#table").bootstrapTable('getOptions');
-    	alert(options)
+    	alert(JSON.stringify(options))
     })
     
     $('#table').on('click-row.bs.table', function (e, row, $element, field) {
-      alert(JSON.stringify(row));
-})
+      //alert("row click : "+JSON.stringify(row));
+      
+	})
 
-$('#table').on('dblclick-row.bs.table', function (e, row, $element, field) {
-   alert(JSON.stringify(field));
-})
+	$('#table').on('dbl-click-row.bs.table', function (e, row, $element, field) {
+	   alert("double click: "+JSON.stringify(field));
+	})
+	
     $('#table').on('click-cell.bs.table', function (e,field, value,  row, $element) {
-   alert(JSON.stringify(field));
-})
+   	  //alert("cell click : "+JSON.stringify(field));
+   	  
+   	  //这里改变的是html中的样式，并未改变bootstrapTable的样式，因此只要表格重绘就会失效。
+   	 	console.log("当前样式类:"+String($element.attr("class")));
+   	  console.log(""+field+","+value)
+   	  console.log(JSON.stringify(row))
+   	  var classes = String($element.attr("class"))
+   	  $element.toggleClass("bg-blue")   //切换样式开关
+   	  if(classes==="" || classes==="undefined")
+   		  {
+   		
+	   		selectCell.push($element)
+	   		selectRowIds.push(row.id)
+   		  }
+   	  else
+   		  {
+		   		
+				for(var i=0; i<selectRowIds.length; i++)
+				{
+					if(selectRowIds[i] === row.id)
+						{
+							selectRowIds.splice(i,1)
+							selectCell.splice(i,1)
+							i--
+							
+						}
+				}
+   		  
+   		  }
+	})
+
+	$('#table').on('dbl-click-cell.bs.table', function (e,field, value,  row, $element) {
+	   alert("double cell click : "+JSON.stringify(field));
+	})
+    
+    $button15.click(function(){
+    	 alert("hhh")
+    	 $('#table').bootstrapTable('updateCell', {
+    	        index: 1,
+    	        field: 'id',
+    	        value: '1'
+    	  })
+    	  $('#table').bootstrapTable('updateCell', {
+    	        index: 1,
+    	        field: 'name',
+    	        value: 'updateCell'
+    	  })
+    })
+    
     
   })
+  
+  var inputKey ="";
+  $(document).keyup(function(event){
+    	var key = event.which;  //获取键码
+    	console.log(key +" " + event.keyCode+ " "+ event.charCode +" "+ String.fromCharCode(key))
+    	var $text2 = $('#text2')
+    	$text2.val(key)
+    	
+    	if(selectCell.length>0)
+    		{
+    			inputKey += String.fromCharCode(key)
+    			console.log(inputKey)
+    		}
+    	
+    	/*for(var i = 0; i< selectCell.length;i++)
+		{
+    		//这个改变的是html上显示的值，没有改变bootstrapTable表格绑定的data数据
+			selectCell[i].text(inputKey)
+		}*/
+    	for(var i=0; i<selectRowIds.length; i++)
+    		{
+		    	$('#table').bootstrapTable('updateCellByUniqueId', {
+			        id: selectRowIds[i],
+			        field: 'name',
+			        value: inputKey
+			   })
+    		}
+    	
+    	if(key === 39){   //右方向键的键码为39
+    		
+    	}
+    	else if(key === 37)
+    	{
+    			
+    	}
+    	else if(key === 32)
+    	{
+    		//空格，取消所有单击选中的单元格
+    		for(var i = 0; i< selectCell.length;i++)
+    			{
+    				selectCell[i].toggleClass("bg-blue") 
+    				
+    				selectCell.splice(i,1)
+    				i--
+    			}
+    		
+    	}
+    	else if(key === 13)
+    		{
+    			//回车
+    			
+    			for(var i=0; i<selectRowIds.length; i++)
+        		{
+    				selectCell[i].toggleClass("bg-blue") 
+    				selectRowIds.splice(i,1)
+    				
+    				selectCell.splice(i,1)
+    				i--
+    				inputKey=""
+        		}
+    			
+    		
+    		}
+    })
   
   
 </script>
