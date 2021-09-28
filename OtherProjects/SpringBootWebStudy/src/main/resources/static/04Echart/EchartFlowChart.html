@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1132px;height:516px;border-style: solid; border-width:3px; border-color: blue;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        
+
+		var option = {
+            title:{
+                text:'流程图'
+            },
+            series:[{
+                type:'graph',
+                layout: 'none',
+                symbolSize: 80,
+                roam: true,
+                color: '#6A5ACD',
+                label: {
+                    show: true,
+                    fontSize: 16,
+                    color: '#FFF',
+                    
+                },
+                symbol: 'roundRect',  
+                edgeSymbol: ['circle','arrow'],   //’circle’, ‘rect’, ‘triangle’, ‘diamond’, ‘pin’, ‘arrow’, 'none’
+                edgeSymbolSize: [4, 10],
+                edgeLabel: {
+                    fontSize: 25
+                },
+                data: [
+                {
+                    name:'开始',
+                    x:10,
+                    y:100,
+                },
+                {
+                    name:'授权验证',
+                    x:30,
+                    y:100,
+                },
+                {
+                    name:'登陆',
+                    x:50,
+                    y:100,
+                },
+                {
+                    name:'确认结算',
+                    x:70,
+                    y:100,
+                },
+                {
+                    name:'查询资金',
+                    x:90,
+                    y:100,
+                },
+                {
+                    name:'查询仓位',
+                    x:110,
+                    y:100,
+                },
+                {
+                    name:'下载合约',
+                    x:130,
+                    y:100,
+                },
+                {
+                    name:'结束',
+                    x:150,
+                    y:150,
+                    
+                }
+                
+                ],
+                tooltip: {
+                        show: true,
+                        position: 'right',
+                        textStyle: {
+                            width: 20
+                        },
+                        formatter: function(params){
+                            return params.dataType == "node" ? '鼠标悬停显示':'ddd';   // node or edge
+                        }
+                        
+                    },
+                links:[{
+                        source:'开始',
+                        target:'授权验证',
+                        lineStyle: {
+                            color: '#473C8B',
+                            width: 3,
+                        },
+                        label:{
+                            show:true,
+                            position: 'middle',
+                            formatter:'必须成功才能后续',
+                            fontSize: 15,
+                        }
+                        },
+                        
+                        {
+                            source:'授权验证',
+                            target:'登陆'
+                        },
+                        {
+                            source:'登陆',
+                            target:'确认结算'
+                        },
+                        {
+                            source:'确认结算',
+                            target:'查询资金'
+                        },
+                        {
+                            source:'查询资金',
+                            target:'查询仓位'
+                        },
+                        {
+                            source:'查询仓位',
+                            target:'下载合约'
+                        },
+                        {
+                            source:'下载合约',
+                            target:'结束'
+                        },
+                         {
+                            source:'开始',
+                            target:'结束'
+                        },
+                        
+                ]
+            },
+          
+            
+            ],
+            
+    }
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        
+        myChart.on('click',function(params){
+        
+            alert("点击了 componentType:"+params.componentType + 
+            " \r\nseriesType:" + params.seriesType +
+            "\r\nseriesIndex:" + params.seriesIndex +
+            "\r\ndataIndex:"+params.dataIndex+
+            "\r\ndata:"+params.data+
+            "\r\ndataType:"+params.dataType+
+            "\r\nvalue:"+params.value+
+            "\r\ncolor:"+params.color)
+        }
+        )
+    </script>
+</body>
+</html>

@@ -83,6 +83,10 @@ The following guides illustrate how to use some features concretely:
 
 * 事件的三个阶段（事件流）：捕获、处理、冒泡。 事件注册的新接口（addEventListener）和旧接口（on开头）。事件处理函数匿名写法和非匿名写法。
 
+# Echart
+
+* 画流程图。[示例](.\src\main\resources\static\04Echart\EchartFlowChart.html)
+
 # bootstrapTable表格组件的使用
 
 [官网](https://examples.bootstrap-table.com/#welcome.html#view-source)

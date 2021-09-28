@@ -169,13 +169,16 @@ JAVA 1.8
 * Spring Cloud Bus 是消息，结合Kafka或者RabbitMQ等进行广播消息。 只用spring cloud config的时候，一旦config server上保存的配置数据变化，需要重启config client应用，但结合spring cloud config 和 bus，可以实现通过对 config server上发送一个bus-refresh，配置自动同步到所有 config client上。
 
 # web前端开发
-
-* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md)  
+* javascript [示例](./OtherProjects/SpringBootWebStudy/HELP.md)
+* css [示例](./OtherProjects/SpringBootWebStudy/HELP.md)
+* vue  [示例](./OtherProjects/SpringBootWebStudy/HELP.md) 
+* bootstrapTable表格库 [示例](./OtherProjects/SpringBootWebStudy/HELP.md) 
 * EChart柱状图和饼图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo1.html) 
 * EChart 异步更新柱状图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo2.html) 
 * EChart实时更新曲线图1 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo3.html) 
 * EChart实时更新曲线图2 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo4.html) 
 * EChart拖拽折线图 [示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EChartDemo5.html) 
+* EChart画流程图。[示例](./OtherProjects/SpringBootWebStudy/src/main/resources/static/04Echart/EchartFlowChart.html)
 
 # 工具
 
