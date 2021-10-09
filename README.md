@@ -59,7 +59,7 @@ JAVA 1.8
       
    * ConcurrentLinkedQueue [示例](./concurrent/ConcurrentLinkedQueue/testConcurrentLinkedQueue.java)
    * ConcurrentSkipListMap，Skip list(跳表）是一种可以代替平衡树的数据结构。一般情况下，性能比concurrenthashMap慢几倍。[示例](./concurrent/ConcurrentLinkedQueue/TestConcurrentSkipListMap.java)
-   * ConcurrentSkipset ，数据类实现了equals接口、comparable接口、hashcode接口。 集合不能有重复。示例[./concurrent/TestConcurrentSkipListSet.java]
+   * ConcurrentSkipset ，数据类实现了equals接口、comparable接口、hashcode接口。 集合不能有重复。[示例](./concurrent/TestConcurrentSkipListSet.java)
    * Exchanger, 两个线程之间同步安全的交换数据的一种方式。本质上与notify和wait相似。 [示例](./concurrent/ExchangerTest.java)
    
 
@@ -107,6 +107,8 @@ JAVA 1.8
    * 二叉树 [示例](./src/algorithm/BTree.java)
    * 递归 [示例](./src/algorithm/DiGui.java)
    * 数字和人民币中文转换 [示例](./src/algorithm/RMB.java)
+   * 冒泡排序，O(n*n) 以及优化版 [示例1](./src/algorithm/bubbleSort1.java) [示例2](./src/algorithm/bubbleSort2.java) [示例3](./src/algorithm/bubbleSort3.java) [示例4](./src/algorithm/bubbleSort4.java)
+   * 快速排序，O(nlogn) 分治算法使用双循环[示例](./src/algorithm/QuickSort1.java)和单循环[示例](./src/algorithm/QuickSort2.java)
    
 * Netty网络库的使用 *
    * Netty底层也用的NIO的那套机制，简化了使用者，只要传入几个参数，即可创建网络功能。创建一个server。 [示例](./OtherProjects/Netty/src/main/java/Demo/TestNetty.java)
