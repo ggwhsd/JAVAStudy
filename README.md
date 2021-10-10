@@ -107,8 +107,12 @@ JAVA 1.8
    * 二叉树 [示例](./src/algorithm/BTree.java)
    * 递归 [示例](./src/algorithm/DiGui.java)
    * 数字和人民币中文转换 [示例](./src/algorithm/RMB.java)
+   * 小顶堆构建，堆使用数组。[示例](./src/algorithm/SmallHeap.java)
+   * 利用堆构造优先队列。 [示例](./src/algorithm/PriorityQueue.java)
    * 冒泡排序，O(n*n) 以及优化版 [示例1](./src/algorithm/bubbleSort1.java) [示例2](./src/algorithm/bubbleSort2.java) [示例3](./src/algorithm/bubbleSort3.java) [示例4](./src/algorithm/bubbleSort4.java)
    * 快速排序，O(nlogn) 分治算法使用双循环[示例](./src/algorithm/QuickSort1.java)和单循环[示例](./src/algorithm/QuickSort2.java)
+   * 堆排序，对无需数组进行堆构造。 然后 每次将对顶元素与最后一个未更换过位置的元素进行调换，再做一次下沉操作，重复以上调换和下沉，最后可以得到一个有序数组。大顶堆，排序之后是从小到大排序。[示例](./src/algorithm/HeapSort.java)
+   
    
 * Netty网络库的使用 *
    * Netty底层也用的NIO的那套机制，简化了使用者，只要传入几个参数，即可创建网络功能。创建一个server。 [示例](./OtherProjects/Netty/src/main/java/Demo/TestNetty.java)
