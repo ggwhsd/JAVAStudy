@@ -174,6 +174,8 @@ JAVA 1.8
 
 * Spring Cloud Bus 是消息，结合Kafka或者RabbitMQ等进行广播消息。 只用spring cloud config的时候，一旦config server上保存的配置数据变化，需要重启config client应用，但结合spring cloud config 和 bus，可以实现通过对 config server上发送一个bus-refresh，配置自动同步到所有 config client上。
 
+* Spring Boot Admin 一个监控Springboot的项目，提供webui界面。[./OtherProjects/SpringBootAdminServer],接入该admin的client的示例[./OtherProjects/SpringBootAdminClient]
+
 # web前端开发
 * javascript [示例](./OtherProjects/SpringBootWebStudy/HELP.md)
 * css [示例](./OtherProjects/SpringBootWebStudy/HELP.md)

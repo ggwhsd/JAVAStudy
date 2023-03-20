@@ -19,4 +19,4 @@ spring:
 file:
   uploadFile: C:/Users/a/Pictures/bing
 movie:
-  dir: G:/BaiduNetdiskDownload
+  dir: ./

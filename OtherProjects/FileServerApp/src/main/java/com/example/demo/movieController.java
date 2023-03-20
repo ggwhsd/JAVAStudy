@@ -42,7 +42,13 @@ public class movieController {
 		logger.info("count="+count);
 		
 		String dir = info.getmovieDir();
+		
 		String filePath = dir + "\\" + filename;
+		
+		if(dir=="./")
+		{
+			filePath = dir + filename;
+		}
 		
 		try {
 			FileInputStream inputStream = new FileInputStream(filePath);
