@@ -176,7 +176,7 @@ JAVA 1.8
 
 * Spring Boot Admin 一个监控Springboot的项目，提供webui界面。[./OtherProjects/SpringBootAdminServer],接入该admin的client的示例[./OtherProjects/SpringBootAdminClient]
 
-* Spring Boot: demo性质项目，包含了基本的mvc和restful方式，以及aop的使用方式。 [./OtherProjects/SpringBootDemo/demo1]
+* Spring Boot: demo性质项目，包含了基本的mvc框架使用，controller请求参数的几种方式，restful风格的使用基础以及aop的使用方式。 [./OtherProjects/SpringBootDemo/demo1], 以及前后端分离的restful案例，[./OtherProjects/SpringBootDemo/Demo8web]
 
 # web前端开发
 * javascript [示例](./OtherProjects/SpringBootWebStudy/HELP.md)
